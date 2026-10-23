@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <!-- This page alone runs EmailOctopus's form script (and Google reCAPTCHA), so its rules are looser than the main page's.
+       Keeping it on its own page means third-party code never runs on index.html. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://eomail5.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com https://gallery.eo.page; img-src 'self' data: https://eomail5.com https://gallery.eo.page https://www.gstatic.com; connect-src https://eomail5.com; frame-src https://www.google.com https://recaptcha.google.com; form-action https://eomail5.com; base-uri 'none'; object-src 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Subscribe · The Pickle Hub</title>
+  <meta name="description" content="Sign up for occasional emails from The Pickle Hub.">
+  <link rel="icon" href="assets/img/jar.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/guard.js"></script>
+</head>
+<body>
+  <main class="subscribe-page">
+    <a class="subscribe-page__back" href="index.html#intro">← Back to The Pickle Hub</a>
+
+    <img class="subscribe-page__jar" src="assets/img/jar.svg" alt="" width="56" height="56">
+    <h1>Subscribe for more cool stuff</h1>
+    <p>New techniques, videos and experiments from The Pickle Hub, sent now and then. No spam.</p>
+    <p>After you sign up you'll get an email asking you to confirm. Every email has an unsubscribe link.</p>
+
+    <div class="subscribe-page__form">
+      <script async src="https://eomail5.com/form/031d1a9e-cf00-11f1-b92e-657c95aab55c.js" data-form="031d1a9e-cf00-11f1-b92e-657c95aab55c"></script>
+      <noscript><p class="placeholder">Turn on JavaScript to see the sign-up form.</p></noscript>
+    </div>
+
+    <p class="subscribe__note">This form is run by EmailOctopus and protected from spam by Google reCAPTCHA, which may set cookies. You must be 13 or over to subscribe. See <a href="index.html#privacy">how your details are looked after</a>.</p>
+  </main>
+</body>
+</html>

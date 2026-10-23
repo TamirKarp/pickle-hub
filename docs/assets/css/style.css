@@ -426,6 +426,15 @@ details > *:not(summary) { margin: 0 1.1rem 1.1rem; }
 .scrim { position: fixed; inset: 0; background: rgb(0 0 0 / .4); z-index: 44; }
 
 /* ============ Subscribe ============ */
+a.subscribe__btn { display: inline-flex; align-items: center; text-decoration: none; }
+.video-note { margin: -.25rem 0 .75rem; font-size: .82rem; color: var(--muted); }
+
+.subscribe-page { max-width: 36rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+.subscribe-page h1 { font-size: clamp(2rem, 1.5rem + 2vw, 2.6rem); margin: .5rem 0 .75rem; }
+.subscribe-page__back { display: inline-block; margin-bottom: 1.5rem; font-weight: 600; }
+.subscribe-page__jar { display: block; }
+.subscribe-page__form { margin: 1.5rem 0; min-height: 8rem; }
+
 .subscribe {
   margin-top: 3rem; padding: 1.75rem; border-radius: var(--radius);
   background: var(--brine-soft); border: 1px solid var(--border);

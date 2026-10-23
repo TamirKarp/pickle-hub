@@ -66,6 +66,11 @@
     const frag = document.createDocumentFragment();
 
     frag.append(player);
+    if (src.videoId) {
+      frag.append(el('p', { class: 'video-note' },
+        'Pressing play loads this video from YouTube, which may store data in your browser. ',
+        el('a', { href: '#privacy' }, 'Privacy')));
+    }
     frag.append(el('p', { class: 'credit' },
       'Video by ',
       safeChannelUrl(src.channelUrl) ? el('a', { href: safeChannelUrl(src.channelUrl), rel: 'noopener' }, src.creator) : src.creator,

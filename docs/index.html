@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' https://i.ytimg.com; connect-src 'self' https://api.web3forms.com; frame-src https://www.youtube-nocookie.com; form-action 'none'; base-uri 'none'; object-src 'none'; require-trusted-types-for 'script'; trusted-types 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' https://i.ytimg.com; connect-src 'self'; frame-src https://www.youtube-nocookie.com; form-action 'none'; base-uri 'none'; object-src 'none'; require-trusted-types-for 'script'; trusted-types 'none'">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>The Pickle Hub</title>
@@ -45,6 +45,7 @@
         <li class="toc__group">Reference</li>
         <li><a href="#safety">Safety &amp; troubleshooting</a></li>
         <li><a href="#sources">Sources</a></li>
+        <li><a href="#privacy">Privacy</a></li>
         <li><a href="#subscribe">Subscribe</a></li>
       </ol>
       <a class="coffee" href="https://buymeacoffee.com/tamirkarp" target="_blank" rel="noopener">☕ Buy me a coffee</a>
@@ -594,35 +595,34 @@
         <p class="cite">Video summaries on this site are written in our own words from each video's captions. All videos belong to their creators.</p>
       </section>
 
+      <section id="privacy" class="section">
+        <h2>Privacy</h2>
+        <p>The Pickle Hub is run by Tamir, an individual in the UK, who is responsible for any personal data collected through this site. You can get in touch at <strong>[contact email to be added]</strong> or by replying to any Pickle Hub email.</p>
+
+        <h3>The newsletter</h3>
+        <p>If you subscribe, I collect your email address and use it only to send Pickle Hub updates. I rely on your consent to do this, and you'll get an email asking you to confirm before you're added. Every email has an unsubscribe link, and you can withdraw your consent at any time.</p>
+        <p>The list is run by EmailOctopus (Three Hearts Digital Ltd, London), which stores it on servers in Ireland and sends emails through providers in the EU and US. EmailOctopus only handles your details on my instructions. The sign-up page uses Google reCAPTCHA to block spam, which sends information about your device and visit to Google and may set cookies. I never sell your details or share them with anyone else.</p>
+        <p>I keep your address until you unsubscribe. After that it's kept only as "unsubscribed", so you're never emailed again by mistake. You must be 13 or over to subscribe.</p>
+
+        <h3>Hosting and videos</h3>
+        <p>This site is hosted on GitHub Pages, which logs visitors' IP addresses for security. Video thumbnails load from YouTube (Google), which receives your IP address. Videos themselves only load when you press play, and YouTube may then store data in your browser. This site sets no cookies of its own and uses no analytics.</p>
+
+        <h3>Your rights</h3>
+        <p>You can ask to see, correct or delete your details at any time by contacting me. If you're unhappy with how your data has been handled, you can complain to the <a href="https://ico.org.uk/make-a-complaint/" rel="noopener">Information Commissioner's Office</a>.</p>
+      </section>
+
       <!-- ===================== SUBSCRIBE ===================== -->
-      <!-- Sign-ups are relayed by Web3Forms, so the destination address never appears in this page.
-           Paste the Web3Forms access key into data-access-key below. -->
+      <!-- The EmailOctopus form lives on subscribe.html so its third-party scripts never run on this page. -->
       <section id="subscribe" class="subscribe" aria-labelledby="subscribe-title">
         <h2 id="subscribe-title">Subscribe for more cool stuff</h2>
         <p>New techniques, videos and experiments from The Pickle Hub, sent now and then. No spam.</p>
-        <form class="subscribe__form" id="subscribe-form" data-access-key="" novalidate hidden>
-          <div class="subscribe__fields">
-            <label class="subscribe__field">
-              <span>First name <small>(optional)</small></span>
-              <input type="text" name="name" autocomplete="given-name" maxlength="80">
-            </label>
-            <label class="subscribe__field subscribe__field--grow">
-              <span>Email</span>
-              <input type="email" name="email" autocomplete="email" required maxlength="254">
-            </label>
-            <button type="submit" class="subscribe__btn">Subscribe</button>
-          </div>
-          <!-- Spam trap: people never see or fill this -->
-          <input type="checkbox" name="botcheck" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <p class="subscribe__note">We'll only use your email to send Pickle Hub updates. Reply to any email to unsubscribe.</p>
-          <p class="subscribe__status" id="subscribe-status" role="status" aria-live="polite"></p>
-        </form>
-        <noscript><p class="placeholder">Turn on JavaScript to subscribe.</p></noscript>
+        <a class="subscribe__btn" href="subscribe.html">Subscribe</a>
+        <p class="subscribe__note">Opens our sign-up page, run by EmailOctopus. You'll be asked to confirm by email, and every email has an unsubscribe link. See <a href="#privacy">Privacy</a>.</p>
       </section>
 
       <footer class="footer">
         <p class="footer__support">Enjoying The Pickle Hub? <a class="coffee" href="https://buymeacoffee.com/tamirkarp" target="_blank" rel="noopener">☕ Buy me a coffee</a></p>
-        <p>The Pickle Hub. Video summaries are written in our own words; all videos belong to their creators.</p>
+        <p>The Pickle Hub. Video summaries are written in our own words; all videos belong to their creators. <a href="#privacy">Privacy</a></p>
       </footer>
     </main>
   </div>

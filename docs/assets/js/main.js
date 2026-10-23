@@ -48,58 +48,6 @@
     if (e.key === 'Escape' && toc.classList.contains('is-open')) { setOpen(false); toggle.focus(); }
   });
 
-  /* ---------- Subscribe form (relayed by Web3Forms so the inbox address stays private) ---------- */
-  const subForm = document.getElementById('subscribe-form');
-  if (subForm) {
-    subForm.hidden = false; // hidden in the HTML so it can't submit without JS
-    const status = document.getElementById('subscribe-status');
-    const btn = subForm.querySelector('button[type="submit"]');
-    const setStatus = (msg, kind) => { status.textContent = msg; status.dataset.kind = kind || ''; };
-
-    subForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const key = subForm.dataset.accessKey;
-      const emailInput = subForm.elements.email;
-      const email = emailInput.value.trim();
-
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        setStatus('Please enter a valid email address.', 'error');
-        emailInput.focus();
-        return;
-      }
-      if (subForm.elements.botcheck.checked) return; // a bot filled the hidden field
-      if (!key) {
-        setStatus("Sign-ups aren't switched on yet. Please check back soon.", 'error');
-        return;
-      }
-
-      btn.disabled = true;
-      setStatus('Subscribing…');
-      try {
-        const res = await fetch('https://api.web3forms.com/submit', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify({
-            access_key: key,
-            subject: 'New Pickle Hub subscriber',
-            from_name: 'The Pickle Hub',
-            email,
-            name: subForm.elements.name.value.trim().slice(0, 80),
-            botcheck: subForm.elements.botcheck.checked,
-          }),
-        });
-        const data = await res.json().catch(() => ({}));
-        if (!res.ok || data.success === false) throw new Error(data.message || res.status);
-        subForm.reset();
-        setStatus("You're in. Thanks for subscribing!", 'ok');
-      } catch {
-        setStatus('Something went wrong. Please try again in a moment.', 'error');
-      } finally {
-        btn.disabled = false;
-      }
-    });
-  }
-
   /* ---------- Brine calculator ---------- */
   const form = document.getElementById('calc-form');
   if (!form) return;
