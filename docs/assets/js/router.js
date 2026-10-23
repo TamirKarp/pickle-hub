@@ -53,6 +53,8 @@
       });
       if (topbarTitle) topbarTitle.textContent = titles.get(page.id) || 'The Pickle Hub';
       document.title = page === home ? 'The Pickle Hub' : `${titles.get(page.id)} · The Pickle Hub`;
+      // Let other scripts react to the switch (sources.js pauses and resumes videos).
+      document.dispatchEvent(new CustomEvent('pickle:pagechange', { detail: { from: current, to: page } }));
       current = page;
     }
     if (scrollTo) scrollTo.scrollIntoView({ behavior: 'instant' });

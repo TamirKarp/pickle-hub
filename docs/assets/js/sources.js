@@ -30,8 +30,39 @@
   };
   const thumbUrl = (id, size) => `https://i.ytimg.com/vi/${encodeURIComponent(id)}/${size}.jpg`;
   const watchUrl = (id, t = 0) => `https://www.youtube.com/watch?v=${encodeURIComponent(id)}${t ? `&t=${t}s` : ''}`;
+  const YT_ORIGIN = 'https://www.youtube-nocookie.com';
+  // enablejsapi lets the page pause and resume the player with postMessage (see "Pause when leaving a section").
   const embedUrl = (id, t = 0) =>
-    `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0${t ? `&start=${Math.floor(t)}` : ''}`;
+    `${YT_ORIGIN}/embed/${encodeURIComponent(id)}?autoplay=1&rel=0&enablejsapi=1&origin=${encodeURIComponent(location.origin)}${t ? `&start=${Math.floor(t)}` : ''}`;
+
+  /* ---------- Pause when leaving a section, resume when coming back ---------- */
+  const playerState = new WeakMap(); // iframe -> last YouTube state (1 playing, 2 paused, 3 buffering…)
+  const ytCommand = (iframe, func) =>
+    iframe.contentWindow?.postMessage(JSON.stringify({ event: 'command', func, args: [] }), YT_ORIGIN);
+
+  window.addEventListener('message', (e) => {
+    if (e.origin !== YT_ORIGIN) return; // only trust messages from the YouTube player itself
+    const iframe = [...document.querySelectorAll('.player iframe')].find((f) => f.contentWindow === e.source);
+    if (!iframe || typeof e.data !== 'string') return;
+    let msg;
+    try { msg = JSON.parse(e.data); } catch { return; }
+    if (msg.event === 'onStateChange' && Number.isInteger(msg.info)) playerState.set(iframe, msg.info);
+    if (msg.event === 'infoDelivery' && Number.isInteger(msg.info?.playerState)) playerState.set(iframe, msg.info.playerState);
+  });
+
+  document.addEventListener('pickle:pagechange', ({ detail: { from, to } }) => {
+    from?.querySelectorAll('.player iframe').forEach((iframe) => {
+      const state = playerState.get(iframe);
+      if (state === 1 || state === 3 || state === undefined) { // playing, buffering, or not reported yet
+        ytCommand(iframe, 'pauseVideo');
+        iframe.dataset.resume = '1';
+      }
+    });
+    to?.querySelectorAll('.player iframe[data-resume]').forEach((iframe) => {
+      ytCommand(iframe, 'playVideo');
+      delete iframe.dataset.resume;
+    });
+  });
 
   /* ---------- Player (click-to-load, so nothing loads from YouTube until you press play) ---------- */
   const loadVideo = (player, src, t = 0) => {
@@ -44,6 +75,11 @@
       // YouTube refuses to play embeds that don't send a referrer (Error 153).
       referrerpolicy: 'strict-origin-when-cross-origin',
     }));
+    // Ask the player to report its state, so we know whether it was playing when the visitor leaves the section.
+    const iframe = player.querySelector('iframe');
+    iframe.addEventListener('load', () => {
+      iframe.contentWindow?.postMessage(JSON.stringify({ event: 'listening', id: src.id, channel: 'widget' }), YT_ORIGIN);
+    });
   };
 
   const renderPlayer = (src) => {
