@@ -11,7 +11,6 @@
         "channelUrl": "https://www.youtube.com/channel/UCjh6GxOGEk5vqGvZKzw-mCQ",
         "duration": "0:38",
         "intro": "Here's Wendy the Food Scientist to explain it in under a minute.",
-        "summary": "A 38-second explainer from a food scientist. Fermenting relies on bacteria already on the food to make lactic acid over days or weeks; pickling skips the microbes and adds vinegar, so it's ready in hours. Either way the food ends up below pH 4.6, where harmful bacteria can't grow.",
         "points": [
           {
             "text": "Not all pickles are fermented, and not all fermented foods are pickles.",
@@ -30,8 +29,7 @@
             "t": 31
           }
         ],
-        "fromDescription": "her fermented dill pickles use a 2% salt brine, and her basic vinegar pickling brine is equal parts vinegar and water with 2 tbsp sugar and 1.5 tsp salt.",
-        "compare": "Matches the written sources. One thing worth adding: pH 4.6 is the line for harmful bacteria, but yeasts and moulds can still grow below it, so keep ferments under the brine (see The science)."
+        "fromDescription": "her fermented dill pickles use a 2% salt brine, and her basic vinegar pickling brine is equal parts vinegar and water with 2 tbsp sugar and 1.5 tsp salt."
       }
     ]
   },
