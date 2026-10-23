@@ -7,30 +7,6 @@
     return;
   }
 
-  /* ---------- Contents: highlight the section in view ---------- */
-  const tocLinks = [...document.querySelectorAll('.toc__list a')];
-  const sections = tocLinks
-    .map((a) => document.querySelector(a.getAttribute('href')))
-    .filter(Boolean);
-
-  const setCurrent = (id) => {
-    tocLinks.forEach((a) => {
-      if (a.getAttribute('href') === `#${id}`) a.setAttribute('aria-current', 'true');
-      else a.removeAttribute('aria-current');
-    });
-  };
-
-  const updateCurrent = () => {
-    // The current section is the last one whose top has passed a line near the top of the viewport.
-    const line = Math.min(window.innerHeight * 0.3, 140);
-    let current = null;
-    for (const s of sections) {
-      if (s.getBoundingClientRect().top <= line) current = s;
-    }
-    if (current) setCurrent(current.id);
-    else tocLinks.forEach((a) => a.removeAttribute('aria-current'));
-  };
-
   /* ---------- Progress bar & back-to-top ---------- */
   const bar = document.querySelector('.progress__bar');
   const toTop = document.getElementById('to-top');
@@ -40,8 +16,8 @@
     const ratio = max > 0 ? window.scrollY / max : 0;
     bar.style.transform = `scaleX(${Math.min(1, Math.max(0, ratio))})`;
     toTop.classList.toggle('is-visible', window.scrollY > 600);
-    updateCurrent();
   };
+  toTop.addEventListener('click', () => window.scrollTo({ top: 0 }));
 
   let ticking = false;
   window.addEventListener('scroll', () => {
@@ -60,7 +36,7 @@
   const setOpen = (open) => {
     toc.classList.toggle('is-open', open);
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.textContent = open ? 'Close' : 'Contents';
+    toggle.textContent = open ? 'Close' : 'Menu';
     scrim.hidden = !open;
     if (open) toc.querySelector('a[aria-current="true"], .toc__list a')?.focus({ preventScroll: true });
   };
@@ -193,10 +169,9 @@
     if (!btn) return;
     pctInput.value = btn.dataset.calcPct;
     calculate();
-    // Focus before scrolling: focusing mid-scroll cancels smooth scrolling in some browsers.
-    weightInput.focus({ preventScroll: true });
-    document.getElementById('calculator').scrollIntoView();
-    history.replaceState(null, '', '#calculator');
+    // router.js shows the calculator on hashchange; focus the weight box once it has.
+    window.addEventListener('hashchange', () => weightInput.focus({ preventScroll: true }), { once: true });
+    location.hash = '#calculator';
     form.classList.remove('calc--flash');
     void form.offsetWidth; // restart the animation
     form.classList.add('calc--flash');

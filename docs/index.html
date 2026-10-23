@@ -9,6 +9,7 @@
   <meta name="description" content="A friendly, well-sourced guide to pickling and fermentation at home: the science, the methods, a brine calculator and hand-picked videos.">
   <link rel="icon" href="assets/img/jar.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/router.js" defer></script>
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/sources.js" defer></script>
   <script src="assets/js/seasons.js" defer></script>
@@ -17,9 +18,15 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
 
+  <header class="topbar">
+    <a class="topbar__brand" href="#intro" aria-label="The Pickle Hub: home"><img src="assets/img/jar.svg" alt="" width="26" height="26"></a>
+    <span class="topbar__title" id="topbar-title">The Pickle Hub</span>
+    <button class="topbar__menu" id="toc-toggle" type="button" aria-controls="toc" aria-expanded="false">Menu</button>
+  </header>
+
   <div class="layout">
     <nav id="toc" class="toc" aria-label="Contents">
-      <a class="toc__brand" href="#top">
+      <a class="toc__brand" href="#intro">
         <img src="assets/img/jar.svg" alt="" width="28" height="28">
         <span>The Pickle Hub</span>
       </a>
@@ -620,8 +627,7 @@
     </main>
   </div>
 
-  <button class="fab" id="toc-toggle" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
   <div class="scrim" id="toc-scrim" hidden></div>
-  <a class="to-top" id="to-top" href="#top" aria-label="Back to top">↑</a>
+  <button type="button" class="to-top" id="to-top" aria-label="Back to top">↑</button>
 </body>
 </html>
