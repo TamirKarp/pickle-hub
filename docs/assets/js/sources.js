@@ -66,12 +66,8 @@
     if (play && src.videoId) loadVideo(player, src); // the click on the thumbnail is the user's choice to play
     const frag = document.createDocumentFragment();
 
+    if (src.intro) frag.append(el('p', { class: 'video-intro' }, src.intro));
     frag.append(player);
-    if (src.videoId) {
-      frag.append(el('p', { class: 'video-note' },
-        'Choosing or playing a video loads it from YouTube, which may store data in your browser. ',
-        el('a', { href: '#privacy' }, 'Privacy')));
-    }
     frag.append(el('p', { class: 'credit' },
       'Video by ',
       safeChannelUrl(src.channelUrl) ? el('a', { href: safeChannelUrl(src.channelUrl), rel: 'noopener' }, src.creator) : src.creator,

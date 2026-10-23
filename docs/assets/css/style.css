@@ -427,7 +427,7 @@ details > *:not(summary) { margin: 0 1.1rem 1.1rem; }
 
 /* ============ Subscribe ============ */
 a.subscribe__btn { display: inline-flex; align-items: center; text-decoration: none; }
-.video-note { margin: -.25rem 0 .75rem; font-size: .82rem; color: var(--muted); }
+.video-intro { font-family: var(--font-head); font-size: 1.2rem; font-weight: 600; color: var(--brine); margin: 1.5rem 0 .25rem; }
 
 .subscribe-page { max-width: 36rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
 .subscribe-page h1 { font-size: clamp(2rem, 1.5rem + 2vw, 2.6rem); margin: .5rem 0 .75rem; }
