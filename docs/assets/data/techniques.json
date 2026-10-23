@@ -33,5 +33,41 @@
         "compare": "Matches the written sources. One thing worth adding: pH 4.6 is the line for harmful bacteria, but yeasts and moulds can still grow below it, so keep ferments under the brine (see The science)."
       }
     ]
+  },
+  "quick-pickles": {
+    "sources": [
+      {
+        "id": "fallow",
+        "videoId": "cxHvciP6WhE",
+        "format": "short",
+        "title": "How to make pickles like a chef",
+        "creator": "Fallow",
+        "channelUrl": "https://www.youtube.com/@FallowChefs"
+      },
+      {
+        "id": "sivans-kitchen",
+        "videoId": "u3Ic6TITVX8",
+        "format": "short",
+        "title": "2-day veggie pickle trick",
+        "creator": "Sivan's Kitchen",
+        "channelUrl": "https://www.youtube.com/@Sivanskitchenla"
+      },
+      {
+        "id": "andy-cooks",
+        "videoId": "ZhEQPrGi68E",
+        "format": "short",
+        "title": "Quick pickle cucumber",
+        "creator": "Andy Cooks",
+        "channelUrl": "https://www.youtube.com/@andy_cooks"
+      },
+      {
+        "id": "bon-appetit",
+        "videoId": "InuufSk-H54",
+        "format": "short",
+        "title": "Quick pickle almost any vegetable with 2 ingredients",
+        "creator": "Bon Appétit",
+        "channelUrl": "https://www.youtube.com/@bonappetit"
+      }
+    ]
   }
 }

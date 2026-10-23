@@ -61,14 +61,15 @@
   };
 
   /* ---------- Panel: everything below the thumbnails ---------- */
-  const renderPanel = (src) => {
+  const renderPanel = (src, { play = false } = {}) => {
     const player = renderPlayer(src);
+    if (play && src.videoId) loadVideo(player, src); // the click on the thumbnail is the user's choice to play
     const frag = document.createDocumentFragment();
 
     frag.append(player);
     if (src.videoId) {
       frag.append(el('p', { class: 'video-note' },
-        'Pressing play loads this video from YouTube, which may store data in your browser. ',
+        'Choosing or playing a video loads it from YouTube, which may store data in your browser. ',
         el('a', { href: '#privacy' }, 'Privacy')));
     }
     frag.append(el('p', { class: 'credit' },
@@ -131,7 +132,7 @@
   /* ---------- Switcher ---------- */
   const switchers = new Map(); // technique id -> { mount, tech, tabs, panel }
 
-  const select = (tid, sourceId, { updateHash = false, focus = false } = {}) => {
+  const select = (tid, sourceId, { updateHash = false, focus = false, play = false } = {}) => {
     const s = switchers.get(tid);
     if (!s) return false;
     const src = s.tech.sources.find((x) => x.id === sourceId);
@@ -146,7 +147,8 @@
         if (focus) tab.focus();
       }
     });
-    s.panel.replaceChildren(renderPanel(src));
+    s.panel.replaceChildren(renderPanel(src, { play }));
+    if (play) s.panel.querySelector('.player')?.scrollIntoView({ block: 'nearest' });
     if (updateHash) history.replaceState(null, '', `#${tid}/${src.id}`);
     return true;
   };
@@ -173,7 +175,7 @@
         : el('span', { class: 'source__thumb source__thumb--empty', 'aria-hidden': 'true' }, '▶'),
       el('span', { class: 'source__title' }, src.title),
       el('span', { class: 'source__meta' }, [src.creator, src.duration].filter(Boolean).join(' · ')));
-      tab.addEventListener('click', () => select(tid, src.id, { updateHash: true }));
+      tab.addEventListener('click', () => select(tid, src.id, { updateHash: true, play: true }));
       return tab;
     });
 

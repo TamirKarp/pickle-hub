@@ -347,7 +347,7 @@ details > *:not(summary) { margin: 0 1.1rem 1.1rem; }
   position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius); overflow: hidden;
   background: #000; margin: .5rem 0 .5rem;
 }
-.player--short { aspect-ratio: 9 / 16; max-width: 20rem; }
+.player--short { aspect-ratio: 9 / 16; width: 100%; max-width: min(20rem, 100%); margin-inline: auto; }
 .player iframe, .player__facade { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .player__facade { padding: 0; cursor: pointer; background: #000; }
 .player__facade img { width: 100%; height: 100%; object-fit: cover; opacity: .9; }
