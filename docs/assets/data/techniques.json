@@ -43,7 +43,54 @@
         "format": "short",
         "title": "How to make pickles like a chef",
         "creator": "Fallow",
-        "channelUrl": "https://www.youtube.com/@FallowChefs"
+        "channelUrl": "https://www.youtube.com/@FallowChefs",
+        "duration": "0:32",
+        "summary": "Fallow, a London restaurant, makes crinkle-cut, restaurant-style cucumber pickles. The cucumbers are salted first to draw out water, then covered in a sweet and sharp brine of sugar, white wine vinegar and water, spiced with turmeric and mustard seed, and left for at least two days.",
+        "glance": {
+          "Time": "20 min + 2 days",
+          "Difficulty": "Easy",
+          "Acid": "White wine vinegar",
+          "Brine": "1 sugar : 3 vinegar : 2 water"
+        },
+        "ingredients": [
+          "Cucumbers",
+          "Salt, for sprinkling",
+          "Sugar (1 part)",
+          "White wine vinegar (3 parts)",
+          "Water (2 parts)",
+          "Turmeric and mustard seed, or other whole spices"
+        ],
+        "method": [
+          {
+            "text": "Slice the cucumbers. Fallow use a crinkle-cut knife for the classic pickle look.",
+            "t": 0
+          },
+          {
+            "text": "Sprinkle with salt and leave for 20 minutes.",
+            "t": 5
+          },
+          {
+            "text": "Meanwhile, mix the pickling liquid: 1 part sugar, 3 parts white wine vinegar and 2 parts water.",
+            "t": 11
+          },
+          {
+            "text": "Add turmeric and mustard seed, or try other spices for different flavours.",
+            "t": 14
+          },
+          {
+            "text": "Rinse the cucumbers, pack them into a jar and pour over the pickling liquid.",
+            "t": 18
+          },
+          {
+            "text": "Seal and leave for at least 2 days. The longer, the better.",
+            "t": 21
+          },
+          {
+            "text": "Serve on burgers, as a garnish or as a snack.",
+            "t": 26
+          }
+        ],
+        "compare": "This is a quick pickle: the jar isn't heat-processed, so keep it in the fridge. Half the liquid is vinegar, which gives a properly sharp pickle, and salting the slices first helps them stay crunchy."
       },
       {
         "id": "sivans-kitchen",
@@ -51,7 +98,49 @@
         "format": "short",
         "title": "2-day veggie pickle trick",
         "creator": "Sivan's Kitchen",
-        "channelUrl": "https://www.youtube.com/@Sivanskitchenla"
+        "channelUrl": "https://www.youtube.com/@Sivanskitchenla",
+        "duration": "1:59",
+        "summary": "Sivan turns the leftover vegetables at the bottom of the fridge into crunchy pickles instead of throwing them away. Any mix of veg goes into a jar with salt, a splash of white vinegar and water, then sits on the counter for two days before moving to the fridge.",
+        "glance": {
+          "Time": "10 min + 2 days",
+          "Difficulty": "Easy",
+          "Acid": "White vinegar + salt",
+          "Keeps": "Months, in the fridge"
+        },
+        "ingredients": [
+          "Any vegetables you have, cut up. Sivan uses cabbage, cauliflower, cucumber, red pepper, jalapeños, celery, carrots, radishes and dill",
+          "2 tbsp kosher salt per 1 litre jar",
+          "About ½ cup (120 ml) white distilled vinegar per jar",
+          "Filtered water, to fill"
+        ],
+        "method": [
+          {
+            "text": "Cut up whatever vegetables need using.",
+            "t": 22
+          },
+          {
+            "text": "Wash them well.",
+            "t": 46
+          },
+          {
+            "text": "Pack them tightly into clean jars, pressing down as you go. Recycled jars are fine.",
+            "t": 53
+          },
+          {
+            "text": "Add 2 tbsp kosher salt and about ½ cup white vinegar to each 1 litre jar.",
+            "t": 70
+          },
+          {
+            "text": "Top up with filtered water to the brim, seal tightly and give it a good shake.",
+            "t": 80
+          },
+          {
+            "text": "Leave on the counter for 2 days, then move to the fridge to keep them cold and crisp.",
+            "t": 95
+          }
+        ],
+        "fromDescription": "for a salt-only version, skip the vinegar and add an extra ½ tbsp salt.",
+        "compare": "This sits halfway between a quick pickle and a ferment: it uses less vinegar than a classic quick pickle, and two days at room temperature lets some fermentation get going. Keep every piece under the liquid, use a clean jar and move it to the fridge after the two days. Kosher salt varies a lot in weight, so weigh it if you can. The salt-only version is a ferment, so the Brine ferments advice applies."
       },
       {
         "id": "andy-cooks",
@@ -59,7 +148,47 @@
         "format": "short",
         "title": "Quick pickle cucumber",
         "creator": "Andy Cooks",
-        "channelUrl": "https://www.youtube.com/@andy_cooks"
+        "channelUrl": "https://www.youtube.com/@andy_cooks",
+        "duration": "0:31",
+        "summary": "Andy's all-purpose quick pickle: equal parts vinegar and water with a spoonful each of salt and sugar, heated and poured over sliced cucumber with dill, chilli flakes and peppercorns. They're ready to eat as soon as they've cooled.",
+        "glance": {
+          "Time": "15 min + cooling",
+          "Difficulty": "Easy",
+          "Acid": "Any vinegar",
+          "Brine": "1 vinegar : 1 water"
+        },
+        "ingredients": [
+          "1 cucumber, sliced",
+          "150 ml vinegar (any type)",
+          "150 ml water",
+          "1 tbsp salt",
+          "1 tbsp sugar",
+          "Dill, chilli flakes and black peppercorns, or your own aromatics"
+        ],
+        "method": [
+          {
+            "text": "Slice the cucumber.",
+            "t": 5
+          },
+          {
+            "text": "Put it in a clean jar with the dill, peppercorns and chilli flakes.",
+            "t": 7
+          },
+          {
+            "text": "Heat the vinegar, water, salt and sugar in a small pan until it simmers.",
+            "t": 10
+          },
+          {
+            "text": "Pour the hot liquid over the cucumber.",
+            "t": 17
+          },
+          {
+            "text": "Cover, leave to cool completely, then seal. They're ready to eat once cool.",
+            "t": 19
+          }
+        ],
+        "fromDescription": "the same liquid works for cauliflower, courgettes, radishes and even watermelon rind, and the pickles keep in the fridge for up to six months.",
+        "compare": "A classic fridge pickle with a half-vinegar brine, which is about as sharp as quick pickles get. The jar isn't heat-processed, so keep it in the fridge and use clean utensils when you dip in."
       },
       {
         "id": "bon-appetit",
@@ -67,7 +196,39 @@
         "format": "short",
         "title": "Quick pickle almost any vegetable with 2 ingredients",
         "creator": "Bon Appétit",
-        "channelUrl": "https://www.youtube.com/@bonappetit"
+        "channelUrl": "https://www.youtube.com/@bonappetit",
+        "duration": "0:37",
+        "summary": "Chris Morocco's two-ingredient shortcut: thinly sliced vegetables tossed with a big pinch of salt and seasoned rice vinegar, which already contains sugar and salt. They're ready whenever you need them and keep for a few weeks.",
+        "glance": {
+          "Time": "5 min",
+          "Difficulty": "Very easy",
+          "Acid": "Seasoned rice vinegar",
+          "Keeps": "A few weeks"
+        },
+        "ingredients": [
+          "Any vegetables, thinly sliced",
+          "A big pinch of salt",
+          "Seasoned rice vinegar (it already has sugar and salt in it)"
+        ],
+        "method": [
+          {
+            "text": "Slice the vegetables thinly. Chris finds slicing quicker and easier than chopping.",
+            "t": 16
+          },
+          {
+            "text": "Add a big pinch of salt and a good splash of seasoned rice vinegar.",
+            "t": 25
+          },
+          {
+            "text": "Toss everything together.",
+            "t": 32
+          },
+          {
+            "text": "Leave until you're ready to use them.",
+            "t": 34
+          }
+        ],
+        "compare": "Less a jar pickle than a quick dressing: no water and no measuring. Seasoned rice vinegar is milder than white vinegar. Chris says they keep for a few weeks; store them covered in the fridge."
       }
     ]
   }
