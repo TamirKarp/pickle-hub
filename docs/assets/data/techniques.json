@@ -236,5 +236,72 @@
         "compare": "Less a jar pickle than a quick dressing: no water and no measuring. Seasoned rice vinegar is milder than white vinegar. Chris says they keep for a few weeks; store them covered in the fridge."
       }
     ]
+  },
+  "sauerkraut": {
+    "recipeLabel": "sauerkraut recipe",
+    "sources": [
+      {
+        "id": "andy-cooks-sauerkraut",
+        "videoId": "AmIjczutV0c",
+        "format": "short",
+        "title": "Sauerkraut",
+        "creator": "Andy Cooks",
+        "cook": "Andy",
+        "channelUrl": "https://www.youtube.com/@andy_cooks",
+        "duration": "1:00",
+        "summary": "Andy's classic sauerkraut: finely sliced green cabbage massaged with 2% salt until it gives up its juice, flavoured with caraway, then packed tight under its own brine in a glass jar and left to ferment for three weeks.",
+        "glance": {
+          "Time": "45 min + 3 weeks",
+          "Difficulty": "Easy",
+          "Salt": "2% of the cabbage",
+          "Where": "Cool, dark spot"
+        },
+        "saltPct": 2,
+        "ingredients": [
+          "1 head of green cabbage",
+          "Salt: 20 g for every 1 kg of sliced cabbage",
+          "1 tbsp caraway seeds (optional)"
+        ],
+        "method": [
+          {
+            "text": "Cut the cabbage in half, remove the core and slice it finely.",
+            "t": 3
+          },
+          {
+            "text": "Weigh the sliced cabbage and weigh out 20 g of salt per kilo. Andy's 1.5 kg needs 30 g.",
+            "t": 5
+          },
+          {
+            "text": "Working in batches, sprinkle on the salt and massage it in really well.",
+            "t": 12
+          },
+          {
+            "text": "Leave it for 30 minutes at room temperature.",
+            "t": 17
+          },
+          {
+            "text": "Mix in the caraway seeds, or leave it plain, and give it one last massage.",
+            "t": 20
+          },
+          {
+            "text": "Choose a glass or ceramic jar, not plastic.",
+            "t": 27
+          },
+          {
+            "text": "Pack the cabbage in really tightly and pour in all the brine from the bowl.",
+            "t": 48
+          },
+          {
+            "text": "Weigh it down, put the lid on and leave it somewhere cool and dark for 3 weeks.",
+            "t": 55
+          },
+          {
+            "text": "After 3 weeks it's ready. Keep it in the fridge from then on."
+          }
+        ],
+        "tip": "With an ordinary clip-top jar, open it every day to let the gas out, or it could burst. A water-lock lid lets the gas out by itself.",
+        "compare": "This matches tested guidance closely: 2% salt by weight is the standard for sauerkraut, and keeping it packed under its brine with a weight is what stops mould. Three weeks somewhere cool is on the slow side of the usual 1 to 4 weeks, which gives a deeper flavour. Taste it along the way and move it to the fridge when you like it."
+      }
+    ]
   }
 }
