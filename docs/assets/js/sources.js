@@ -61,7 +61,7 @@
   };
 
   /* ---------- Panel: everything below the thumbnails ---------- */
-  const renderPanel = (src, { play = false } = {}) => {
+  const renderPanel = (src, { play = false, label = '' } = {}) => {
     const player = renderPlayer(src);
     if (play && src.videoId) loadVideo(player, src); // the click on the thumbnail is the user's choice to play
     const frag = document.createDocumentFragment();
@@ -73,42 +73,55 @@
       safeChannelUrl(src.channelUrl) ? el('a', { href: safeChannelUrl(src.channelUrl), rel: 'noopener' }, src.creator) : src.creator,
       src.videoId ? [' · ', el('a', { href: watchUrl(src.videoId), rel: 'noopener' }, 'Watch on YouTube')] : null));
 
-    if (src.summary) frag.append(el('p', { class: 'summary' }, src.summary));
+    const glance = () => (src.glance && Object.keys(src.glance).length
+      ? el('dl', { class: 'glance' }, Object.entries(src.glance).map(([k, v]) => el('div', {}, el('dt', {}, k), el('dd', {}, v))))
+      : null);
+    const calcButton = () => (Number.isFinite(src.saltPct)
+      ? el('button', { type: 'button', class: 'btn-calc', 'data-calc-pct': src.saltPct }, `Calculate salt at ${src.saltPct}%`)
+      : null);
 
-    if (src.glance && Object.keys(src.glance).length) {
-      frag.append(el('dl', { class: 'glance' },
-        Object.entries(src.glance).map(([k, v]) => el('div', {}, el('dt', {}, k), el('dd', {}, v)))));
-    }
+    // Steps or key points, each with an optional timestamp button that jumps the video to that moment.
+    const stepList = (items, tag, cls) => el(tag, { class: cls }, items.map((step) => {
+      const li = el('li', {}, el('span', {}, step.text));
+      if (src.videoId && Number.isFinite(step.t) && step.t >= 0) {
+        const ts = el('button', { type: 'button', class: 'ts', 'aria-label': `Play from ${fmtTime(step.t)}` },
+          `▶ ${fmtTime(step.t)}`);
+        ts.addEventListener('click', () => {
+          loadVideo(player, src, step.t);
+          player.scrollIntoView({ block: 'nearest' });
+        });
+        li.append(ts);
+      }
+      return li;
+    }));
 
-    if (Number.isFinite(src.saltPct)) {
-      frag.append(el('button', { type: 'button', class: 'btn-calc', 'data-calc-pct': src.saltPct },
-        `Calculate salt at ${src.saltPct}%`));
-    }
-
-    if (src.ingredients?.length) {
-      frag.append(el('h3', {}, 'What you need'), el('ul', { class: 'ingredients' }, src.ingredients.map((i) => el('li', {}, i))));
-    }
-
-    // Method steps (numbered) or key points (bulleted), each with an optional timestamp button.
-    const steps = (heading, items, tag) => {
-      frag.append(el('h3', {}, heading), el(tag, { class: 'method' }, items.map((step) => {
-        const li = el('li', {}, el('span', {}, step.text));
-        if (src.videoId && Number.isFinite(step.t) && step.t >= 0) {
-          const ts = el('button', { type: 'button', class: 'ts', 'aria-label': `Play from ${fmtTime(step.t)}` },
-            `▶ ${fmtTime(step.t)}`);
-          ts.addEventListener('click', () => {
-            loadVideo(player, src, step.t);
-            player.scrollIntoView({ block: 'nearest' });
-          });
-          li.append(ts);
-        }
-        return li;
-      })));
-    };
-    if (src.points?.length) steps('Key points', src.points, 'ul');
-    if (src.method?.length) steps('Method', src.method, 'ol');
-    if (src.fromDescription) {
-      frag.append(el('p', { class: 'from-desc' }, el('strong', {}, 'From the video description: '), src.fromDescription));
+    if (src.method?.length) {
+      // A recipe: present it as a card headed "<cook>'s <label>", e.g. "Andy's quick pickle recipe".
+      const cook = src.cook || src.creator;
+      const titleId = `recipe-${src.id}`;
+      frag.append(el('article', { class: 'recipe', 'aria-labelledby': titleId },
+        el('p', { class: 'recipe__eyebrow' }, 'Recipe'),
+        el('h3', { class: 'recipe__title', id: titleId }, `${cook}'s ${label || 'recipe'}`),
+        src.summary ? el('p', { class: 'recipe__summary' }, src.summary) : null,
+        glance(),
+        calcButton(),
+        el('div', { class: 'recipe__cols' },
+          src.ingredients?.length
+            ? el('div', { class: 'recipe__col' }, el('h4', {}, "You'll need"),
+              el('ul', { class: 'recipe__ingredients' }, src.ingredients.map((i) => el('li', {}, i))))
+            : null,
+          el('div', { class: 'recipe__col' }, el('h4', {}, 'Method'), stepList(src.method, 'ol', 'recipe__steps'))),
+        src.tip ? el('p', { class: 'recipe__tip' }, el('strong', {}, `Tip from ${cook}: `), src.tip) : null));
+      frag.append(el('p', { class: 'support' }, 'Enjoying The Pickle Hub? ',
+        el('a', { class: 'coffee', href: 'https://buymeacoffee.com/tamirkarp', target: '_blank', rel: 'noopener' }, '☕ Buy me a coffee')));
+    } else {
+      if (src.summary) frag.append(el('p', { class: 'summary' }, src.summary));
+      const g = glance(); if (g) frag.append(g);
+      const c = calcButton(); if (c) frag.append(c);
+      if (src.points?.length) frag.append(el('h3', {}, 'Key points'), stepList(src.points, 'ul', 'method'));
+      if (src.fromDescription) {
+        frag.append(el('p', { class: 'from-desc' }, el('strong', {}, 'From the video description: '), src.fromDescription));
+      }
     }
 
     if (src.science) {
@@ -143,7 +156,7 @@
         if (focus) tab.focus();
       }
     });
-    s.panel.replaceChildren(renderPanel(src, { play }));
+    s.panel.replaceChildren(renderPanel(src, { play, label: s.tech.recipeLabel }));
     if (play) s.panel.querySelector('.player')?.scrollIntoView({ block: 'nearest' });
     if (updateHash) history.replaceState(null, '', `#${tid}/${src.id}`);
     return true;

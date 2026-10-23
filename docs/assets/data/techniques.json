@@ -1,5 +1,5 @@
 {
-  "_readme": "One entry per section (keyed by the section id in index.html). Each source is one video. 'videoId' is the YouTube id (the part after watch?v=). 'format': 'short' for YouTube Shorts. 'saltPct' drives the 'Calculate salt' button; leave it out for non-salt techniques. Method steps and key points take an optional 't' (seconds into the video) to show a timestamp button. Optional 'intro' is a short friendly line shown above the video.",
+  "_readme": "One entry per section (keyed by the section id in index.html). Each source is one video. 'videoId' is the YouTube id (the part after watch?v=). 'format': 'short' for YouTube Shorts. 'saltPct' drives the 'Calculate salt' button; leave it out for non-salt techniques. Method steps and key points take an optional 't' (seconds into the video) to show a timestamp button. Optional 'intro' is a short friendly line shown above the video. For recipe sections, set 'recipeLabel' on the section (e.g. 'quick pickle recipe') and 'cook' on each source (the name in the card header); 'tip' adds a 'Tip from <cook>' box.",
   "intro": {
     "sources": [
       {
@@ -36,6 +36,7 @@
     ]
   },
   "quick-pickles": {
+    "recipeLabel": "quick pickle recipe",
     "sources": [
       {
         "id": "fallow",
@@ -43,6 +44,7 @@
         "format": "short",
         "title": "How to make pickles like a chef",
         "creator": "Fallow",
+        "cook": "Fallow",
         "channelUrl": "https://www.youtube.com/@FallowChefs",
         "duration": "0:32",
         "summary": "Fallow, a London restaurant, makes crinkle-cut, restaurant-style cucumber pickles. The cucumbers are salted first to draw out water, then covered in a sweet and sharp brine of sugar, white wine vinegar and water, spiced with turmeric and mustard seed, and left for at least two days.",
@@ -98,6 +100,7 @@
         "format": "short",
         "title": "2-day veggie pickle trick",
         "creator": "Sivan's Kitchen",
+        "cook": "Sivan",
         "channelUrl": "https://www.youtube.com/@Sivanskitchenla",
         "duration": "1:59",
         "summary": "Sivan turns the leftover vegetables at the bottom of the fridge into crunchy pickles instead of throwing them away. Any mix of veg goes into a jar with salt, a splash of white vinegar and water, then sits on the counter for two days before moving to the fridge.",
@@ -139,8 +142,8 @@
             "t": 95
           }
         ],
-        "fromDescription": "for a salt-only version, skip the vinegar and add an extra ½ tbsp salt.",
-        "compare": "This sits halfway between a quick pickle and a ferment: it uses less vinegar than a classic quick pickle, and two days at room temperature lets some fermentation get going. Keep every piece under the liquid, use a clean jar and move it to the fridge after the two days. Kosher salt varies a lot in weight, so weigh it if you can. The salt-only version is a ferment, so the Brine ferments advice applies."
+        "compare": "This sits halfway between a quick pickle and a ferment: it uses less vinegar than a classic quick pickle, and two days at room temperature lets some fermentation get going. Keep every piece under the liquid, use a clean jar and move it to the fridge after the two days. Kosher salt varies a lot in weight, so weigh it if you can. The salt-only version is a ferment, so the Brine ferments advice applies.",
+        "tip": "For a salt-only version, skip the vinegar and add an extra ½ tbsp salt."
       },
       {
         "id": "andy-cooks",
@@ -148,6 +151,7 @@
         "format": "short",
         "title": "Quick pickle cucumber",
         "creator": "Andy Cooks",
+        "cook": "Andy",
         "channelUrl": "https://www.youtube.com/@andy_cooks",
         "duration": "0:31",
         "summary": "Andy's all-purpose quick pickle: equal parts vinegar and water with a spoonful each of salt and sugar, heated and poured over sliced cucumber with dill, chilli flakes and peppercorns. They're ready to eat as soon as they've cooled.",
@@ -187,8 +191,8 @@
             "t": 19
           }
         ],
-        "fromDescription": "the same liquid works for cauliflower, courgettes, radishes and even watermelon rind, and the pickles keep in the fridge for up to six months.",
-        "compare": "A classic fridge pickle with a half-vinegar brine, which is about as sharp as quick pickles get. The jar isn't heat-processed, so keep it in the fridge and use clean utensils when you dip in."
+        "compare": "A classic fridge pickle with a half-vinegar brine, which is about as sharp as quick pickles get. The jar isn't heat-processed, so keep it in the fridge and use clean utensils when you dip in.",
+        "tip": "The same liquid works for cauliflower, courgettes, radishes and even watermelon rind. The pickles keep in the fridge for up to six months."
       },
       {
         "id": "bon-appetit",
@@ -196,6 +200,7 @@
         "format": "short",
         "title": "Quick pickle almost any vegetable with 2 ingredients",
         "creator": "Bon Appétit",
+        "cook": "Chris Morocco",
         "channelUrl": "https://www.youtube.com/@bonappetit",
         "duration": "0:37",
         "summary": "Chris Morocco's two-ingredient shortcut: thinly sliced vegetables tossed with a big pinch of salt and seasoned rice vinegar, which already contains sugar and salt. They're ready whenever you need them and keep for a few weeks.",
