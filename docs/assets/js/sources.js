@@ -112,6 +112,13 @@
             : null,
           el('div', { class: 'recipe__col' }, el('h4', {}, 'Method'), stepList(src.method, 'ol', 'recipe__steps'))),
         src.tip ? el('p', { class: 'recipe__tip' }, el('strong', {}, `Tip from ${cook}: `), src.tip) : null));
+      const channel = safeChannelUrl(src.channelUrl);
+      if (channel) {
+        const subUrl = new URL(channel);
+        subUrl.searchParams.set('sub_confirmation', '1'); // YouTube shows a "Subscribe?" prompt when this opens
+        frag.append(el('p', { class: 'support support--creator' }, `Enjoyed ${cook}'s recipe? `,
+          el('a', { class: 'yt-sub', href: subUrl.href, target: '_blank', rel: 'noopener' }, `▶ Subscribe to ${src.creator} on YouTube`)));
+      }
       frag.append(el('p', { class: 'support' }, 'Enjoying The Pickle Hub? ',
         el('a', { class: 'coffee', href: 'https://buymeacoffee.com/tamirkarp', target: '_blank', rel: 'noopener' }, '☕ Buy me a coffee')));
     } else {
