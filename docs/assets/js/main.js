@@ -38,7 +38,7 @@
     toggle.setAttribute('aria-expanded', String(open));
     toggle.textContent = open ? 'Close' : 'Menu';
     scrim.hidden = !open;
-    if (open) toc.querySelector('a[aria-current="true"], .toc__list a')?.focus({ preventScroll: true });
+    if (open) (toc.querySelector('a[aria-current="true"]') || toc.querySelector('.toc__list a'))?.focus({ preventScroll: true });
   };
 
   toggle.addEventListener('click', () => setOpen(!toc.classList.contains('is-open')));
@@ -118,8 +118,12 @@
     pctInput.value = btn.dataset.calcPct;
     calculate();
     // router.js shows the calculator on hashchange; focus the weight box once it has.
-    window.addEventListener('hashchange', () => weightInput.focus({ preventScroll: true }), { once: true });
-    location.hash = '#calculator';
+    if (location.hash === '#calculator') {
+      weightInput.focus({ preventScroll: true });
+    } else {
+      window.addEventListener('hashchange', () => weightInput.focus({ preventScroll: true }), { once: true });
+      location.hash = '#calculator';
+    }
     form.classList.remove('calc--flash');
     void form.offsetWidth; // restart the animation
     form.classList.add('calc--flash');

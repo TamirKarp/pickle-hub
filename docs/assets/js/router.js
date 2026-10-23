@@ -62,7 +62,9 @@
 
   /* ---------- Work out what the hash points at ---------- */
   const route = ({ focus = false } = {}) => {
-    const id = decodeURIComponent(location.hash.slice(1)).split('/')[0];
+    let raw = location.hash.slice(1);
+    try { raw = decodeURIComponent(raw); } catch { raw = ''; } // e.g. a lone % in a crafted link
+    const id = raw.split('/')[0];
     const target = id && document.getElementById(id);
 
     if (!target) { show(current || home); return; }
