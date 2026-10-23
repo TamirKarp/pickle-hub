@@ -164,7 +164,7 @@ img { max-width: 100%; height: auto; }
   .compare-table, .compare-table thead, .compare-table tbody, .compare-table tr, .compare-table th, .compare-table td { display: block; }
   .compare-table thead { display: none; }
   .compare-table tr { padding: .75rem 0; border-bottom: 1px solid var(--border); }
-  .compare-table th, .compare-table td { border: 0; padding: .15rem 0; width: auto; }
+  .compare-table th, .compare-table td, .compare-table tbody th { border: 0; padding: .15rem 0; width: auto; }
   .compare-table td::before { content: attr(data-label) ": "; font-weight: 600; color: var(--brine); }
 }
 
@@ -462,7 +462,8 @@ details > *:not(summary) { margin: 0 1.1rem 1.1rem; }
   }
   .toc.is-open { transform: none; visibility: visible; }
   .fab { display: block; }
-  .to-top { right: 1rem; bottom: 4.75rem; }
+  .to-top { display: none; } /* the Contents menu already links to the top; one floating button is enough */
+  .ts { min-height: 2.25rem; padding: .3rem .75rem; font-size: .85rem; }
   .calc { padding: 1.1rem; }
 }
 @media (max-width: 900px) and (prefers-reduced-motion: reduce) { .toc { transition: none; } }
