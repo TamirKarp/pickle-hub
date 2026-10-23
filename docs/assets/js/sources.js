@@ -155,8 +155,7 @@
     const tid = mount.dataset.technique;
     tech?.sources?.forEach((s) => { if (s.videoId && !isVideoId(s.videoId)) s.videoId = null; });
     if (!tech?.sources?.length) {
-      mount.append(placeholder('Videos to follow once approved.'));
-      return;
+      return; // no videos yet: the section's 'coming soon' note covers it
     }
 
     const panelId = `${tid}-panel`;

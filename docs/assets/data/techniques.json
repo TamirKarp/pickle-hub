@@ -1,6 +1,5 @@
 {
-  "_readme": "One entry per technique (keyed by the section id in index.html). Each source is one video. 'videoId' is the YouTube id (the part after watch?v=). 'saltPct' drives the 'Calculate salt' button; leave it null for non-salt techniques. Method steps take an optional 't' (seconds into the video) to show a timestamp button. Everything here is DEMO DATA until sources are approved.",
-
+  "_readme": "One entry per section (keyed by the section id in index.html). Each source is one video. 'videoId' is the YouTube id (the part after watch?v=). 'format': 'short' for YouTube Shorts. 'saltPct' drives the 'Calculate salt' button; leave it out for non-salt techniques. Method steps and key points take an optional 't' (seconds into the video) to show a timestamp button.",
   "intro": {
     "sources": [
       {
@@ -13,78 +12,25 @@
         "duration": "0:38",
         "summary": "A 38-second explainer from a food scientist. Fermenting relies on bacteria already on the food to make lactic acid over days or weeks; pickling skips the microbes and adds vinegar, so it's ready in hours. Either way the food ends up below pH 4.6, where harmful bacteria can't grow.",
         "points": [
-          { "text": "Not all pickles are fermented, and not all fermented foods are pickles.", "t": 0 },
-          { "text": "Lacto-fermentation: bacteria naturally present on the food turn its sugars into lactic acid over days to weeks, building complex flavour and probiotics that may benefit your gut.", "t": 9 },
-          { "text": "Pickling: no fermentation, just vinegar added to make the food acidic. It tastes bright and fresh within a few hours.", "t": 22 },
-          { "text": "Both methods bring the pH below 4.6, which stops harmful bacteria growing.", "t": 31 }
+          {
+            "text": "Not all pickles are fermented, and not all fermented foods are pickles.",
+            "t": 0
+          },
+          {
+            "text": "Lacto-fermentation: bacteria naturally present on the food turn its sugars into lactic acid over days to weeks, building complex flavour and probiotics that may benefit your gut.",
+            "t": 9
+          },
+          {
+            "text": "Pickling: no fermentation, just vinegar added to make the food acidic. It tastes bright and fresh within a few hours.",
+            "t": 22
+          },
+          {
+            "text": "Both methods bring the pH below 4.6, which stops harmful bacteria growing.",
+            "t": 31
+          }
         ],
         "fromDescription": "her fermented dill pickles use a 2% salt brine, and her basic vinegar pickling brine is equal parts vinegar and water with 2 tbsp sugar and 1.5 tsp salt.",
         "compare": "Matches the written sources. One thing worth adding: pH 4.6 is the line for harmful bacteria, but yeasts and moulds can still grow below it, so keep ferments under the brine (see The science)."
-      }
-    ]
-  },
-
-  "sauerkraut": {
-    "sources": [
-      {
-        "id": "demo-a",
-        "videoId": null,
-        "title": "Demo: classic small-batch kraut",
-        "creator": "Example creator A",
-        "channelUrl": null,
-        "duration": "12:40",
-        "summary": "DEMO TEXT. A short, two-to-three sentence summary of the video, written in our own words from its transcript, will go here.",
-        "glance": { "Time": "2–4 weeks", "Difficulty": "Easy", "Salt": "2%", "Temp": "18–22°C" },
-        "saltPct": 2,
-        "ingredients": ["Demo: white cabbage", "Demo: fine sea salt", "Demo: caraway seeds (optional)"],
-        "method": [
-          { "text": "Demo step: shred the cabbage finely.", "t": 65 },
-          { "text": "Demo step: weigh and add salt at 2%, then massage until it releases liquid.", "t": 140 },
-          { "text": "Demo step: pack into a jar and keep it under the brine with a weight.", "t": 330 },
-          { "text": "Demo step: ferment at room temperature, tasting from day 7.", "t": 520 }
-        ],
-        "science": "DEMO TEXT. What's happening chemically during this method, as explained in the video and checked against the written sources.",
-        "troubleshooting": ["Demo: not enough brine after a day: top up with 2% brine.", "Demo: white film on top: likely kahm yeast, skim it off."],
-        "compare": "DEMO TEXT. Where this video's method matches or differs from tested guidance."
-      },
-      {
-        "id": "demo-b",
-        "videoId": null,
-        "title": "Demo: big-crock kraut",
-        "creator": "Example creator B",
-        "channelUrl": null,
-        "duration": "8:15",
-        "summary": "DEMO TEXT. A different video with a different method, so you can see the fields change when you switch.",
-        "glance": { "Time": "4–6 weeks", "Difficulty": "Medium", "Salt": "2.5%", "Temp": "15–18°C" },
-        "saltPct": 2.5,
-        "ingredients": ["Demo: green cabbage", "Demo: pickling salt", "Demo: juniper berries"],
-        "method": [
-          { "text": "Demo step: quarter, core and slice the cabbage.", "t": 40 },
-          { "text": "Demo step: layer cabbage and salt in the crock, pounding as you go.", "t": 210 },
-          { "text": "Demo step: weigh down, cover and leave somewhere cool.", "t": 400 }
-        ],
-        "science": "DEMO TEXT. A cooler, slower ferment gives a different balance of bacteria and flavour.",
-        "troubleshooting": ["Demo: kraut is too salty: rinse before eating, or use less salt next time."],
-        "compare": "DEMO TEXT. Example of a note flagging a difference from tested guidance."
-      },
-      {
-        "id": "demo-c",
-        "videoId": null,
-        "title": "Demo: red cabbage & apple",
-        "creator": "Example creator C",
-        "channelUrl": null,
-        "duration": "15:02",
-        "summary": "DEMO TEXT. A third variation.",
-        "glance": { "Time": "1–3 weeks", "Difficulty": "Easy", "Salt": "2%", "Temp": "18–21°C" },
-        "saltPct": 2,
-        "ingredients": ["Demo: red cabbage", "Demo: apple", "Demo: fine sea salt"],
-        "method": [
-          { "text": "Demo step: grate the apple and shred the cabbage.", "t": 90 },
-          { "text": "Demo step: salt, massage and pack.", "t": 300 }
-        ],
-        "science": "DEMO TEXT.",
-        "troubleshooting": ["Demo: colour turns blue-purple: normal for red cabbage as acidity changes."],
-        "compare": "DEMO TEXT."
       }
     ]
   }
