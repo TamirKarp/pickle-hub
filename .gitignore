@@ -1,0 +1,21 @@
+# Raw video transcripts are the creators' words: keep them local, publish only our summaries.
+research/
+*.vtt
+*.srt
+
+# AI tooling state and local config (can contain prompts, memory and context)
+.swarm/
+.claude-flow/
+.hive-mind/
+.mcp.json
+.claude/*
+!.claude/launch.json
+
+# Secrets, databases and editor clutter
+.env*
+*.db
+*.sqlite
+.DS_Store
+.vscode/
+.idea/
+*.swp

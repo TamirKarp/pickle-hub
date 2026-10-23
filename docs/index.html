@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' https://i.ytimg.com; connect-src 'self' https://api.web3forms.com; frame-src https://www.youtube-nocookie.com; form-action 'none'; base-uri 'none'; object-src 'none'; require-trusted-types-for 'script'; trusted-types 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>The Pickle Hub</title>
+  <meta name="description" content="A friendly, well-sourced guide to pickling and fermentation at home: the science, the methods, a brine calculator and hand-picked videos.">
+  <link rel="icon" href="assets/img/jar.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/sources.js" defer></script>
+  <script src="assets/js/seasons.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
+
+  <div class="layout">
+    <nav id="toc" class="toc" aria-label="Contents">
+      <a class="toc__brand" href="#top">
+        <img src="assets/img/jar.svg" alt="" width="28" height="28">
+        <span>The Pickle Hub</span>
+      </a>
+      <ol class="toc__list">
+        <li><a href="#intro">Pickling vs. fermenting</a></li>
+        <li><a href="#science">The science</a></li>
+        <li><a href="#getting-started">Getting started</a></li>
+        <li><a href="#calculator">Brine calculator</a></li>
+        <li class="toc__group">Techniques</li>
+        <li><a href="#quick-pickles">Quick vinegar pickles</a></li>
+        <li><a href="#sauerkraut">Sauerkraut</a></li>
+        <li><a href="#brine-ferments">Brine ferments</a></li>
+        <li><a href="#kimchi">Kimchi</a></li>
+        <li><a href="#drinks">Fermented drinks</a></li>
+        <li><a href="#canning">Water-bath canning</a></li>
+        <li class="toc__group">Reference</li>
+        <li><a href="#safety">Safety &amp; troubleshooting</a></li>
+        <li><a href="#sources">Sources</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
+      </ol>
+      <a class="coffee" href="https://buymeacoffee.com/tamirkarp" target="_blank" rel="noopener">☕ Buy me a coffee</a>
+    </nav>
+
+    <main id="main" class="content">
+      <header id="top" class="hero">
+        <img class="hero__jar" src="assets/img/jar.svg" alt="" width="72" height="72">
+        <h1>The Pickle Hub</h1>
+        <p class="hero__lede">How to pickle and ferment at home, explained properly: the science, tested methods, a brine calculator and hand-picked videos.</p>
+      </header>
+
+      <!-- ===================== INTRO ===================== -->
+      <section id="intro" class="section">
+        <h2>Pickling vs. fermenting</h2>
+        <p class="lede">Both are old ways of keeping food, and both leave you with something sour and tangy in a jar, which is why people call the results of both "pickles". The difference is where the sourness comes from.</p>
+        <p>When you <strong>pickle</strong>, you add the acid yourself: vegetables go into vinegar and are ready within hours. When you <strong>ferment</strong>, you add salt and let bacteria that already live on the vegetables make the acid for you, turning the food's natural sugars into lactic acid over days or weeks. So not every pickle is fermented, and not every fermented food is a pickle.</p>
+
+        <div class="table-wrap">
+          <table class="compare-table">
+            <thead>
+              <tr><th scope="col"><span class="visually-hidden">Compare</span></th><th scope="col">Pickling</th><th scope="col">Fermenting</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Where the acid comes from</th><td data-label="Pickling">Vinegar you add</td><td data-label="Fermenting">Lactic acid made by bacteria on the food</td></tr>
+              <tr><th scope="row">What it sits in</th><td data-label="Pickling">Vinegar, usually with water, salt and sugar</td><td data-label="Fermenting">A salt and water brine, or the veg's own juices drawn out by salt</td></tr>
+              <tr><th scope="row">How long</th><td data-label="Pickling">Hours</td><td data-label="Fermenting">Days to weeks, depending on salt, temperature and the food</td></tr>
+              <tr><th scope="row">Flavour</th><td data-label="Pickling">Bright and sharp, tasting of the veg and spices</td><td data-label="Fermenting">A deeper, more complex sourness that builds over time</td></tr>
+              <tr><th scope="row">Live cultures</th><td data-label="Pickling">No</td><td data-label="Fermenting">Yes, which may benefit your gut</td></tr>
+              <tr><th scope="row">Good first tries</th><td data-label="Pickling">Onions, beetroot, carrots, cucumber, red cabbage</td><td data-label="Fermenting">Cabbage, carrots, beetroot, celery, cucumber, chilli</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p><strong>What they have in common:</strong> both methods make the food acidic enough (below pH 4.6) that harmful bacteria, including the one that causes botulism, can't grow. The <a href="#science">science section</a> explains why that number matters.</p>
+
+        <p><strong>A note on storage:</strong> vinegar pickles can live in the cupboard only if the jars have been heat-processed and sealed (see <a href="#canning">water-bath canning</a>). Quick "fridge pickles" stay in the fridge. Fermented veg also belongs in the fridge once it tastes right, because the cold slows fermentation and keeps it crunchy.</p>
+
+        <div class="switcher" data-technique="intro"></div>
+
+        <p class="cite">Sources: <a href="https://www.kilnerjar.co.uk/blog/what-is-the-difference-between-fermenting-and-pickling" rel="noopener">Kilner, "What is the difference between fermenting and pickling?"</a>; <a href="https://www.youtube.com/watch?v=HQCS--L9OhM" rel="noopener">Wendy the Food Scientist, "Fermentation vs. Pickling"</a>.</p>
+      </section>
+
+      <!-- ===================== SCIENCE ===================== -->
+      <section id="science" class="section">
+        <h2>The science</h2>
+        <p class="lede">Food goes off for two main reasons: microbes (bacteria, yeasts and moulds) grow on it, and the food's own enzymes keep working after it's harvested. Preserving food means changing the conditions so the wrong microbes can't thrive.</p>
+        <p>There are only a handful of ways to do that: heat, drying, cold, lowering the pH (making it more acidic), cutting off oxygen and taking away the nutrients microbes feed on. Pickling and fermenting lean mostly on acid. Fermenting adds salt and keeps the food under brine, away from the air.</p>
+
+        <figure class="figure">
+          <svg class="sci-fig" viewBox="0 0 600 460" role="img" aria-labelledby="sci-fig-title sci-fig-desc">
+            <title id="sci-fig-title">Inside a ferment, and where it sits on the pH scale</title>
+            <desc id="sci-fig-desc">A jar of fermenting vegetables held under brine by a weight, with lactic acid bacteria and carbon dioxide bubbles in the brine and a crossed-out mould spore in the air gap. Beside it, a pH scale from 2 to 8 marks vinegar near 2.5, a finished ferment near 3.5, fresh veg near 6 and water at 7. A dashed line at pH 4.6 marks the point below which botulism bacteria cannot grow; fermenting moves the veg from about pH 6 down past that line.</desc>
+            <defs>
+              <linearGradient id="ph-grad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" class="stop-acid"/>
+                <stop offset="1" class="stop-neutral"/>
+              </linearGradient>
+              <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0 0L10 5L0 10z" class="f-arrowhead"/>
+              </marker>
+            </defs>
+
+            <!-- Jar -->
+            <rect class="f-lid" x="92" y="36" width="116" height="26" rx="5"/>
+            <path class="f-glass" d="M82 62H218Q236 62 236 80V372Q236 392 214 392H86Q64 392 64 372V80Q64 62 82 62Z"/>
+            <path class="f-brine" d="M67 150Q108 144 150 150T233 150V372Q233 389 214 389H86Q67 389 67 372Z"/>
+
+            <!-- Veg under the brine -->
+            <g class="f-veg">
+              <path d="M88 210q14-8 28 0t28 0t28 0t28 0"/>
+              <path d="M100 232q14-8 28 0t28 0t28 0t28 0"/>
+              <path d="M88 254q14-8 28 0t28 0t28 0t28 0"/>
+              <path d="M100 276q14-8 28 0t28 0t28 0t28 0"/>
+              <path d="M88 298q14-8 28 0t28 0t28 0t28 0"/>
+              <path d="M100 320q14-8 28 0t28 0t28 0t28 0"/>
+              <path d="M88 342q14-8 28 0t28 0t28 0t28 0"/>
+              <path d="M100 364q14-8 28 0t28 0t28 0t28 0"/>
+            </g>
+
+            <!-- Weight -->
+            <rect class="f-weight" x="88" y="165" width="124" height="22" rx="8"/>
+
+            <!-- Lactic acid bacteria -->
+            <g class="f-bact">
+              <rect x="-8" y="-3.5" width="16" height="7" rx="3.5" transform="translate(122 221) rotate(20)"/>
+              <rect x="-8" y="-3.5" width="16" height="7" rx="3.5" transform="translate(182 243) rotate(-30)"/>
+              <rect x="-8" y="-3.5" width="16" height="7" rx="3.5" transform="translate(106 265) rotate(-15)"/>
+              <rect x="-8" y="-3.5" width="16" height="7" rx="3.5" transform="translate(162 287) rotate(35)"/>
+              <rect x="-8" y="-3.5" width="16" height="7" rx="3.5" transform="translate(204 309) rotate(10)"/>
+              <rect x="-8" y="-3.5" width="16" height="7" rx="3.5" transform="translate(130 331) rotate(-25)"/>
+              <rect x="-8" y="-3.5" width="16" height="7" rx="3.5" transform="translate(178 353) rotate(20)"/>
+              <rect x="-8" y="-3.5" width="16" height="7" rx="3.5" transform="translate(112 376) rotate(5)"/>
+            </g>
+
+            <!-- CO2 bubbles -->
+            <g class="f-bubble">
+              <circle cx="216" cy="230" r="4"/>
+              <circle cx="212" cy="276" r="3"/>
+              <circle cx="219" cy="335" r="5"/>
+              <circle cx="80" cy="300" r="3"/>
+              <circle cx="112" cy="157" r="3"/>
+              <circle cx="190" cy="156" r="4"/>
+            </g>
+
+            <!-- No air, no mould -->
+            <g transform="translate(108 106)">
+              <circle class="f-spore" r="6"/>
+              <path class="f-spore-fuzz" d="M0-10V-6M0 6V10M-10 0H-6M6 0H10M-7-7L-4.5-4.5M4.5 4.5L7 7M-7 7L-4.5 4.5M4.5-4.5L7-7"/>
+              <circle class="f-no" r="17"/>
+              <path class="f-no" d="M-12-12L12 12"/>
+            </g>
+            <text class="f-label-sm" x="136" y="101">No air,</text>
+            <text class="f-label-sm" x="136" y="122">no mould</text>
+
+            <!-- Legend under the jar -->
+            <rect class="f-bact" x="-8" y="-3.5" width="16" height="7" rx="3.5" transform="translate(76 420)"/>
+            <text class="f-muted" x="94" y="426">Lactic acid bacteria</text>
+            <circle class="f-bubble" cx="76" cy="446" r="5"/>
+            <text class="f-muted" x="94" y="452">CO₂ bubbles</text>
+
+            <!-- pH scale -->
+            <rect class="f-safe" x="300" y="48" width="290" height="150.7" rx="10"/>
+            <rect x="320" y="60" width="24" height="320" rx="12" fill="url(#ph-grad)"/>
+            <g class="f-tick" text-anchor="end">
+              <text x="312" y="65">2</text>
+              <text x="312" y="118">3</text>
+              <text x="312" y="172">4</text>
+              <text x="312" y="225">5</text>
+              <text x="312" y="278">6</text>
+              <text x="312" y="332">7</text>
+              <text x="312" y="385">8</text>
+            </g>
+            <text class="f-tick f-tick--warn" x="312" y="204" text-anchor="end">4.6</text>
+            <text class="f-tick" x="332" y="410" text-anchor="middle">pH</text>
+
+            <g class="f-mark">
+              <path d="M344 86.7H356M344 140H356M344 273.3H356M344 326.7H356"/>
+            </g>
+            <text class="f-label" x="362" y="93">Vinegar</text>
+            <text class="f-label" x="362" y="146">Finished ferment</text>
+            <text class="f-label" x="362" y="279">Fresh veg</text>
+            <text class="f-label" x="362" y="333">Water (neutral)</text>
+
+            <line class="f-line" x1="318" y1="198.7" x2="590" y2="198.7"/>
+            <text class="f-label-sm f-warn-text" x="582" y="188" text-anchor="end">Too acidic for botulism</text>
+
+            <!-- Fermenting arrow: fresh veg down past the line -->
+            <path class="f-arrow" d="M300 273C266 250 266 163 300 140" marker-end="url(#arrow)"/>
+            <text class="f-muted" transform="translate(260 206) rotate(-90)" text-anchor="middle">fermenting</text>
+          </svg>
+          <figcaption>As lactic acid bacteria turn the veg's sugars into lactic acid, the pH drops from around 6 to past the 4.6 safety line. The weight keeps everything under the brine, away from the air that moulds need.</figcaption>
+        </figure>
+
+        <h3>Acid and the pH 4.6 line</h3>
+        <p>pH measures acidity: the lower the number, the more acidic. Below pH 4.6, the bacteria that cause botulism can't grow, and that's the target for both methods. Vinegar gets a pickle there straight away. A ferment gets there gradually, as lactic acid bacteria eat the sugars in the veg and turn them into lactic acid. That acid is also what gives ferments their tang.</p>
+
+        <h3>Two kinds of fermentation</h3>
+        <p>In <strong>lactic acid fermentation</strong>, bacteria turn sugars into lactic acid. It's how sauerkraut, kimchi, fermented pickles, yoghurt and some cured meats are made. In <strong>alcoholic fermentation</strong>, yeasts turn sugars into alcohol and carbon dioxide, which is how beer and wine are made. Fruit left to its own devices tends to go the alcoholic route, because yeasts cope with fruit's acidity better than most bacteria do.</p>
+
+        <h3>Why acid isn't the whole story: yeasts and moulds</h3>
+        <p>Yeasts and moulds are fungi, and unlike most bacteria they're comfortable in acid. Yeasts grow best between about pH 3.5 and 4.5, which is exactly where a finished ferment sits. Moulds tolerate anything from about pH 3.5 to 8. So a jar that's acidic enough to be safe from botulism can still grow a film or mould on top.</p>
+        <p>Moulds spread through spores that drift through the air and settle on food, and they need oxygen to grow. That's why fermenting recipes are so insistent about keeping everything below the brine with a weight: no air, no mould.</p>
+
+        <figure class="figure">
+          <svg class="sci-fig" viewBox="0 0 600 420" role="img" aria-labelledby="yeast-fig-title yeast-fig-desc">
+            <title id="yeast-fig-title">Why veg must stay under the brine, and where yeasts and moulds grow</title>
+            <desc id="yeast-fig-desc">Two jars with mould spores drifting in the air above them. In the left jar, veg floats above the brine and has grown fuzzy mould. In the right jar, a weight holds the veg under the brine and it stays clean. Below, a pH chart shows yeasts growing between pH 3.5 and 4.5 and moulds between pH 3.5 and 8, both on the acidic side of the pH 4.6 botulism line.</desc>
+
+            <!-- Spores in the air -->
+            <g class="f-spore-dot">
+              <circle cx="92" cy="22" r="3"/><circle cx="212" cy="30" r="2.5"/><circle cx="250" cy="62" r="3"/>
+              <circle cx="300" cy="44" r="2.5"/><circle cx="350" cy="64" r="3"/><circle cx="392" cy="26" r="2.5"/>
+              <circle cx="512" cy="20" r="3"/><circle cx="216" cy="80" r="2"/>
+            </g>
+            <text class="f-muted" x="300" y="104" text-anchor="middle">mould spores in the air</text>
+
+            <!-- Jar A: veg floating above the brine -->
+            <g transform="translate(150 30)">
+              <rect class="f-lid" x="-32" y="0" width="64" height="14" rx="3"/>
+              <path class="f-glass" d="M-42 18H42Q52 18 52 28V180Q52 192 40 192H-40Q-52 192-52 180V28Q-52 18-42 18Z"/>
+              <path class="f-brine" d="M-50 88Q-25 84 0 88T50 88V180Q50 190 40 190H-40Q-50 190-50 180Z"/>
+              <g class="f-veg f-veg--sm">
+                <path d="M-34 70q8-5 16 0t16 0t16 0t16 0"/><path d="M-30 82q8-5 16 0t16 0t16 0t16 0"/>
+                <path d="M-34 104q8-5 16 0t16 0t16 0t16 0"/><path d="M-30 118q8-5 16 0t16 0t16 0t16 0"/>
+                <path d="M-34 132q8-5 16 0t16 0t16 0t16 0"/><path d="M-30 146q8-5 16 0t16 0t16 0t16 0"/>
+                <path d="M-34 160q8-5 16 0t16 0t16 0t16 0"/><path d="M-30 174q8-5 16 0t16 0t16 0t16 0"/>
+              </g>
+              <g class="f-mould">
+                <circle cx="-24" cy="62" r="7"/><circle cx="-16" cy="58" r="5"/><circle cx="-30" cy="57" r="4"/>
+                <circle cx="6" cy="64" r="6"/><circle cx="13" cy="59" r="4.5"/>
+                <circle cx="30" cy="75" r="5.5"/><circle cx="24" cy="70" r="3.5"/>
+              </g>
+            </g>
+            <text class="f-label-sm" x="150" y="250" text-anchor="middle">Veg above the brine</text>
+            <text class="f-label-sm f-warn-text" x="150" y="272" text-anchor="middle">mould takes hold</text>
+
+            <!-- Jar B: weighted under the brine -->
+            <g transform="translate(450 30)">
+              <rect class="f-lid" x="-32" y="0" width="64" height="14" rx="3"/>
+              <path class="f-glass" d="M-42 18H42Q52 18 52 28V180Q52 192 40 192H-40Q-52 192-52 180V28Q-52 18-42 18Z"/>
+              <path class="f-brine" d="M-50 70Q-25 66 0 70T50 70V180Q50 190 40 190H-40Q-50 190-50 180Z"/>
+              <g class="f-veg f-veg--sm">
+                <path d="M-34 112q8-5 16 0t16 0t16 0t16 0"/><path d="M-30 126q8-5 16 0t16 0t16 0t16 0"/>
+                <path d="M-34 140q8-5 16 0t16 0t16 0t16 0"/><path d="M-30 154q8-5 16 0t16 0t16 0t16 0"/>
+                <path d="M-34 168q8-5 16 0t16 0t16 0t16 0"/><path d="M-30 180q8-5 16 0t16 0t16 0t16 0"/>
+              </g>
+              <rect class="f-weight" x="-36" y="82" width="72" height="13" rx="5"/>
+            </g>
+            <text class="f-label-sm" x="450" y="250" text-anchor="middle">Weighted under the brine</text>
+            <text class="f-label-sm f-ok-text" x="450" y="272" text-anchor="middle">nothing for mould to grab</text>
+
+            <!-- pH chart -->
+            <rect class="f-safe" x="140" y="305" width="182" height="68"/>
+            <text class="f-label-sm f-warn-text" x="146" y="298">Too acidic for botulism</text>
+            <rect class="f-bar-yeast" x="245" y="316" width="70" height="20" rx="10"/>
+            <rect class="f-bar-mould" x="245" y="346" width="315" height="20" rx="10"/>
+            <text class="f-label-sm" x="130" y="332" text-anchor="end">Yeasts</text>
+            <text class="f-label-sm" x="130" y="362" text-anchor="end">Moulds</text>
+            <line class="f-line" x1="322" y1="305" x2="322" y2="380"/>
+            <line class="f-axis" x1="140" y1="378" x2="560" y2="378"/>
+            <g class="f-tick" text-anchor="middle">
+              <text x="140" y="398">2</text><text x="210" y="398">3</text><text x="280" y="398">4</text>
+              <text x="350" y="398">5</text><text x="420" y="398">6</text><text x="490" y="398">7</text><text x="560" y="398">8</text>
+            </g>
+            <text class="f-tick f-tick--warn" x="322" y="414" text-anchor="middle">4.6</text>
+            <text class="f-tick" x="574" y="398">pH</text>
+          </svg>
+          <figcaption>Mould spores are always in the air and need oxygen to grow, so any veg poking above the brine is a landing pad. Acid doesn't stop them either: yeasts grow between about pH 3.5 and 4.5, right where a finished ferment sits.</figcaption>
+        </figure>
+        <p>Both also need water. Microbes can only use "free" water, which scientists measure as water activity, on a scale from 0 (bone dry) to 1 (pure water). Yeasts stop growing below about 0.9 and moulds below about 0.8. Very salty or sugary foods, like salt cod or jam, preserve themselves partly this way. Fermenting brines are far weaker than that, so in a ferment the salt's job is to favour the good bacteria, not to stop yeasts and moulds on its own.</p>
+
+        <h3>Cold</h3>
+        <p>Keeping food below 4°C slows microbes down and slows the chemical reactions that spoil food. It can't undo spoilage that has already started, only delay it. For ferments, moving the jar to the fridge is how you hit the pause button once it tastes the way you like.</p>
+
+        <figure class="figure">
+          <svg class="sci-fig" viewBox="0 0 600 390" role="img" aria-labelledby="cold-fig-title cold-fig-desc">
+            <title id="cold-fig-title">The fridge pauses a ferment</title>
+            <desc id="cold-fig-desc">A thermometer marks room temperature, 4°C and 0°C. A jar on the counter at room temperature is full of bacteria and bubbles. An arrow labelled "once it tastes right" leads to the same jar inside a fridge below 4°C, now with only a few bubbles: the ferment is paused and stays crunchy.</desc>
+            <defs>
+              <marker id="arrow-cold" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0 0L10 5L0 10z" class="f-arrowhead"/>
+              </marker>
+            </defs>
+
+            <!-- Thermometer: y = 260 - 6 x temperature -->
+            <rect class="f-glass" x="46" y="40" width="22" height="270" rx="11"/>
+            <rect class="f-mercury" x="52" y="140" width="10" height="178" rx="5"/>
+            <circle class="f-mercury" cx="57" cy="318" r="20"/>
+            <g class="f-mark"><path d="M68 140H80M68 236H80M68 260H80"/></g>
+            <text class="f-label-sm" x="86" y="146">Room temp</text>
+            <text class="f-label-sm f-cold-text" x="86" y="241">4°C</text>
+            <text class="f-muted" x="86" y="267">0°C freezing</text>
+
+            <!-- Jar on the counter: busy -->
+            <g transform="translate(270 50)">
+              <rect class="f-lid" x="-32" y="0" width="64" height="14" rx="3"/>
+              <path class="f-glass" d="M-42 18H42Q52 18 52 28V180Q52 192 40 192H-40Q-52 192-52 180V28Q-52 18-42 18Z"/>
+              <path class="f-brine" d="M-50 70Q-25 66 0 70T50 70V180Q50 190 40 190H-40Q-50 190-50 180Z"/>
+              <g class="f-veg f-veg--sm">
+                <path d="M-34 112q8-5 16 0t16 0t16 0t16 0"/><path d="M-30 126q8-5 16 0t16 0t16 0t16 0"/>
+                <path d="M-34 140q8-5 16 0t16 0t16 0t16 0"/><path d="M-30 154q8-5 16 0t16 0t16 0t16 0"/>
+                <path d="M-34 168q8-5 16 0t16 0t16 0t16 0"/><path d="M-30 180q8-5 16 0t16 0t16 0t16 0"/>
+              </g>
+              <rect class="f-weight" x="-36" y="82" width="72" height="13" rx="5"/>
+              <g class="f-bact">
+                <rect x="-6" y="-2.5" width="12" height="5" rx="2.5" transform="translate(-14 119) rotate(20)"/>
+                <rect x="-6" y="-2.5" width="12" height="5" rx="2.5" transform="translate(20 133) rotate(-30)"/>
+                <rect x="-6" y="-2.5" width="12" height="5" rx="2.5" transform="translate(-24 147) rotate(-15)"/>
+                <rect x="-6" y="-2.5" width="12" height="5" rx="2.5" transform="translate(8 161) rotate(35)"/>
+                <rect x="-6" y="-2.5" width="12" height="5" rx="2.5" transform="translate(-6 175) rotate(10)"/>
+                <rect x="-6" y="-2.5" width="12" height="5" rx="2.5" transform="translate(30 172) rotate(-20)"/>
+              </g>
+              <g class="f-bubble">
+                <circle cx="-30" cy="76" r="3"/><circle cx="-8" cy="74" r="2.5"/><circle cx="16" cy="77" r="3.5"/>
+                <circle cx="38" cy="75" r="2.5"/><circle cx="42" cy="108" r="3"/><circle cx="-42" cy="130" r="2.5"/>
+                <circle cx="42" cy="150" r="3.5"/>
+              </g>
+            </g>
+            <text class="f-label-sm" x="270" y="358" text-anchor="middle">On the counter</text>
+            <text class="f-muted" x="270" y="380" text-anchor="middle">bacteria busy</text>
+
+            <!-- Arrow -->
+            <path class="f-arrow" d="M334 160H402" marker-end="url(#arrow-cold)"/>
+            <text class="f-muted" x="368" y="128" text-anchor="middle">once it</text>
+            <text class="f-muted" x="368" y="147" text-anchor="middle">tastes right</text>
+
+            <!-- Fridge -->
+            <rect class="f-fridge" x="415" y="20" width="165" height="315" rx="14"/>
+            <path class="f-fridge-line" d="M415 92H580M425 316H570"/>
+            <rect class="f-handle" x="426" y="40" width="6" height="36" rx="3"/>
+            <rect class="f-handle" x="426" y="104" width="6" height="50" rx="3"/>
+            <path class="f-snow" transform="translate(500 56)" d="M0-16V16M-13.9-8L13.9 8M-13.9 8L13.9-8M-4-12L0-8L4-12M-4 12L0 8L4 12"/>
+
+            <!-- Jar in the fridge: paused -->
+            <g transform="translate(500 122)">
+              <rect class="f-lid" x="-32" y="0" width="64" height="14" rx="3"/>
+              <path class="f-glass" d="M-42 18H42Q52 18 52 28V180Q52 192 40 192H-40Q-52 192-52 180V28Q-52 18-42 18Z"/>
+              <path class="f-brine" d="M-50 70Q-25 66 0 70T50 70V180Q50 190 40 190H-40Q-50 190-50 180Z"/>
+              <g class="f-veg f-veg--sm">
+                <path d="M-34 112q8-5 16 0t16 0t16 0t16 0"/><path d="M-30 126q8-5 16 0t16 0t16 0t16 0"/>
+                <path d="M-34 140q8-5 16 0t16 0t16 0t16 0"/><path d="M-30 154q8-5 16 0t16 0t16 0t16 0"/>
+                <path d="M-34 168q8-5 16 0t16 0t16 0t16 0"/><path d="M-30 180q8-5 16 0t16 0t16 0t16 0"/>
+              </g>
+              <rect class="f-weight" x="-36" y="82" width="72" height="13" rx="5"/>
+              <g class="f-bact">
+                <rect x="-6" y="-2.5" width="12" height="5" rx="2.5" transform="translate(-14 147) rotate(5)"/>
+                <rect x="-6" y="-2.5" width="12" height="5" rx="2.5" transform="translate(18 175) rotate(-5)"/>
+              </g>
+              <g class="f-bubble"><circle cx="20" cy="76" r="2.5"/></g>
+            </g>
+            <text class="f-label-sm" x="497" y="358" text-anchor="middle">In the fridge</text>
+            <text class="f-muted" x="497" y="380" text-anchor="middle">paused, stays crunchy</text>
+          </svg>
+          <figcaption>At room temperature the bacteria are busy. Below 4°C they slow right down, so the fridge holds your ferment at the flavour you like and helps it keep its crunch.</figcaption>
+        </figure>
+
+        <p class="cite">Sources: <a href="https://www.britannica.com/topic/food-preservation/Fungi" rel="noopener">Britannica, "Food preservation: Fungi" and "Control of microbial contamination"</a>; <a href="https://www.kilnerjar.co.uk/blog/what-is-the-difference-between-fermenting-and-pickling" rel="noopener">Kilner</a>; <a href="https://www.youtube.com/watch?v=HQCS--L9OhM" rel="noopener">Wendy the Food Scientist</a>.</p>
+      </section>
+
+      <!-- ===================== GETTING STARTED ===================== -->
+      <section id="getting-started" class="section">
+        <h2>Getting started</h2>
+        <p class="lede">You don't need special kit or experience: a clean jar, the right salt, some vegetables and a bit of patience will do. The best first project is a single, simple one, like sauerkraut.</p>
+
+        <h3>Two ways to ferment veg</h3>
+        <p><strong>Dry salting</strong> is for vegetables that give up their own juice, such as cabbage, carrots, beetroot, radishes and onions. You sprinkle salt over them, massage it in and pack them down until they're sitting in their own brine. <strong>Brining</strong> is for whole or chunky vegetables that won't make enough liquid, such as cucumbers, green beans, cauliflower, peppers and garlic. You pour salty water over them instead.</p>
+
+        <h3>What you need</h3>
+        <ul class="kit">
+          <li><strong>A jar.</strong> Wide-mouthed is easiest to pack. Old jam or pasta sauce jars work fine.</li>
+          <li><strong>A weight</strong> to keep everything under the brine. A fermentation weight is ideal, but a small zip-lock bag filled with brine or a shot glass does the job.</li>
+          <li><strong>A lid.</strong> A fermentation lid lets gas out by itself. With a normal lid, rest it loosely or open the jar once a day to let the gas out.</li>
+          <li><strong>A plate or tray</strong> underneath, because lively ferments can bubble over.</li>
+          <li><strong>Kitchen scales.</strong> Salt is the one thing worth weighing precisely.</li>
+        </ul>
+
+        <h3>Salt</h3>
+        <p>Use sea salt, pickling salt or kosher salt. Avoid iodised salt and salt with anti-caking agents, which can hold back the bacteria you want. Always weigh it rather than using spoons: a tablespoon of fine sea salt weighs almost twice as much as a tablespoon of coarse kosher salt.</p>
+        <div class="table-wrap">
+          <table class="compare-table">
+            <thead><tr><th scope="col">Strength</th><th scope="col">Use it for</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">2% of the veg's weight</th><td data-label="Use it for">Dry-salted ferments like sauerkraut and kimchi (20 g salt per 1 kg of veg)</td></tr>
+              <tr><th scope="row">3% of the water</th><td data-label="Use it for">A lighter brine for quick or delicate ferments</td></tr>
+              <tr><th scope="row">3.5% of the water</th><td data-label="Use it for">The all-purpose brine (35 g salt per litre of water)</td></tr>
+              <tr><th scope="row">5% of the water</th><td data-label="Use it for">Hot weather, long ferments or extra crunch</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Where to keep it</h3>
+        <p>Find a spot out of direct sunlight, away from the oven, radiators and outside walls, where the temperature stays steady and you'll remember to check it every day. Temperature sets the pace:</p>
+        <div class="table-wrap">
+          <table class="compare-table">
+            <thead><tr><th scope="col">Temperature</th><th scope="col">What happens</th><th scope="col">Typical time</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">15 to 18°C</th><td data-label="What happens">Slow, with a complex flavour</td><td data-label="Typical time">Weeks to months</td></tr>
+              <tr><th scope="row">18 to 24°C</th><td data-label="What happens">The sweet spot</td><td data-label="Typical time">1 to 4 weeks</td></tr>
+              <tr><th scope="row">24 to 29°C</th><td data-label="What happens">Fast, with a sharper flavour</td><td data-label="Typical time">2 to 5 days</td></tr>
+              <tr><th scope="row">Above 29°C</th><td data-label="What happens">Risky: add more salt or find somewhere cooler</td><td data-label="Typical time">Not recommended</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Keeping things clean</h3>
+        <p>Wash everything (jars, weights, lids, your hands and the worktop) in hot, soapy water, rinse well and leave it to air dry. A dishwasher is fine for cleaning. For vegetable ferments that's enough: the lactic acid the bacteria make protects the jar, so you don't need to sanitise. Do sanitise if your home has damp or mould problems, or if your last batch grew mould or a yeast film. Two things to avoid: don't plunge glass jars into boiling water, because they can crack, and don't clean with vinegar and bicarbonate of soda together, because they cancel each other out.</p>
+
+        <h3>Is it working?</h3>
+        <p>Start tasting after about five days. Bubbles mean the bacteria are busy, and as the bubbling slows the main fermentation is winding down. A healthy ferment smells pleasantly sour, and cloudy brine and a fizz when you open the jar are both normal. When it tastes right to you, move it to the fridge. Most fermented veg keeps for months there.</p>
+        <p><strong>Throw it out</strong> if you see fuzzy mould, if the veg turns slimy or if it smells rotten rather than sour. The <a href="#safety">safety section</a> covers what's harmless and what isn't.</p>
+
+        <h3>Ferment what's in season, and what's left over</h3>
+        <p>Produce fermented at its peak gives the freshest, best-flavoured results, and fermenting is a good way to stop food going to waste. Slightly tired or bruised vegetables are fine once you've trimmed the bad bits. Even scraps can be useful: pineapple peel makes tepache (a fizzy drink), ginger peel can start a ginger bug and watermelon rind can be pickled in brine.</p>
+
+        <div class="season" id="season">
+          <div class="season__months" role="tablist" aria-label="Choose a month"></div>
+          <div class="season__panel" role="tabpanel" id="season-panel">
+            <h4 class="season__title" id="season-title">In season in the UK</h4>
+            <ul class="season__list" id="season-list"></ul>
+          </div>
+          <p class="season__note">British produce worth fermenting or pickling. Seasons shift with the weather and where you live, so check what your greengrocer or farm shop has.</p>
+          <noscript><p class="placeholder">Turn on JavaScript to see what's in season each month.</p></noscript>
+        </div>
+
+        <p class="cite">Sources: <a href="https://thefermentguide.com/guides/how-to-ferment-at-home" rel="noopener">The Ferment Guide, "How to ferment at home"</a>; <a href="https://efda.co.uk/blog/fermenting-and-pickling-at-home-a-beginners-guide-to-living-flavour/" rel="noopener">Edinburgh Food &amp; Drink Academy</a>; Révolution Fermentation on <a href="https://revolutionfermentation.com/en/blogs/other/clean-sanitize-fermentation-equipment/" rel="noopener">cleaning equipment</a>, <a href="https://revolutionfermentation.com/en/blogs/other/8-reasons-why-fermentations-help-reduce-our-waste/" rel="noopener">reducing waste</a> and <a href="https://revolutionfermentation.com/en/blogs/other/seasonal-fermentation-calendar/" rel="noopener">seasonal fermenting</a>. Seasonal calendar: <a href="https://hubbub.org.uk/how-to-eat-seasonally-in-the-uk-a-month-by-month-guide" rel="noopener">Hubbub</a>, with cabbage and cucumbers from <a href="https://www.oddbox.co.uk/blog/whats-in-season-when-a-guide-to-uk-seasonal-eating" rel="noopener">Oddbox</a>.</p>
+      </section>
+
+      <!-- ===================== CALCULATOR ===================== -->
+      <section id="calculator" class="section">
+        <h2>Brine calculator</h2>
+        <p>Work out how much salt to add, based on the total weight of everything in the jar.</p>
+
+        <noscript><p class="placeholder">Turn on JavaScript to use the calculator. Or work it out by hand: salt in grams = total weight in grams × percentage ÷ 100.</p></noscript>
+        <form class="calc" id="calc-form" novalidate>
+          <fieldset class="calc__field">
+            <legend>Brine strength</legend>
+            <div class="calc__presets" role="group" aria-label="Common strengths">
+              <button type="button" class="chip" data-pct="2">2% <small>sauerkraut</small></button>
+              <button type="button" class="chip" data-pct="3.5">3.5% <small>cucumbers</small></button>
+              <button type="button" class="chip" data-pct="5">5% <small>peppers, long ferments</small></button>
+            </div>
+            <label class="calc__input">
+              <span class="visually-hidden">Brine strength in percent</span>
+              <input id="calc-pct" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="2">
+              <span class="calc__suffix">%</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="calc__field">
+            <legend>Total weight</legend>
+            <p class="calc__help">Everything going in the jar: veg, aromatics and water.</p>
+            <div class="calc__row">
+              <label class="calc__input calc__input--grow">
+                <span class="visually-hidden">Total weight</span>
+                <input id="calc-weight" type="number" inputmode="decimal" min="0" step="any" placeholder="e.g. 1000">
+              </label>
+              <label>
+                <span class="visually-hidden">Unit</span>
+                <select id="calc-unit">
+                  <option value="g" selected>g</option>
+                  <option value="kg">kg</option>
+                  <option value="oz">oz</option>
+                  <option value="lb">lb</option>
+                </select>
+              </label>
+            </div>
+          </fieldset>
+
+          <output class="calc__result" id="calc-result" for="calc-pct calc-weight calc-unit" aria-live="polite">
+            <span class="calc__result-label">Salt needed</span>
+            <span class="calc__result-value" id="calc-salt">0 g</span>
+            <span class="calc__result-sub" id="calc-sub">Enter a weight to see how much salt you need.</span>
+          </output>
+          <p class="calc__warn" id="calc-warn" hidden></p>
+        </form>
+
+        <div class="tip">
+          <strong>How to weigh it:</strong> put the empty jar on the scale and zero it. Pack in the veg and aromatics, top up with water until everything is covered, then read the weight.
+        </div>
+      </section>
+
+      <!-- ===================== TECHNIQUES ===================== -->
+      <!-- Each technique's video sources and methods live in assets/data/techniques.json -->
+      <section id="quick-pickles" class="section technique">
+        <p class="eyebrow">Technique</p>
+        <h2>Quick vinegar pickles</h2>
+        <p class="placeholder">Introduction to follow once sources are approved.</p>
+        <div class="switcher" data-technique="quick-pickles">
+          <noscript><p class="placeholder">Turn on JavaScript to browse the videos and methods for this technique.</p></noscript>
+        </div>
+        <aside class="baseline" aria-label="Safety baseline">
+          <h3>Safety baseline</h3>
+          <p class="placeholder">Tested guidance that applies whichever video you choose, to follow.</p>
+        </aside>
+      </section>
+
+      <section id="sauerkraut" class="section technique">
+        <p class="eyebrow">Technique</p>
+        <h2>Sauerkraut</h2>
+        <p class="placeholder">Introduction to follow once sources are approved.</p>
+        <div class="switcher" data-technique="sauerkraut">
+          <noscript><p class="placeholder">Turn on JavaScript to browse the videos and methods for this technique.</p></noscript>
+        </div>
+        <aside class="baseline" aria-label="Safety baseline">
+          <h3>Safety baseline</h3>
+          <p class="placeholder">Tested guidance that applies whichever video you choose, to follow.</p>
+        </aside>
+      </section>
+
+      <section id="brine-ferments" class="section technique">
+        <p class="eyebrow">Technique</p>
+        <h2>Brine ferments</h2>
+        <p class="placeholder">Introduction to follow once sources are approved.</p>
+        <div class="switcher" data-technique="brine-ferments">
+          <noscript><p class="placeholder">Turn on JavaScript to browse the videos and methods for this technique.</p></noscript>
+        </div>
+        <aside class="baseline" aria-label="Safety baseline">
+          <h3>Safety baseline</h3>
+          <p class="placeholder">Tested guidance that applies whichever video you choose, to follow.</p>
+        </aside>
+      </section>
+
+      <section id="kimchi" class="section technique">
+        <p class="eyebrow">Technique</p>
+        <h2>Kimchi</h2>
+        <p class="placeholder">Introduction to follow once sources are approved.</p>
+        <div class="switcher" data-technique="kimchi">
+          <noscript><p class="placeholder">Turn on JavaScript to browse the videos and methods for this technique.</p></noscript>
+        </div>
+        <aside class="baseline" aria-label="Safety baseline">
+          <h3>Safety baseline</h3>
+          <p class="placeholder">Tested guidance that applies whichever video you choose, to follow.</p>
+        </aside>
+      </section>
+
+      <section id="drinks" class="section technique">
+        <p class="eyebrow">Technique</p>
+        <h2>Fermented drinks</h2>
+        <p class="placeholder">Introduction to follow once sources are approved.</p>
+        <div class="switcher" data-technique="drinks">
+          <noscript><p class="placeholder">Turn on JavaScript to browse the videos and methods for this technique.</p></noscript>
+        </div>
+        <aside class="baseline" aria-label="Safety baseline">
+          <h3>Safety baseline</h3>
+          <p class="placeholder">Tested guidance that applies whichever video you choose, to follow.</p>
+        </aside>
+      </section>
+
+      <section id="canning" class="section technique">
+        <p class="eyebrow">Technique</p>
+        <h2>Water-bath canning</h2>
+        <p class="placeholder">Introduction to follow once sources are approved.</p>
+        <div class="switcher" data-technique="canning">
+          <noscript><p class="placeholder">Turn on JavaScript to browse the videos and methods for this technique.</p></noscript>
+        </div>
+        <aside class="baseline" aria-label="Safety baseline">
+          <h3>Safety baseline</h3>
+          <p class="placeholder">Tested guidance that applies whichever video you choose, to follow.</p>
+        </aside>
+      </section>
+
+      <!-- ===================== REFERENCE ===================== -->
+      <section id="safety" class="section">
+        <h2>Safety &amp; troubleshooting</h2>
+        <p class="placeholder">Content to follow once sources are approved.</p>
+      </section>
+
+      <section id="sources" class="section">
+        <h2>Sources</h2>
+        <h3>Written</h3>
+        <ul>
+          <li><a href="https://www.kilnerjar.co.uk/blog/what-is-the-difference-between-fermenting-and-pickling" rel="noopener">What is the difference between fermenting and pickling?</a> Kilner blog.</li>
+          <li><a href="https://www.britannica.com/topic/food-preservation/Fungi" rel="noopener">Food preservation: spoilage mechanisms (Fungi)</a>. N. W. Desrosier and the editors of Encyclopaedia Britannica.</li>
+          <li><a href="https://thefermentguide.com/guides/how-to-ferment-at-home" rel="noopener">How to ferment at home: a complete step-by-step guide</a>. The Ferment Guide.</li>
+          <li><a href="https://efda.co.uk/blog/fermenting-and-pickling-at-home-a-beginners-guide-to-living-flavour/" rel="noopener">Fermenting and pickling at home: a beginner's guide to living flavour</a>. Edinburgh Food &amp; Drink Academy.</li>
+          <li><a href="https://revolutionfermentation.com/en/blogs/other/clean-sanitize-fermentation-equipment/" rel="noopener">How to clean and sanitise your fermentation equipment</a>. Révolution Fermentation.</li>
+          <li><a href="https://revolutionfermentation.com/en/blogs/other/8-reasons-why-fermentations-help-reduce-our-waste/" rel="noopener">8 ways to reduce waste with fermentation</a>. Révolution Fermentation.</li>
+          <li><a href="https://revolutionfermentation.com/en/blogs/other/seasonal-fermentation-calendar/" rel="noopener">Seasonal fermentation calendar</a>. Révolution Fermentation.</li>
+          <li><a href="https://hubbub.org.uk/how-to-eat-seasonally-in-the-uk-a-month-by-month-guide" rel="noopener">How to eat seasonally in the UK: a month by month guide</a>. Hubbub.</li>
+          <li><a href="https://www.oddbox.co.uk/blog/whats-in-season-when-a-guide-to-uk-seasonal-eating" rel="noopener">What's in season when? A guide to UK seasonal eating</a>. Oddbox.</li>
+        </ul>
+        <h3>Videos</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=HQCS--L9OhM" rel="noopener">Fermentation vs. Pickling: What's the Difference?</a> Wendy the Food Scientist.</li>
+        </ul>
+        <p class="cite">Video summaries on this site are written in our own words from each video's captions. All videos belong to their creators.</p>
+      </section>
+
+      <!-- ===================== SUBSCRIBE ===================== -->
+      <!-- Sign-ups are relayed by Web3Forms, so the destination address never appears in this page.
+           Paste the Web3Forms access key into data-access-key below. -->
+      <section id="subscribe" class="subscribe" aria-labelledby="subscribe-title">
+        <h2 id="subscribe-title">Subscribe for more cool stuff</h2>
+        <p>New techniques, videos and experiments from The Pickle Hub, sent now and then. No spam.</p>
+        <form class="subscribe__form" id="subscribe-form" data-access-key="" novalidate hidden>
+          <div class="subscribe__fields">
+            <label class="subscribe__field">
+              <span>First name <small>(optional)</small></span>
+              <input type="text" name="name" autocomplete="given-name" maxlength="80">
+            </label>
+            <label class="subscribe__field subscribe__field--grow">
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required maxlength="254">
+            </label>
+            <button type="submit" class="subscribe__btn">Subscribe</button>
+          </div>
+          <!-- Spam trap: people never see or fill this -->
+          <input type="checkbox" name="botcheck" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="subscribe__note">We'll only use your email to send Pickle Hub updates. Reply to any email to unsubscribe.</p>
+          <p class="subscribe__status" id="subscribe-status" role="status" aria-live="polite"></p>
+        </form>
+        <noscript><p class="placeholder">Turn on JavaScript to subscribe.</p></noscript>
+      </section>
+
+      <footer class="footer">
+        <p class="footer__support">Enjoying The Pickle Hub? <a class="coffee" href="https://buymeacoffee.com/tamirkarp" target="_blank" rel="noopener">☕ Buy me a coffee</a></p>
+        <p>The Pickle Hub. Video summaries are written in our own words; all videos belong to their creators.</p>
+      </footer>
+    </main>
+  </div>
+
+  <button class="fab" id="toc-toggle" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <div class="scrim" id="toc-scrim" hidden></div>
+  <a class="to-top" id="to-top" href="#top" aria-label="Back to top">↑</a>
+</body>
+</html>

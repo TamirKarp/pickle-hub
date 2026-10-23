@@ -1,0 +1,17 @@
+{
+  "_readme": "UK produce worth fermenting or pickling, by month. Base list: Hubbub, 'How to eat seasonally in the UK' (https://hubbub.org.uk/how-to-eat-seasonally-in-the-uk-a-month-by-month-guide). Cabbage and cucumber: Oddbox, 'What's in season when?' (https://www.oddbox.co.uk/blog/whats-in-season-when-a-guide-to-uk-seasonal-eating). Only produce suited to fermenting or pickling is included.",
+  "months": [
+    ["Apples & pears", "Beetroot", "Cabbage (red, savoy, white)", "Cauliflower", "Celeriac", "Jerusalem artichoke", "Kale", "Rhubarb", "Shallots", "Swede", "Turnips"],
+    ["Beetroot", "Cabbage (red, savoy, white)", "Cauliflower", "Celeriac", "Jerusalem artichoke", "Kale", "Rhubarb", "Shallots", "Swede", "Turnips"],
+    ["Cauliflower", "Kale", "Rhubarb", "Spring greens", "Swede", "Wild garlic"],
+    ["Asparagus", "Dill", "Radishes", "Rhubarb", "Spring greens", "Wild garlic"],
+    ["Asparagus", "Carrots", "Dill", "Radishes", "Rhubarb", "Spring greens", "Sweetheart cabbage", "Wild garlic"],
+    ["Asparagus", "Beetroot", "Carrots", "Chillies", "Courgettes", "Cucumbers", "Dill", "Fennel", "Garlic", "Green beans", "Onions", "Radishes", "Sweetheart cabbage", "Turnips"],
+    ["Beetroot", "Cabbage (sweetheart, white)", "Carrots", "Chillies", "Courgettes", "Cucumbers", "Dill", "Fennel", "Garlic", "Green beans", "Onions & shallots", "Radishes", "Turnips"],
+    ["Beetroot", "Cabbage (sweetheart, white)", "Carrots", "Chillies", "Courgettes", "Cucumbers", "Fennel", "Garlic", "Green beans", "Onions & shallots", "Peppers", "Plums & damsons", "Radishes", "Turnips"],
+    ["Apples & pears", "Beetroot", "Cabbage (red, sweetheart, white)", "Carrots", "Celeriac", "Chillies", "Courgettes", "Cucumbers", "Fennel", "Garlic", "Green beans", "Kale", "Onions & shallots", "Peppers", "Plums & damsons", "Radishes", "Turnips"],
+    ["Apples & pears", "Beetroot", "Cabbage (red, savoy, sweetheart, white)", "Celeriac", "Chillies", "Cucumbers", "Fennel", "Garlic", "Green beans", "Jerusalem artichoke", "Kale", "Radishes", "Shallots", "Swede", "Turnips"],
+    ["Apples & pears", "Beetroot", "Cabbage (red, savoy, white)", "Cauliflower", "Celeriac", "Jerusalem artichoke", "Kale", "Shallots", "Swede", "Turnips"],
+    ["Apples & pears", "Beetroot", "Cabbage (red, savoy, white)", "Cauliflower", "Celeriac", "Jerusalem artichoke", "Kale", "Shallots", "Swede", "Turnips"]
+  ]
+}
