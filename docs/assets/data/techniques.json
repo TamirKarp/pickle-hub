@@ -244,7 +244,7 @@
         "id": "andy-cooks-sauerkraut",
         "videoId": "AmIjczutV0c",
         "format": "short",
-        "title": "Sauerkraut",
+        "title": "Classic sauerkraut",
         "creator": "Andy Cooks",
         "cook": "Andy",
         "channelUrl": "https://www.youtube.com/@andy_cooks",
@@ -301,6 +301,123 @@
         ],
         "tip": "With an ordinary clip-top jar, open it every day to let the gas out, or it could burst. A water-lock lid lets the gas out by itself.",
         "compare": "This matches tested guidance closely: 2% salt by weight is the standard for sauerkraut, and keeping it packed under its brine with a weight is what stops mould. Three weeks somewhere cool is on the slow side of the usual 1 to 4 weeks, which gives a deeper flavour. Taste it along the way and move it to the fridge when you like it."
+      },
+      {
+        "id": "capri-lilly",
+        "videoId": "BV_q-3aXX4w",
+        "format": "short",
+        "title": "Traditional sauerkraut with carrot and dill",
+        "creator": "Capri Lilly",
+        "cook": "Capri",
+        "channelUrl": "https://www.youtube.com/@GoodFoodBaddie",
+        "duration": "1:34",
+        "summary": "Capri's everyday sauerkraut: cabbage and carrot salted overnight so they release plenty of brine, flavoured with caraway and dill, then packed under an airlock and left for up to a month for a deeper, tangier flavour.",
+        "glance": {
+          "Time": "Overnight + 2 to 4 weeks",
+          "Difficulty": "Easy",
+          "Salt": "3% of the veg",
+          "Kit": "Airlock lid + weight"
+        },
+        "saltPct": 3,
+        "ingredients": [
+          "1 large cabbage, shredded (Capri used 1,060 g)",
+          "2 to 3 large carrots, shredded (she used 150 g)",
+          "Sea salt at 2 to 3% of the veg weight (she used 37 g, which is 3%). Avoid iodised salt and salt with anti-caking agents",
+          "2 to 3 tsp caraway seeds",
+          "3 tbsp fresh dill"
+        ],
+        "method": [
+          {
+            "text": "Shred the cabbage thinly so it gives up its moisture more easily.",
+            "t": 23
+          },
+          {
+            "text": "Weigh the cabbage and carrots, then work out the salt: 2 to 4%, using more if your kitchen is warm or you want a longer ferment.",
+            "t": 27
+          },
+          {
+            "text": "Salt the cabbage, cover it and leave it overnight to soften and release plenty of brine.",
+            "t": 46
+          },
+          {
+            "text": "Mix in the carrots, caraway and dill.",
+            "t": 52
+          },
+          {
+            "text": "Pack it tightly into a jar, pressing out the air pockets, and weigh it down under the brine. Fit an airlock lid."
+          },
+          {
+            "text": "In the first week expect bubbles, cloudy brine and the veg pushing up. That's fermentation working, so keep pressing everything back under the brine.",
+            "t": 57
+          },
+          {
+            "text": "Start tasting after about 2 weeks. Capri lets hers go a month for a richer flavour.",
+            "t": 73
+          },
+          {
+            "text": "When it's ready, move it into smaller jars and keep it in the fridge.",
+            "t": 82
+          }
+        ],
+        "tip": "An airlock lid lets the gas out by itself, so there's no daily burping and you can more or less make it and forget it.",
+        "compare": "Very close to tested guidance. Capri's 3% salt is a little higher than the usual 2%, which slows the ferment down and suits a warm kitchen or a long ferment. Leaving the salted cabbage overnight is fine, and her advice to avoid iodised salt matches Getting started."
+      },
+      {
+        "id": "yangs-kitchen",
+        "videoId": "y8GEwuI7jfk",
+        "format": "short",
+        "title": "Pineapple, turmeric and ginger sauerkraut",
+        "creator": "Yang's Nourishing Kitchen",
+        "cook": "Yang",
+        "channelUrl": "https://www.youtube.com/@YangsNourishingKitchen",
+        "duration": "0:53",
+        "summary": "Yang's sweeter take on sauerkraut: cabbage salted until it releases its juice, then mixed with pineapple, fresh ginger and turmeric, packed tight and left somewhere cool and dark for at least 4 to 6 weeks. The video makes a quarter of her full recipe, enough for a 1 litre jar.",
+        "glance": {
+          "Time": "Half a day + 4 to 6 weeks",
+          "Difficulty": "Easy",
+          "Salt": "About 2%",
+          "Where": "Cool, dark spot"
+        },
+        "saltPct": 2,
+        "ingredients": [
+          "About 625 g cabbage, shredded",
+          "About 285 g pineapple, diced",
+          "1 tbsp fresh ginger, grated",
+          "½ tbsp ground turmeric",
+          "1 tbsp sea salt (Yang's rule is 1 tbsp for every 900 g of veg)",
+          "A pinch of black pepper (optional)"
+        ],
+        "method": [
+          {
+            "text": "Shred the cabbage.",
+            "t": 3
+          },
+          {
+            "text": "Massage the salt into the cabbage, then leave it for up to half a day until it has released its juice.",
+            "t": 9
+          },
+          {
+            "text": "Mix in the pineapple, ginger and turmeric, plus the black pepper if you're using it.",
+            "t": 34
+          },
+          {
+            "text": "Pack it into a jar as tightly as you can, pressing it down with a fork until the brine covers it. Leave 2 to 5 cm of space at the top.",
+            "t": 36
+          },
+          {
+            "text": "Check it regularly, especially in the first 2 weeks: press it back down to release the bubbles and keep everything under the brine. Stand the jar on a plate to catch any overflow.",
+            "t": 43
+          },
+          {
+            "text": "Leave it somewhere cool and dark for at least 4 to 6 weeks. Yang prefers 2 months or more.",
+            "t": 48
+          },
+          {
+            "text": "Once it tastes how you like, move it to the fridge."
+          }
+        ],
+        "tip": "Don't add vinegar or water. Cabbage makes enough brine of its own, and vinegar can get in the way of the good bacteria.",
+        "compare": "Matches tested guidance on salt (about 2%) and on keeping everything under the brine. Yang's 4 to 6 week minimum is longer than most guides, which say 1 to 4 weeks; that's about flavour rather than safety, so taste earlier if you like. The pineapple adds extra sugar, so expect a lively start and keep a plate under the jar."
       }
     ]
   }
