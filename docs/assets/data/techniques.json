@@ -1,5 +1,5 @@
 {
-  "_readme": "One entry per section (keyed by the section id in index.html). Each source is one video. 'videoId' is the YouTube id (the part after watch?v=). 'format': 'short' for YouTube Shorts. 'saltPct' drives the 'Calculate salt' button; leave it out for non-salt techniques. Method steps and key points take an optional 't' (seconds into the video) to show a timestamp button. Optional 'intro' is a short friendly line shown above the video. For recipe sections, set 'recipeLabel' on the section (e.g. 'quick pickle recipe') and 'cook' on each source (the name in the card header); 'tip' adds a 'Tip from <cook>' box. Non-recipe videos can also have 'context' (a short background note) and 'links' (a list of {text, url}, https only).",
+  "_readme": "One entry per section (keyed by the section id in index.html). Each source is one video. 'videoId' is the YouTube id (the part after watch?v=). 'format': 'short' for YouTube Shorts. 'saltPct' drives the 'Calculate salt' button; leave it out for non-salt techniques. Method steps and key points take an optional 't' (seconds into the video) to show a timestamp button. Optional 'intro' is a short friendly line shown above the video. For recipe sections, set 'recipeLabel' on the section (e.g. 'quick pickle recipe') and 'cook' on each source (the name in the card header); 'tip' adds a 'Tip from <cook>' box. Non-recipe videos can also have 'context' (a short background note) and 'links' (a list of {text, url}, https only). Optional 'recipeTitle' replaces the generated card title; optional 'start' (seconds) is where the video starts when first played.",
   "intro": {
     "sources": [
       {
@@ -459,6 +459,329 @@
         ],
         "tip": "Don't add vinegar or water. Cabbage makes enough brine of its own, and vinegar can get in the way of the good bacteria.",
         "compare": "Matches tested guidance on salt (about 2%) and on keeping everything under the brine. Yang's 4 to 6 week minimum is longer than most guides, which say 1 to 4 weeks; that's about flavour rather than safety, so taste earlier if you like. The pineapple adds extra sugar, so expect a lively start and keep a plate under the jar."
+      },
+      {
+        "id": "gaz-oakley",
+        "videoId": "G7FnWqbybBk",
+        "format": "short",
+        "title": "Spiced parsnip sauerkraut",
+        "creator": "Gaz Oakley",
+        "cook": "Gaz",
+        "channelUrl": "https://www.youtube.com/@gazoakleychef",
+        "duration": "0:58",
+        "recipeTitle": "Gaz's spiced parsnip sauerkraut",
+        "summary": "Gaz's winter kraut swaps cabbage for grated parsnip, with apple for sweetness plus chilli, garlic, ginger, turmeric, garam masala and fennel seeds. It's salted at 2%, left for an hour to make its own brine, then packed down under a leaf and a weight to ferment.",
+        "glance": {
+          "Time": "1 hour + fermenting",
+          "Difficulty": "Easy",
+          "Salt": "2% of everything",
+          "Season": "Winter"
+        },
+        "saltPct": 2,
+        "ingredients": [
+          "Parsnips, peeled and grated",
+          "Apples, finely chopped",
+          "Fresh chilli",
+          "Garlic and ginger, minced",
+          "Fresh herbs",
+          "Ground turmeric, garam masala and fennel seeds",
+          "Sea salt: 2% of the weight of everything in the bowl"
+        ],
+        "method": [
+          {
+            "text": "Peel and grate the parsnips into a big mixing bowl.",
+            "t": 3
+          },
+          {
+            "text": "Add finely chopped apple for sweetness, then chilli, garlic and ginger.",
+            "t": 7
+          },
+          {
+            "text": "Add your herbs, then the spices: ground turmeric, garam masala and fennel seeds.",
+            "t": 17
+          },
+          {
+            "text": "Weigh everything in the bowl, add 2% of that weight in sea salt and mix really well.",
+            "t": 25
+          },
+          {
+            "text": "Leave it for about an hour so the salt draws out the moisture and makes a natural brine.",
+            "t": 32
+          },
+          {
+            "text": "Pack it into clean jars, pressing down until the brine covers everything.",
+            "t": 40
+          },
+          {
+            "text": "Lay a large leaf over the top and add a weight so nothing floats up.",
+            "t": 46
+          },
+          {
+            "text": "Seal the jar and stand it on a plate to ferment.",
+            "t": 50
+          }
+        ],
+        "compare": "Same 2% salt as a classic sauerkraut, so the calculator works as it is. Gaz doesn't give quantities or a fermenting time, so mix the veg and spices to taste and follow Getting started: taste from about day 5 and move it to the fridge when you like it. If you seal it with an ordinary lid, open it daily to let the gas out."
+      }
+    ]
+  },
+  "brine-ferments": {
+    "recipeLabel": "brine ferment",
+    "sources": [
+      {
+        "id": "ethan-chlebowski",
+        "videoId": "Jg5LSeVleDU",
+        "title": "Noma guide to lacto-fermented pickles",
+        "creator": "Ethan Chlebowski",
+        "cook": "Ethan",
+        "channelUrl": "https://www.youtube.com/@EthanChlebowski",
+        "duration": "10:06",
+        "recipeTitle": "Ethan's Noma-style lacto pickles",
+        "summary": "Ethan walks through the method used at Noma, the Copenhagen restaurant, for fermenting almost any vegetable in brine: weigh the veg and water together, add exactly 2% of that weight in salt, keep everything under the brine and start tasting after 2 or 3 days.",
+        "glance": {
+          "Time": "10 min + 2 days or more",
+          "Difficulty": "Easy",
+          "Salt": "2% of veg + water",
+          "Where": "Room temp, out of the sun"
+        },
+        "saltPct": 2,
+        "ingredients": [
+          "Cucumbers, or any vegetable that's good raw, juicy and firm. Avoid waxed veg; organic if you can",
+          "Water, to cover",
+          "Salt: 2% of the combined weight of veg and water",
+          "Optional: bay leaves, mustard seeds, peppercorns, chilli, garlic"
+        ],
+        "method": [
+          {
+            "text": "Give the veg a light rinse but don't scrub it: the bacteria you need live on the skin.",
+            "t": 63
+          },
+          {
+            "text": "Put the empty jar on the scales and zero it, then fit the veg in snugly with any spices.",
+            "t": 100
+          },
+          {
+            "text": "Add water to cover and note the weight. Ethan's came to 414 g.",
+            "t": 120
+          },
+          {
+            "text": "Weigh out 2% of that in salt. Pour the water off, dissolve the salt in it and pour it back over.",
+            "t": 128
+          },
+          {
+            "text": "Screw the lid on loosely, about two-finger tight, so gas can escape. Weigh down anything that floats, for example with a water-filled zip-lock bag.",
+            "t": 145
+          },
+          {
+            "text": "Leave at room temperature out of direct sunlight. If it gets very fizzy, open the lid to let the gas out.",
+            "t": 260
+          },
+          {
+            "text": "Start tasting after 2 to 3 days. When it's sour enough, tighten the lid and move it to the fridge, where it keeps for several months.",
+            "t": 275
+          }
+        ],
+        "tip": "You can go above 2% salt, but never below it.",
+        "compare": "This is exactly how the Pickle Hub brine calculator works, so set it to 2%. Ethan's food-safety points match tested guidance: there's no need to sterilise jars, fuzzy mould means throw it out, a flat white film (kahm yeast) can be skimmed off, and the bacteria that cause botulism can't grow below pH 4.6."
+      },
+      {
+        "id": "mike-g",
+        "videoId": "W6Aq8TodxHs",
+        "start": 44,
+        "title": "The most helpful fermentation guide",
+        "creator": "LifebyMikeG",
+        "cook": "Mike",
+        "channelUrl": "https://www.youtube.com/@LifebyMikeG",
+        "duration": "19:27",
+        "recipeTitle": "Mike's fermented carrots and beets",
+        "summary": "A masterclass in two-ingredient ferments: vegetables, salt and water. Mike explains how to choose a salt level between 2 and 5% of the total weight, then ferments carrots and beets at 3.5%, along with garlic scapes, turnips and radish pods from his garden.",
+        "glance": {
+          "Time": "20 min + 5 days or more",
+          "Difficulty": "Easy",
+          "Salt": "3.5% (range 2 to 5%)",
+          "Temp": "15 to 24°C"
+        },
+        "saltPct": 3.5,
+        "ingredients": [
+          "Carrots and beets, or any firm veg, chopped into bite-sized pieces",
+          "Water, to cover",
+          "Salt: 3.5% of the combined weight of veg and water"
+        ],
+        "method": [
+          {
+            "text": "Peel shop-bought veg, since you don't know what it's been treated with, and cut off any blemishes. Chop into bite-sized pieces.",
+            "t": 570
+          },
+          {
+            "text": "Put a clean jar on the scales, zero it, add the veg and cover with water.",
+            "t": 600
+          },
+          {
+            "text": "Multiply the weight of veg and water by 0.035 to get the salt. Weigh it out and add it.",
+            "t": 630
+          },
+          {
+            "text": "Put the lid on and shake to get the salt dissolving.",
+            "t": 640
+          },
+          {
+            "text": "Add a glass weight to keep everything under the water line.",
+            "t": 650
+          },
+          {
+            "text": "Fit a one-way airlock lid, or use an ordinary lid and open it regularly to let the gas out.",
+            "t": 675
+          },
+          {
+            "text": "Leave out of sunlight at 15 to 24°C. Cooler is slower and easier to control.",
+            "t": 690
+          },
+          {
+            "text": "Taste after about 5 days. The first few days can taste a bit off; it keeps getting better with time.",
+            "t": 855
+          }
+        ],
+        "tip": "Choosing your salt: go higher, up to 5%, for long ferments, dense veg like beets and carrots, or if you're a beginner. Go lower, down to 2%, for quick ferments, softer veg like radishes, or a more fermented flavour.",
+        "compare": "Mike measures salt against the total weight of veg and water, just like the Pickle Hub calculator, so the button below gives the right amount. His 2 to 5% range and 15 to 24°C match tested guidance, and he's clear that anything that grows mould after floating above the brine should be thrown away."
+      },
+      {
+        "id": "dish-by-david",
+        "videoId": "NHH8K9tYOvE",
+        "format": "short",
+        "title": "Fermented tomatoes",
+        "creator": "DishByDavid",
+        "cook": "David",
+        "channelUrl": "https://www.youtube.com/@DishByDavid",
+        "duration": "0:39",
+        "recipeTitle": "David's fermented tomatoes",
+        "summary": "Firm Roma tomatoes fermented whole in brine until they turn bold and tangy. David's tricks: clean the skins, prick the stem ends so the brine gets inside, and scatter mustard seeds over the top. They're ready when the skins peel off easily.",
+        "glance": {
+          "Time": "10 min + a few days",
+          "Difficulty": "Easy",
+          "Tomatoes": "Firm Roma",
+          "Ready": "When skins peel easily"
+        },
+        "ingredients": [
+          "Firm Roma tomatoes",
+          "Brine (salt and water). David doesn't give his strength in the video",
+          "Mustard seeds"
+        ],
+        "method": [
+          {
+            "text": "Rinse the tomatoes with a little bicarbonate of soda to clean the skins.",
+            "t": 12
+          },
+          {
+            "text": "Prick the stem end of each tomato a couple of times with a toothpick so the brine soaks right in.",
+            "t": 15
+          },
+          {
+            "text": "Pack them into a jar and cover with brine.",
+            "t": 18
+          },
+          {
+            "text": "Sprinkle mustard seeds over the top.",
+            "t": 20
+          },
+          {
+            "text": "Leave for a few days. They're ready when the skins peel off easily.",
+            "t": 25
+          }
+        ],
+        "compare": "David doesn't give a salt strength in the video; his full recipe is in a paid guide. Getting started suggests 3.5% of the water (35 g salt per litre) as an all-purpose brine. Mustard seeds add flavour, but they're no substitute for keeping the tomatoes under the brine, so weigh them down if they float."
+      },
+      {
+        "id": "capri-lilly-lemons",
+        "videoId": "zzgHJt_Wu7g",
+        "title": "Fermented lemons",
+        "creator": "Capri Lilly",
+        "cook": "Capri",
+        "channelUrl": "https://www.youtube.com/@GoodFoodBaddie",
+        "duration": "5:33",
+        "recipeTitle": "Capri's fermented lemons",
+        "summary": "Moroccan-style preserved lemons: lemons cut into quarters, packed with salt into a jar until they're covered in their own juice, then left at room temperature for 3 to 4 weeks. The softened rinds add a salty, tangy depth to dressings, grains, chicken and more.",
+        "glance": {
+          "Time": "20 min + 3 to 4 weeks",
+          "Difficulty": "Easy",
+          "Salt": "About ½ cup per 1 litre jar",
+          "Keeps": "6 to 12 months"
+        },
+        "ingredients": [
+          "6 to 10 lemons for a 1 litre jar, organic or unwaxed if you can",
+          "About ½ cup coarse sea salt or kosher salt, plus more as needed",
+          "Extra freshly squeezed lemon juice for topping up (not bottled)",
+          "Optional spices: cinnamon sticks, star anise, cloves, thyme, bay leaves"
+        ],
+        "method": [
+          {
+            "text": "Cut a little off the small ends so each lemon stands flat.",
+            "t": 112
+          },
+          {
+            "text": "Cut each lemon into quarters without cutting through the base, so it opens like a flower.",
+            "t": 118
+          },
+          {
+            "text": "Pack salt generously into each lemon, getting it into every gap.",
+            "t": 130
+          },
+          {
+            "text": "Press the lemons tightly into a clean jar, adding a few teaspoons of salt between layers and pressing down to release their juice.",
+            "t": 157
+          },
+          {
+            "text": "If there isn't enough juice to cover them, top up with fresh lemon juice. Add any leftover salt and a fermentation weight.",
+            "t": 178
+          },
+          {
+            "text": "Seal and leave at room temperature for 3 to 4 weeks. For the first week or two, turn the jar upside down once a day.",
+            "t": 192
+          },
+          {
+            "text": "They're ready when the rinds are soft. Rinse them before using to take the edge off the salt.",
+            "t": 265
+          }
+        ],
+        "tip": "It's mostly the rind and pith you use, finely chopped. Try them in dressings, hummus, grain bowls and roast veg, or with chicken, fish or lamb.",
+        "compare": "Capri sterilises her jars by boiling them for 20 minutes. That isn't needed for ferments, and boiling can crack glass (see Getting started): a jar washed in hot, soapy water is fine. This is a very salty ferment, which is why it keeps so long, and why the lemons need a rinse before you eat them."
+      },
+      {
+        "id": "capri-lilly-fruit",
+        "videoId": "QE6scX4Ods0",
+        "format": "short",
+        "title": "Lacto-fermented stone fruit",
+        "creator": "Capri Lilly",
+        "cook": "Capri",
+        "channelUrl": "https://www.youtube.com/@GoodFoodBaddie",
+        "duration": "0:46",
+        "recipeTitle": "Capri's fermented stone fruit",
+        "summary": "Peaches, plums and nectarines covered in a 2% salt water brine and left for 3 to 7 days, tasting daily until they're as tangy as you like. The result is sweet, sour and savoury: good on a cheese board, with yoghurt or with grilled meat.",
+        "glance": {
+          "Time": "5 min + 3 to 7 days",
+          "Difficulty": "Very easy",
+          "Brine": "2% salt in water",
+          "Keeps": "About 2 months, in the fridge"
+        },
+        "ingredients": [
+          "Stone fruit: peaches, plums or nectarines",
+          "Water, to cover",
+          "Salt for a 2% brine: 20 g per litre of water"
+        ],
+        "method": [
+          {
+            "text": "Put the fruit in a clean jar and cover it with a 2% salt water brine (20 g salt per litre of water).",
+            "t": 25
+          },
+          {
+            "text": "Leave it to ferment for 3 to 7 days, opening the jar to let the gas out and tasting it every day.",
+            "t": 27
+          },
+          {
+            "text": "When it's tangy enough for you, move it to the fridge, where it keeps for about 2 months.",
+            "t": 40
+          }
+        ],
+        "compare": "A 2% brine is on the gentle side, which suits a quick ferment. Fruit is sugary, so it ferments fast: taste daily as Capri says, and keep the fruit under the brine with a weight. Her brine is 2% of the water only, so use 20 g per litre rather than the calculator, which counts the fruit too."
       }
     ]
   }

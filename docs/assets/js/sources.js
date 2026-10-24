@@ -91,7 +91,7 @@
     const facade = el('button', { type: 'button', class: 'player__facade', 'aria-label': `Play video: ${src.title}` },
       el('img', { src: thumbUrl(src.videoId, 'hqdefault'), alt: '', loading: 'lazy', width: 480, height: 360 }),
       el('span', { class: 'player__play', 'aria-hidden': 'true' }));
-    facade.addEventListener('click', () => loadVideo(player, src));
+    facade.addEventListener('click', () => loadVideo(player, src, src.start || 0)); // 'start' skips a long intro
     player.append(facade);
     return player;
   };
@@ -99,7 +99,7 @@
   /* ---------- Panel: everything below the thumbnails ---------- */
   const renderPanel = (src, { play = false, label = '' } = {}) => {
     const player = renderPlayer(src);
-    if (play && src.videoId) loadVideo(player, src); // the click on the thumbnail is the user's choice to play
+    if (play && src.videoId) loadVideo(player, src, src.start || 0); // the click on the thumbnail is the user's choice to play
     const frag = document.createDocumentFragment();
 
     if (src.intro) frag.append(el('p', { class: 'video-intro' }, src.intro));
@@ -137,7 +137,7 @@
       const titleId = `recipe-${src.id}`;
       frag.append(el('article', { class: 'recipe', 'aria-labelledby': titleId },
         el('p', { class: 'recipe__eyebrow' }, 'Recipe'),
-        el('h3', { class: 'recipe__title', id: titleId }, `${cook}'s ${label || 'recipe'}`),
+        el('h3', { class: 'recipe__title', id: titleId }, src.recipeTitle || `${cook}'s ${label || 'recipe'}`),
         src.summary ? el('p', { class: 'recipe__summary' }, src.summary) : null,
         glance(),
         calcButton(),
