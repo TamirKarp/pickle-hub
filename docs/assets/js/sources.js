@@ -196,6 +196,8 @@
     if (!s) return false;
     const src = s.tech.sources.find((x) => x.id === sourceId);
     if (!src) return false;
+    // A deep link to a video in another category switches the filter to match.
+    if (s.setFilter && src.category && src.category !== s.filter) s.setFilter(src.category, { selectFirst: false });
 
     s.tabs.forEach((tab) => {
       const on = tab.dataset.source === src.id;
@@ -238,22 +240,48 @@
       return tab;
     });
 
-    // Arrow keys move between thumbnails (standard tabs pattern).
+    // Arrow keys move between the visible thumbnails (standard tabs pattern).
     list.addEventListener('keydown', (e) => {
-      const i = tabs.indexOf(document.activeElement);
+      const visible = tabs.filter((t) => !t.hidden);
+      const i = visible.indexOf(document.activeElement);
       if (i < 0) return;
-      const next = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: tabs.length - 1 }[e.key];
+      const next = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: visible.length - 1 }[e.key];
       if (next === undefined) return;
       e.preventDefault();
-      const target = tabs[(next + tabs.length) % tabs.length];
+      const target = visible[(next + visible.length) % visible.length];
       select(tid, target.dataset.source, { updateHash: true, focus: true });
     });
 
     list.append(...tabs);
     if (tabs.length === 1) list.hidden = true; // nothing to choose between yet
+    const entry = { mount, tech, tabs, panel, filter: null, setFilter: null };
+    switchers.set(tid, entry);
+
+    // Optional filter buttons (e.g. Cheong / Kombucha / Soda) narrow the thumbnails to one category.
+    const filters = (tech.filters || []).filter((f) => tech.sources.some((src) => src.category === f.id));
+    if (filters.length) {
+      const buttons = filters.map((f) => {
+        const count = tech.sources.filter((src) => src.category === f.id).length;
+        const b = el('button', { type: 'button', class: 'filter__btn', 'aria-pressed': 'false', 'data-filter': f.id },
+          f.label, el('span', { class: 'filter__count' }, String(count)));
+        b.addEventListener('click', () => entry.setFilter(f.id));
+        return b;
+      });
+      entry.setFilter = (cat, { selectFirst = true } = {}) => {
+        entry.filter = cat;
+        buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.filter === cat)));
+        tabs.forEach((t, i) => { t.hidden = tech.sources[i].category !== cat; });
+        list.hidden = tabs.filter((t) => !t.hidden).length <= 1;
+        const first = tech.sources.find((src) => src.category === cat);
+        if (selectFirst && first) select(tid, first.id, { updateHash: true });
+      };
+      mount.append(el('div', { class: 'filter', role: 'group', 'aria-label': 'Show videos about' }, buttons));
+      entry.setFilter(filters[0].id, { selectFirst: false });
+    }
+
     mount.append(list, panel);
-    switchers.set(tid, { mount, tech, tabs, panel });
-    select(tid, tech.sources[0].id);
+    const firstSource = (entry.filter && tech.sources.find((src) => src.category === entry.filter)) || tech.sources[0];
+    select(tid, firstSource.id);
   };
 
   /* ---------- Deep links: #sauerkraut/source-id ---------- */

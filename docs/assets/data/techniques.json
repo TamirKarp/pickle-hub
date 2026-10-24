@@ -1,5 +1,5 @@
 {
-  "_readme": "One entry per section (keyed by the section id in index.html). Each source is one video. 'videoId' is the YouTube id (the part after watch?v=). 'format': 'short' for YouTube Shorts. 'saltPct' drives the 'Calculate salt' button; leave it out for non-salt techniques. Method steps and key points take an optional 't' (seconds into the video) to show a timestamp button. Optional 'intro' is a short friendly line shown above the video. For recipe sections, set 'recipeLabel' on the section (e.g. 'quick pickle recipe') and 'cook' on each source (the name in the card header); 'tip' adds a 'Tip from <cook>' box. Non-recipe videos can also have 'context' (a short background note) and 'links' (a list of {text, url}, https only). Optional 'recipeTitle' replaces the generated card title; optional 'start' (seconds) is where the video starts when first played.",
+  "_readme": "One entry per section (keyed by the section id in index.html). Each source is one video. 'videoId' is the YouTube id (the part after watch?v=). 'format': 'short' for YouTube Shorts. 'saltPct' drives the 'Calculate salt' button; leave it out for non-salt techniques. Method steps and key points take an optional 't' (seconds into the video) to show a timestamp button. Optional 'intro' is a short friendly line shown above the video. For recipe sections, set 'recipeLabel' on the section (e.g. 'quick pickle recipe') and 'cook' on each source (the name in the card header); 'tip' adds a 'Tip from <cook>' box. Non-recipe videos can also have 'context' (a short background note) and 'links' (a list of {text, url}, https only). Optional 'recipeTitle' replaces the generated card title; optional 'start' (seconds) is where the video starts when first played. A section can list 'filters' ([{id, label}]) and give each source a matching 'category' to show filter buttons above the thumbnails.",
   "intro": {
     "sources": [
       {
@@ -1075,6 +1075,90 @@
           }
         ],
         "compare": "This uses the same 2% total-weight method as the Pickle Hub calculator. It's fish-free: soy sauce and seaweed give it savoury depth instead. Gaz sterilises his jar, which isn't necessary; a clean jar washed in hot, soapy water is fine."
+      }
+    ]
+  },
+  "drinks": {
+    "recipeLabel": "recipe",
+    "filters": [
+      {
+        "id": "cheong",
+        "label": "Cheong"
+      },
+      {
+        "id": "kombucha",
+        "label": "Kombucha"
+      },
+      {
+        "id": "soda",
+        "label": "Soda"
+      }
+    ],
+    "sources": [
+      {
+        "id": "johnny-lemon-mandarin-cheong",
+        "category": "cheong",
+        "videoId": "tInQ0hqM8CI",
+        "format": "short",
+        "title": "Lemon and mandarin cheong",
+        "creator": "Johnny Kyunghwo",
+        "cook": "Johnny",
+        "channelUrl": "https://www.youtube.com/@JohnnyKyunghwo"
+      },
+      {
+        "id": "johnny-cheong-compilation",
+        "category": "cheong",
+        "videoId": "bfU5iIrTOC0",
+        "title": "Every cheong syrup I made in 2023",
+        "creator": "Johnny Kyunghwo",
+        "cook": "Johnny",
+        "channelUrl": "https://www.youtube.com/@JohnnyKyunghwo"
+      },
+      {
+        "id": "johnny-kombucha",
+        "category": "kombucha",
+        "videoId": "Kp74PJlWHaE",
+        "title": "How to easily start making kombucha",
+        "creator": "Johnny Kyunghwo",
+        "cook": "Johnny",
+        "channelUrl": "https://www.youtube.com/@JohnnyKyunghwo"
+      },
+      {
+        "id": "gaz-oakley-kombucha",
+        "category": "kombucha",
+        "videoId": "WlyKAL7Jo88",
+        "format": "short",
+        "title": "Kombucha masterclass",
+        "creator": "Gaz Oakley",
+        "cook": "Gaz",
+        "channelUrl": "https://www.youtube.com/@gazoakleychef"
+      },
+      {
+        "id": "whole-shenanigans-ginger-bug",
+        "category": "soda",
+        "videoId": "kDgkLzjPZJ8",
+        "start": 243,
+        "title": "Make any probiotic soda from ginger",
+        "creator": "Whole Shenanigans",
+        "channelUrl": "https://www.youtube.com/@WholeShenanigans"
+      },
+      {
+        "id": "bon-appetit-tepache",
+        "category": "soda",
+        "videoId": "JNcoYLVFCKg",
+        "title": "Brad makes tepache",
+        "creator": "Bon Appétit",
+        "cook": "Brad",
+        "channelUrl": "https://www.youtube.com/@bonappetit"
+      },
+      {
+        "id": "adam-witt",
+        "category": "soda",
+        "videoId": "G_kD6rmrbH4",
+        "format": "short",
+        "title": "A new bubbly probiotic drink",
+        "creator": "Adam Witt",
+        "channelUrl": "https://www.youtube.com/@AdamWitt"
       }
     ]
   }
