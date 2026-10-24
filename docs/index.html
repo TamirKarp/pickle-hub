@@ -19,37 +19,19 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
 
+  <!-- Phone bar (hidden on desktop, where the sidebar does the job) -->
   <header class="site-header">
     <div class="nav">
-      <a class="nav__brand" href="#intro" aria-label="The Pickle Hub: home"><img class="mark" src="assets/img/jar.svg" alt="" width="30" height="30"><span>The Pickle Hub</span></a>
+      <a class="nav__brand" href="#intro" aria-label="The Pickle Hub: home"><img class="mark" src="assets/img/jar.svg" alt="" width="30" height="30"></a>
       <span class="nav__current" id="topbar-title" aria-hidden="true">The Pickle Hub</span>
-      <ul class="nav__links">
-        <li><a data-page href="#intro" data-title="Pickling vs. fermenting">The basics</a></li>
-        <li><a data-page href="#science">The Science</a></li>
-        <li><a data-page href="#getting-started">Getting started</a></li>
-        <li><a data-page href="#calculator">Brine calculator</a></li>
-      </ul>
-      <a class="btn btn--dark nav__cta" href="#subscribe">Subscribe</a>
       <button class="nav__menu" id="toc-toggle" type="button" aria-controls="toc" aria-expanded="false">Menu</button>
     </div>
-    <nav class="topics" aria-label="Techniques and reference">
-      <span class="topics__label">Techniques</span>
-      <ul class="topics__list">
-        <li><a data-page href="#quick-pickles" data-title="Quick vinegar pickles">Quick pickles</a></li>
-        <li><a data-page href="#sauerkraut">Sauerkraut</a></li>
-        <li><a data-page href="#brine-ferments">Brine ferments</a></li>
-        <li><a data-page href="#kimchi">Kimchi</a></li>
-        <li><a data-page href="#drinks" data-title="Fermented drinks">Drinks</a></li>
-      </ul>
-      <ul class="topics__list topics__list--ref">
-        <li><a data-page href="#safety" data-title="Safety &amp; troubleshooting">Safety</a></li>
-        <li><a data-page href="#sources">Sources</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <!-- Phone menu (slides up from the bottom) -->
+  <div class="shell">
+  <!-- Sidebar on desktop; slides up as a menu on phones -->
   <nav id="toc" class="sheet" aria-label="All sections">
+    <a class="sheet__brand" href="#intro"><img class="mark" src="assets/img/jar.svg" alt="" width="30" height="30"><span>The Pickle Hub</span></a>
     <p class="sheet__group">Learn</p>
     <ul>
       <li><a data-page href="#intro">Pickling vs. fermenting</a></li>
@@ -70,8 +52,11 @@
       <li><a data-page href="#safety">Safety &amp; troubleshooting</a></li>
       <li><a data-page href="#sources">Sources</a></li>
       <li><a data-page href="#privacy">Privacy</a></li>
-      <li><a href="#subscribe">Subscribe</a></li>
     </ul>
+    <div class="sheet__actions">
+      <a class="btn btn--dark" href="subscribe.html">Subscribe</a>
+      <a class="btn btn--outline" href="https://buymeacoffee.com/tamirkarp" target="_blank" rel="noopener">☕ Buy me a coffee</a>
+    </div>
   </nav>
 
     <main id="main" class="content">
@@ -719,48 +704,51 @@
         <p class="subscribe__note">Opens our sign-up page, run by EmailOctopus. You'll be asked to confirm by email, and every email has an unsubscribe link. See <a href="#privacy">Privacy</a>.</p>
       </section>
 
-      <footer class="footer">
-        <p class="footer__statement">Fermentation, explained properly.</p>
-        <div class="footer__cols">
-          <div class="footer__brand"><img class="mark" src="assets/img/jar.svg" alt="" width="30" height="30"><span>The Pickle Hub</span></div>
-          <div>
-            <p class="footer__head">Learn</p>
-            <ul>
-              <li><a href="#intro">Pickling vs. fermenting</a></li>
-              <li><a href="#science">The Science</a></li>
-              <li><a href="#getting-started">Getting started</a></li>
-              <li><a href="#calculator">Brine calculator</a></li>
-            </ul>
-          </div>
-          <div>
-            <p class="footer__head">Techniques</p>
-            <ul>
-              <li><a href="#quick-pickles">Quick vinegar pickles</a></li>
-              <li><a href="#sauerkraut">Sauerkraut</a></li>
-              <li><a href="#brine-ferments">Brine ferments</a></li>
-              <li><a href="#kimchi">Kimchi</a></li>
-              <li><a href="#drinks">Fermented drinks</a></li>
-            </ul>
-          </div>
-          <div>
-            <p class="footer__head">Reference</p>
-            <ul>
-              <li><a href="#safety">Safety &amp; troubleshooting</a></li>
-              <li><a href="#sources">Sources</a></li>
-              <li><a href="#privacy">Privacy</a></li>
-            </ul>
-          </div>
-          <div>
-            <p class="footer__head">Support</p>
-            <ul>
-              <li><a href="subscribe.html">Subscribe</a></li>
-              <li><a href="https://buymeacoffee.com/tamirkarp" target="_blank" rel="noopener">Buy me a coffee</a></li>
-            </ul>
-          </div>
-        </div>
-        <p class="footer__small">© The Pickle Hub. Video summaries are written in our own words; all videos belong to their creators.</p>
-      </footer>
+
     </main>
+  </div>
+
+  <footer class="footer">
+    <p class="footer__statement">Fermentation, explained properly.</p>
+    <div class="footer__cols">
+      <div class="footer__brand"><img class="mark" src="assets/img/jar.svg" alt="" width="30" height="30"><span>The Pickle Hub</span></div>
+      <div>
+        <p class="footer__head">Learn</p>
+        <ul>
+          <li><a href="#intro">Pickling vs. fermenting</a></li>
+          <li><a href="#science">The Science</a></li>
+          <li><a href="#getting-started">Getting started</a></li>
+          <li><a href="#calculator">Brine calculator</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__head">Techniques</p>
+        <ul>
+          <li><a href="#quick-pickles">Quick vinegar pickles</a></li>
+          <li><a href="#sauerkraut">Sauerkraut</a></li>
+          <li><a href="#brine-ferments">Brine ferments</a></li>
+          <li><a href="#kimchi">Kimchi</a></li>
+          <li><a href="#drinks">Fermented drinks</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__head">Reference</p>
+        <ul>
+          <li><a href="#safety">Safety &amp; troubleshooting</a></li>
+          <li><a href="#sources">Sources</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__head">Support</p>
+        <ul>
+          <li><a href="subscribe.html">Subscribe</a></li>
+          <li><a href="https://buymeacoffee.com/tamirkarp" target="_blank" rel="noopener">Buy me a coffee</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__small">© The Pickle Hub. Video summaries are written in our own words; all videos belong to their creators.</p>
+  </footer>
 
   <div class="scrim" id="toc-scrim" hidden></div>
   <button type="button" class="to-top" id="to-top" aria-label="Back to top">↑</button>
