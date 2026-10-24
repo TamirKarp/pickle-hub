@@ -5,14 +5,22 @@
 
   if (window.top !== window.self) return; // main.js hides the page when framed
 
-  const tocLinks = [...document.querySelectorAll('.toc__list a')];
-  const pages = tocLinks
-    .map((a) => document.getElementById(a.getAttribute('href').slice(1)))
+  // Every link marked data-page (header, topics row, phone menu) points at a section.
+  const tocLinks = [...document.querySelectorAll('a[data-page]')];
+  const pages = [...new Set(tocLinks.map((a) => a.getAttribute('href').slice(1)))]
+    .map((id) => document.getElementById(id))
     .filter((el) => el && el.classList.contains('section'));
   if (!pages.length) return;
 
   document.documentElement.classList.add('is-paged');
-  const titles = new Map(tocLinks.map((a) => [a.getAttribute('href').slice(1), a.textContent.trim()]));
+  // A section's full name: the first link's data-title, or failing that the longest link text for it.
+  const titles = new Map();
+  tocLinks.forEach((a) => {
+    const id = a.getAttribute('href').slice(1);
+    const name = a.dataset.title || a.textContent.trim();
+    if (a.dataset.title || name.length > (titles.get(id) || '').length) titles.set(id, name);
+  });
+  tocLinks.filter((a) => a.dataset.title).forEach((a) => titles.set(a.getAttribute('href').slice(1), a.dataset.title));
   const hero = document.querySelector('.hero');
   const topbarTitle = document.getElementById('topbar-title');
   const home = pages[0];

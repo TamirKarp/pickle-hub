@@ -29,6 +29,17 @@
     } catch { return null; }
   };
   const thumbUrl = (id, size) => `https://i.ytimg.com/vi/${encodeURIComponent(id)}/${size}.jpg`;
+  // Shorts get YouTube's vertical frame (oar2); other videos the bar-free 16:9 one (hq720).
+  // Both fall back to the always-present hqdefault if YouTube doesn't have them.
+  const thumbImg = (src, attrs) => {
+    const img = el('img', { ...attrs, src: thumbUrl(src.videoId, src.format === 'short' ? 'oar2' : 'hq720'), alt: '', loading: 'lazy' });
+    const fallback = () => { if (!img.src.endsWith('/hqdefault.jpg')) img.src = thumbUrl(src.videoId, 'hqdefault'); };
+    img.addEventListener('error', fallback, { once: true });
+    // A missing size comes back as YouTube's 120px grey placeholder rather than an error.
+    img.addEventListener('load', () => { if (img.naturalWidth <= 120) fallback(); });
+    if (src.format === 'short') img.classList.add('is-short');
+    return img;
+  };
   const watchUrl = (id, t = 0) => `https://www.youtube.com/watch?v=${encodeURIComponent(id)}${t ? `&t=${t}s` : ''}`;
   const YT_ORIGIN = 'https://www.youtube-nocookie.com';
   // enablejsapi lets the page pause and resume the player with postMessage (see "Pause when leaving a section").
@@ -89,7 +100,7 @@
       return player;
     }
     const facade = el('button', { type: 'button', class: 'player__facade', 'aria-label': `Play video: ${src.title}` },
-      el('img', { src: thumbUrl(src.videoId, 'hqdefault'), alt: '', loading: 'lazy', width: 480, height: 360 }),
+      thumbImg(src, { width: 480, height: 360 }),
       el('span', { class: 'player__play', 'aria-hidden': 'true' }));
     facade.addEventListener('click', () => loadVideo(player, src, src.start || 0)); // 'start' skips a long intro
     player.append(facade);
@@ -232,7 +243,7 @@
       },
       // Only fetch a thumbnail when there's a choice to make (a lone video's tab strip is hidden).
       src.videoId && tech.sources.length > 1
-        ? el('img', { class: 'source__thumb', src: thumbUrl(src.videoId, 'mqdefault'), alt: '', loading: 'lazy', width: 320, height: 180 })
+        ? thumbImg(src, { class: 'source__thumb', width: 320, height: 320 })
         : el('span', { class: 'source__thumb source__thumb--empty', 'aria-hidden': 'true' }, '▶'),
       el('span', { class: 'source__title' }, src.title),
       el('span', { class: 'source__meta' }, [src.creator, src.duration].filter(Boolean).join(' · ')));

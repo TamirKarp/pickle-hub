@@ -38,7 +38,7 @@
     toggle.setAttribute('aria-expanded', String(open));
     toggle.textContent = open ? 'Close' : 'Menu';
     scrim.hidden = !open;
-    if (open) (toc.querySelector('a[aria-current="true"]') || toc.querySelector('.toc__list a'))?.focus({ preventScroll: true });
+    if (open) (toc.querySelector('a[aria-current="true"]') || toc.querySelector('a'))?.focus({ preventScroll: true });
   };
 
   toggle.addEventListener('click', () => setOpen(!toc.classList.contains('is-open')));
