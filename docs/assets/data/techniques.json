@@ -935,6 +935,77 @@
         "compare": "Like Maangchi's, the salt is rinsed off, so there's no percentage to measure. Johnny's 2 days out and then the fridge matches hers. If you use an airtight jar, open it every day or two to let the gas out."
       },
       {
+        "id": "aaron-and-claire",
+        "videoId": "GSsVauFuW9I",
+        "title": "Cucumber kimchi (oi kimchi)",
+        "creator": "Aaron and Claire",
+        "cook": "Aaron",
+        "channelUrl": "https://www.youtube.com/@AaronandClaire",
+        "duration": "9:38",
+        "recipeTitle": "Aaron's cucumber kimchi",
+        "summary": "The easiest kimchi there is: cucumber pieces with the watery seeds scooped out, salted briefly to keep them crunchy, then gently tossed with a quick paste of chilli flakes, fish sauce, garlic, ginger and sugar, plus spring onions. A few hours on the counter, then into the fridge, where it keeps for a few weeks.",
+        "glance": {
+          "Time": "45 min + 3 to 4 hours",
+          "Difficulty": "Easy",
+          "Heat": "5 tbsp chilli flakes",
+          "Keeps": "A few weeks, in the fridge"
+        },
+        "ingredients": [
+          "About 2 kg cucumbers",
+          "2 tbsp coarse sea salt (or about 1 tbsp fine salt)",
+          "A big handful of spring onions, cut into 5 cm strips (or garlic chives)",
+          "6 cloves garlic (about 2 tbsp), very finely chopped",
+          "1 tsp grated ginger",
+          "5 tbsp Korean chilli flakes (gochugaru)",
+          "5 tbsp fish sauce",
+          "1½ tbsp sugar (or Korean plum extract)"
+        ],
+        "method": [
+          {
+            "text": "Trim the ends off the cucumbers and cut them into quarters lengthwise.",
+            "t": 104
+          },
+          {
+            "text": "Scrape out the watery seeds with a spoon, so the kimchi stays crisp and doesn't go watery.",
+            "t": 120
+          },
+          {
+            "text": "Cut into bite-sized pieces.",
+            "t": 160
+          },
+          {
+            "text": "Toss with the coarse sea salt and leave for 10 minutes.",
+            "t": 165
+          },
+          {
+            "text": "Drain in a colander for 20 minutes, then rinse in cold water. Taste a piece and rinse again if it's too salty.",
+            "t": 185
+          },
+          {
+            "text": "Cut the spring onions into strips, chop the garlic very finely and grate the ginger.",
+            "t": 215
+          },
+          {
+            "text": "Mix the chilli flakes, fish sauce, garlic, ginger and sugar into a paste.",
+            "t": 260
+          },
+          {
+            "text": "In a big bowl, gently toss the drained cucumbers with the paste, then add the spring onions. Be gentle: squeezing makes it watery.",
+            "t": 313
+          },
+          {
+            "text": "Taste, and add a little more fish sauce if you'd like it saltier.",
+            "t": 355
+          },
+          {
+            "text": "Eat it straight away, or for a better flavour leave it at room temperature for 3 to 4 hours, then keep it in the fridge.",
+            "t": 365
+          }
+        ],
+        "tip": "Don't add vinegar. Kimchi gets its sourness from fermenting, not from vinegar.",
+        "compare": "This is a quick, lightly fermented kimchi: a few hours out and then the fridge, so it starts fresh and slowly turns sour over the following weeks. As with cabbage kimchi, the salt is rinsed off, so there's no percentage to weigh. Scooping out the seeds and salting first is what keeps it crunchy."
+      },
+      {
         "id": "gaz-oakley-courgette",
         "videoId": "MopJEm8t-so",
         "format": "short",
