@@ -784,5 +784,227 @@
         "compare": "A 2% brine is on the gentle side, which suits a quick ferment. Fruit is sugary, so it ferments fast: taste daily as Capri says, and keep the fruit under the brine with a weight. Her brine is 2% of the water only, so use 20 g per litre rather than the calculator, which counts the fruit too."
       }
     ]
+  },
+  "kimchi": {
+    "recipeLabel": "kimchi recipe",
+    "sources": [
+      {
+        "id": "maangchi",
+        "videoId": "eTucCw1w6Ak",
+        "title": "Traditional kimchi (tongbaechu-kimchi)",
+        "creator": "Maangchi",
+        "cook": "Maangchi",
+        "channelUrl": "https://www.youtube.com/@Maangchi",
+        "duration": "16:30",
+        "summary": "Maangchi's traditional whole-cabbage kimchi: napa cabbage salted for two hours and rinsed, then every leaf spread with a paste of sweet rice porridge, chilli flakes, garlic, ginger, onion, fish sauce, salted shrimp, radish and spring onions. It sits out for a day or two to start fermenting, then goes in the fridge.",
+        "glance": {
+          "Time": "3 hours + 1 to 2 days",
+          "Difficulty": "Medium",
+          "Heat": "1 to 2½ cups chilli flakes",
+          "Makes": "One 2.7 kg cabbage"
+        },
+        "ingredients": [
+          "1 large napa cabbage, about 2.7 kg",
+          "½ cup kosher salt",
+          "For the porridge: 2 cups water, 2 tbsp sweet (glutinous) rice flour and 2 tbsp brown sugar",
+          "½ cup minced garlic, 2 tsp minced ginger and 1 cup minced onion",
+          "½ cup fish sauce",
+          "¼ cup salted fermented shrimp (saeujeot), chopped",
+          "1 to 2½ cups Korean chilli flakes (gochugaru): about 1 cup for mild, 2 for spicy",
+          "About 2 cups Korean radish, cut into matchsticks",
+          "Spring onions, plus Asian chives and minari if you can find them"
+        ],
+        "method": [
+          {
+            "text": "Trim the cabbage, cut a slit in the base and tear it in half by hand so the leaves stay whole.",
+            "t": 60
+          },
+          {
+            "text": "Dunk the halves in cold water, then sprinkle the salt between the leaves, using more on the thick stems.",
+            "t": 90
+          },
+          {
+            "text": "Leave for 2 hours, turning it every 30 minutes so it salts evenly.",
+            "t": 116
+          },
+          {
+            "text": "Meanwhile, make the porridge: simmer the water and rice flour, stirring, until it thickens. Stir in the brown sugar and let it cool completely.",
+            "t": 140
+          },
+          {
+            "text": "Mix the cooled porridge with the garlic, ginger, onion, fish sauce, chopped shrimp and chilli flakes, then stir in the radish and spring onions.",
+            "t": 390
+          },
+          {
+            "text": "Rinse the salted cabbage three times in fresh cold water and drain it really well.",
+            "t": 483
+          },
+          {
+            "text": "Spread the paste between every leaf. Wear gloves if it's your first time, because the chilli stings.",
+            "t": 590
+          },
+          {
+            "text": "Pack it into a jar or container, pressing down to push out the air, and close the lid.",
+            "t": 750
+          },
+          {
+            "text": "Leave at room temperature for a day or two, until it smells sour and starts to bubble, then move it to the fridge.",
+            "t": 800
+          },
+          {
+            "text": "As it ferments, keep pressing it down so it stays under its own juice.",
+            "t": 930
+          }
+        ],
+        "tip": "Eat some straight away as fresh kimchi (geotjeori), torn up with sesame seeds and warm rice, while the rest ferments.",
+        "compare": "Kimchi is salted differently from sauerkraut: the cabbage is soaked in salt and then rinsed, so there's no weighed percentage and the calculator doesn't apply. A day or two at room temperature and then the fridge is the usual way to make it. Leave room in the jar for the juice to rise, and keep the kimchi pressed under it."
+      },
+      {
+        "id": "johnny-kyunghwo",
+        "videoId": "HJrw5Ujca4o",
+        "title": "How to make kimchi like a Korean",
+        "creator": "Johnny Kyunghwo",
+        "cook": "Johnny",
+        "channelUrl": "https://www.youtube.com/@JohnnyKyunghwo",
+        "duration": "3:51",
+        "summary": "A quicker, cut-up kimchi: the cabbage is chopped before salting, softened for a few hours or overnight, rinsed and wrung out, then tossed with radish, spring onions and a rice-flour paste of garlic, onion, fish sauce and chilli flakes. Two days on the counter, then into the fridge.",
+        "glance": {
+          "Time": "1 hour + salting + 2 days",
+          "Difficulty": "Easy",
+          "Heat": "Gochugaru to taste",
+          "Style": "Cut-up cabbage"
+        },
+        "ingredients": [
+          "1 napa (Chinese) cabbage",
+          "½ daikon radish",
+          "1 bunch small spring onions",
+          "1 onion and 15 to 20 cloves of garlic",
+          "Fish sauce",
+          "Korean chilli flakes (gochugaru)",
+          "2 heaped tbsp rice flour",
+          "500 ml filtered water",
+          "Sea salt, for salting the cabbage"
+        ],
+        "method": [
+          {
+            "text": "Remove the tough outer leaves, then cut a cross in the base and split the cabbage into quarters by hand.",
+            "t": 7
+          },
+          {
+            "text": "Chop the quarters lengthwise into pieces and put them in a large pot.",
+            "t": 22
+          },
+          {
+            "text": "Sprinkle with sea salt and leave for a few hours, or overnight, to soften. The exact amount doesn't matter much because it gets rinsed off, but don't overdo it.",
+            "t": 30
+          },
+          {
+            "text": "Cut the radish into sticks and the spring onions into similar lengths.",
+            "t": 45
+          },
+          {
+            "text": "Blend the onion and garlic into a paste, adding a splash of fish sauce to help it blend.",
+            "t": 63
+          },
+          {
+            "text": "Whisk the water and rice flour in a small pan and bring to the boil, stirring constantly, until thick.",
+            "t": 78
+          },
+          {
+            "text": "Stir in the garlic paste, then add chilli flakes until the paste is thick enough to cling to the cabbage. Let it cool.",
+            "t": 88
+          },
+          {
+            "text": "Rinse the cabbage under fresh water and wring out as much water as you can, twice.",
+            "t": 124
+          },
+          {
+            "text": "Toss the cabbage with the radish and spring onions, then put on gloves and mix in the cooled paste until everything is evenly coated. Taste, and add more fish sauce, salt or chilli if you like.",
+            "t": 135
+          },
+          {
+            "text": "Pack it into a glass jar, pressing down as you go. Lay plastic wrap on top to keep the air off, then close the lid.",
+            "t": 165
+          },
+          {
+            "text": "Leave on the counter for about 2 days, then move it to the fridge, where it keeps fermenting slowly.",
+            "t": 195
+          }
+        ],
+        "tip": "Don't overfill the jar: kimchi ferments fast and the juice can overflow. Johnny uses any leftover paste to make a quick radish kimchi.",
+        "compare": "Like Maangchi's, the salt is rinsed off, so there's no percentage to measure. Johnny's 2 days out and then the fridge matches hers. If you use an airtight jar, open it every day or two to let the gas out."
+      },
+      {
+        "id": "gaz-oakley-courgette",
+        "videoId": "MopJEm8t-so",
+        "format": "short",
+        "title": "Kimchi-style courgette ferment",
+        "creator": "Gaz Oakley",
+        "cook": "Gaz",
+        "channelUrl": "https://www.youtube.com/@gazoakleychef",
+        "duration": "1:46",
+        "recipeTitle": "Gaz's kimchi-style courgettes",
+        "summary": "Gaz's answer to a glut of courgettes: chunks tossed with spring onions, lots of garlic, soy sauce, seaweed flakes, honey and Korean chilli flakes, salted at 2% to make their own brine, then packed down and left for about a week until tangy and a little fizzy.",
+        "glance": {
+          "Time": "2 hours + about a week",
+          "Difficulty": "Easy",
+          "Salt": "2% of everything",
+          "Season": "Summer"
+        },
+        "saltPct": 2,
+        "ingredients": [
+          "Courgettes, or a marrow, cut into large chunks",
+          "Spring onions, finely chopped",
+          "Plenty of garlic, to taste",
+          "Soy sauce and seaweed flakes",
+          "A little honey",
+          "Korean chilli flakes (gochugaru)",
+          "Sea salt: 2% of the weight of everything in the bowl"
+        ],
+        "method": [
+          {
+            "text": "Chop the courgettes into large chunks and put them in a mixing bowl.",
+            "t": 13
+          },
+          {
+            "text": "Add the spring onions and plenty of garlic.",
+            "t": 17
+          },
+          {
+            "text": "For umami and sweetness, add soy sauce, seaweed flakes and a little honey.",
+            "t": 27
+          },
+          {
+            "text": "Add the Korean chilli flakes.",
+            "t": 33
+          },
+          {
+            "text": "Weigh everything in the bowl and add 2% of that weight in sea salt.",
+            "t": 38
+          },
+          {
+            "text": "Mix really well and leave for about 2 hours until plenty of brine has formed.",
+            "t": 56
+          },
+          {
+            "text": "Pack it tightly into a jar and press everything down under the brine.",
+            "t": 62
+          },
+          {
+            "text": "Plug the top with a couple of leaves and add a fermentation weight.",
+            "t": 68
+          },
+          {
+            "text": "Label with the date and leave at room temperature for about a week.",
+            "t": 78
+          },
+          {
+            "text": "When it's tangy and a little fizzy, move it to the fridge, where it keeps for a very long time.",
+            "t": 88
+          }
+        ],
+        "compare": "This uses the same 2% total-weight method as the Pickle Hub calculator. It's fish-free: soy sauce and seaweed give it savoury depth instead. Gaz sterilises his jar, which isn't necessary; a clean jar washed in hot, soapy water is fine."
+      }
+    ]
   }
 }
