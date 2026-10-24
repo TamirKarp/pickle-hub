@@ -1,5 +1,5 @@
 {
-  "_readme": "One entry per section (keyed by the section id in index.html). Each source is one video. 'videoId' is the YouTube id (the part after watch?v=). 'format': 'short' for YouTube Shorts. 'saltPct' drives the 'Calculate salt' button; leave it out for non-salt techniques. Method steps and key points take an optional 't' (seconds into the video) to show a timestamp button. Optional 'intro' is a short friendly line shown above the video. For recipe sections, set 'recipeLabel' on the section (e.g. 'quick pickle recipe') and 'cook' on each source (the name in the card header); 'tip' adds a 'Tip from <cook>' box.",
+  "_readme": "One entry per section (keyed by the section id in index.html). Each source is one video. 'videoId' is the YouTube id (the part after watch?v=). 'format': 'short' for YouTube Shorts. 'saltPct' drives the 'Calculate salt' button; leave it out for non-salt techniques. Method steps and key points take an optional 't' (seconds into the video) to show a timestamp button. Optional 'intro' is a short friendly line shown above the video. For recipe sections, set 'recipeLabel' on the section (e.g. 'quick pickle recipe') and 'cook' on each source (the name in the card header); 'tip' adds a 'Tip from <cook>' box. Non-recipe videos can also have 'context' (a short background note) and 'links' (a list of {text, url}, https only).",
   "intro": {
     "sources": [
       {
@@ -30,6 +30,49 @@
           }
         ],
         "fromDescription": "her fermented dill pickles use a 2% salt brine, and her basic vinegar pickling brine is equal parts vinegar and water with 2 tbsp sugar and 1.5 tsp salt."
+      }
+    ]
+  },
+  "science": {
+    "sources": [
+      {
+        "id": "huberman-fermented-foods",
+        "videoId": "n0UaKEynlLc",
+        "format": "short",
+        "title": "The power of fermented foods",
+        "creator": "Health Hive",
+        "channelUrl": "https://www.youtube.com/@HealthHiveYouTube",
+        "duration": "0:24",
+        "intro": "Here's neuroscientist Andrew Huberman on what happened when people ate more fermented food.",
+        "points": [
+          {
+            "text": "Huberman's advice: eat 2 to 4 servings of fermented foods a day, and mix up the kinds.",
+            "t": 0
+          },
+          {
+            "text": "In the study he's describing, people's inflammatory markers went down.",
+            "t": 8
+          },
+          {
+            "text": "Markers of autoimmune disruption went down too, and the chemistry of the gut shifted in a healthy direction.",
+            "t": 12
+          },
+          {
+            "text": "That doesn't mean fibre is bad.",
+            "t": 19
+          }
+        ],
+        "context": "About the study: Stanford researchers led by Justin and Erica Sonnenburg gave 36 healthy adults 10 weeks of either lots of fermented foods (yoghurt, kefir, kimchi, fermented vegetables, brine drinks and kombucha) or lots of fibre. The fermented-food group's gut microbes became more diverse and 19 inflammatory proteins in their blood went down, with bigger servings giving stronger effects. The high-fibre group saw neither change. The 2 to 4 servings a day is Huberman's everyday suggestion rather than a figure from the trial.",
+        "links": [
+          {
+            "text": "Huberman Lab on YouTube",
+            "url": "https://www.youtube.com/@hubermanlab"
+          },
+          {
+            "text": "Full Huberman Lab episode with Dr Justin Sonnenburg",
+            "url": "https://www.hubermanlab.com/episode/dr-justin-sonnenburg-how-to-build-maintain-and-repair-gut-health"
+          }
+        ]
       }
     ]
   },

@@ -236,6 +236,13 @@ img { max-width: 100%; height: auto; }
 
 .cite { margin-top: 1.5rem; font-size: .88rem; color: var(--muted); }
 .from-desc { font-size: .95rem; color: var(--muted); }
+.context { margin-top: 1rem; padding: 1rem 1.25rem; border-radius: var(--radius); background: var(--surface-2); }
+.more-links { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1rem; }
+.more-link {
+  display: inline-flex; align-items: center; padding: .55rem 1rem; border-radius: 999px;
+  border: 1.5px solid var(--brine); color: var(--brine); font-weight: 600; font-size: .95rem; text-decoration: none;
+}
+.more-link:hover { background: var(--brine-soft); }
 
 /* ============ Technique: at a glance ============ */
 .glance {

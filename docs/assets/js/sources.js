@@ -165,6 +165,13 @@
       if (src.fromDescription) {
         frag.append(el('p', { class: 'from-desc' }, el('strong', {}, 'From the video description: '), src.fromDescription));
       }
+      if (src.context) frag.append(el('p', { class: 'context' }, src.context));
+      // Further links (https only), e.g. the original creator's channel or a full episode.
+      const links = (src.links || []).filter((l) => { try { return new URL(l.url).protocol === 'https:'; } catch { return false; } });
+      if (links.length) {
+        frag.append(el('p', { class: 'more-links' },
+          links.map((l) => el('a', { class: 'more-link', href: l.url, target: '_blank', rel: 'noopener' }, `${l.text} →`))));
+      }
     }
 
     if (src.science) {
