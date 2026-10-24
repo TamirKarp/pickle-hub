@@ -1103,7 +1103,52 @@
         "title": "Lemon and mandarin cheong",
         "creator": "Johnny Kyunghwo",
         "cook": "Johnny",
-        "channelUrl": "https://www.youtube.com/@JohnnyKyunghwo"
+        "channelUrl": "https://www.youtube.com/@JohnnyKyunghwo",
+        "duration": "0:49",
+        "recipeTitle": "Johnny's lemon and mandarin cheong",
+        "summary": "Cheong is a Korean fruit syrup made by packing fruit in an equal weight of sugar. Johnny slices lemons and mandarins thinly, buries them in sugar and leaves the jar on the counter until the sugar dissolves, then keeps it in the fridge. A spoonful in hot water makes a soothing citrus tea.",
+        "glance": {
+          "Time": "20 min + about 2 days",
+          "Difficulty": "Easy",
+          "Ratio": "1 fruit : 1 sugar, by weight",
+          "Keeps": "Long term, in the fridge"
+        },
+        "ingredients": [
+          "Lemons, washed well to remove any wax",
+          "A few mandarins, peeled",
+          "Sugar: the same weight as the fruit"
+        ],
+        "method": [
+          {
+            "text": "Wash the lemons well to get rid of any waxy coating.",
+            "t": 8
+          },
+          {
+            "text": "Halve the lemons and slice them as thinly as you can, ideally on a mandoline. Peel and thinly slice the mandarins.",
+            "t": 14
+          },
+          {
+            "text": "Weigh the fruit, then weigh out the same weight of sugar.",
+            "t": 25
+          },
+          {
+            "text": "Mix about two-thirds of the sugar thoroughly into the fruit.",
+            "t": 28
+          },
+          {
+            "text": "Pack it into a jar and cover with the rest of the sugar.",
+            "t": 33
+          },
+          {
+            "text": "Leave it on the counter until the sugar has dissolved. Johnny's took about 2 days.",
+            "t": 36
+          },
+          {
+            "text": "Keep it in the fridge. Stir a spoonful into hot water or tea.",
+            "t": 40
+          }
+        ],
+        "compare": "Cheong is preserved mainly by sugar: an equal weight of sugar draws out the juice and keeps spoilage at bay. Left somewhere warm it can start to ferment, so once the sugar has dissolved, keep it in the fridge. Use a clean, dry jar and keep the fruit covered with syrup so it doesn't go mouldy."
       },
       {
         "id": "johnny-cheong-compilation",
@@ -1112,7 +1157,48 @@
         "title": "Every cheong syrup I made in 2023",
         "creator": "Johnny Kyunghwo",
         "cook": "Johnny",
-        "channelUrl": "https://www.youtube.com/@JohnnyKyunghwo"
+        "channelUrl": "https://www.youtube.com/@JohnnyKyunghwo",
+        "duration": "17:58",
+        "recipeTitle": "Johnny's cheong experiments",
+        "summary": "A year of cheong experiments, all made the same simple way: cranberry, red onion, tomato and basil, fresh bay leaf, strawberry, blueberry, plum, peach, chilli and yuja (yuzu). The fruit, veg or herbs are weighed, mixed with an equal weight of sugar and left until they turn into a syrup.",
+        "glance": {
+          "Time": "A night to a few weeks",
+          "Difficulty": "Easy",
+          "Ratio": "1 : 1 by weight",
+          "Flavours": "10 and counting"
+        },
+        "ingredients": [
+          "Fruit, veg or herbs of your choice, washed and dried",
+          "Sugar (white or organic cane): the same weight as the fruit"
+        ],
+        "method": [
+          {
+            "text": "Wash and dry the fruit thoroughly, and pick out any bruised or very soft pieces.",
+            "t": 9
+          },
+          {
+            "text": "Cut it up so the sugar can draw out the juice faster. Whole berries take much longer.",
+            "t": 286
+          },
+          {
+            "text": "Weigh it, then weigh out the same weight of sugar.",
+            "t": 292
+          },
+          {
+            "text": "Mix in about two-thirds of the sugar, pack it into a clean jar and top with the rest.",
+            "t": 293
+          },
+          {
+            "text": "Leave it on the counter for a night to a few days, then move it to the fridge. Soft, juicy fruit can go straight into the fridge.",
+            "t": 300
+          },
+          {
+            "text": "When the sugar has dissolved, strain off the syrup. The leftover fruit can be dried and used as a garnish.",
+            "t": 313
+          }
+        ],
+        "tip": "Frozen fruit works too: let it thaw completely, then use the usual equal weight of sugar.",
+        "compare": "Johnny's first cranberry cheong went mouldy because the whole berries floated above the syrup. His advice: stir it regularly, keep everything submerged and use the fridge, especially for soft, juicy fruit. If you don't want it to ferment, refrigerate it once the sugar has dissolved."
       },
       {
         "id": "johnny-kombucha",
@@ -1121,7 +1207,54 @@
         "title": "How to easily start making kombucha",
         "creator": "Johnny Kyunghwo",
         "cook": "Johnny",
-        "channelUrl": "https://www.youtube.com/@JohnnyKyunghwo"
+        "channelUrl": "https://www.youtube.com/@JohnnyKyunghwo",
+        "duration": "2:42",
+        "recipeTitle": "Johnny's kombucha starter",
+        "summary": "How to start kombucha without buying a scoby: brew black tea, sweeten it with 10% of its weight in sugar, let it cool, then add some raw, unpasteurised kombucha. Cover it with a cloth and wait for a new scoby to grow on top.",
+        "glance": {
+          "Time": "20 min + 1 to 2 weeks",
+          "Difficulty": "Easy",
+          "Sugar": "10% of the tea's weight",
+          "Tea": "Black"
+        },
+        "ingredients": [
+          "Water",
+          "Black tea bags",
+          "Sugar: 10% of the weight of the brewed tea (Johnny's 1,180 g of tea took 118 g)",
+          "Raw, unpasteurised kombucha, shop-bought or from a friend, or a scoby with its liquid"
+        ],
+        "method": [
+          {
+            "text": "Bring the water to the boil, turn off the heat, add the tea bags and let them steep for about 10 minutes.",
+            "t": 19
+          },
+          {
+            "text": "Strain the tea into a jug on the scales so you know its weight.",
+            "t": 39
+          },
+          {
+            "text": "Add sugar at 10% of the tea's weight and stir until it dissolves.",
+            "t": 48
+          },
+          {
+            "text": "Let it cool completely to room temperature. An ice bath speeds this up.",
+            "t": 70
+          },
+          {
+            "text": "Pour it into a clean glass jar and add the raw kombucha, or a scoby with its liquid.",
+            "t": 91
+          },
+          {
+            "text": "Cover with a cloth or kitchen paper and leave it undisturbed at room temperature.",
+            "t": 119
+          },
+          {
+            "text": "A layer of jelly forms on top: that's your new scoby. Once it's thick and the tea tastes a little vinegary, use them to start the next batch.",
+            "t": 131
+          }
+        ],
+        "tip": "Black tea is best while you're growing a new scoby. Johnny switches to green tea once he's brewing kombucha to drink.",
+        "compare": "Starting from raw kombucha works because the liquid brings the yeasts and bacteria and makes the tea acidic from the start. Brew in glass, cover with a breathable cloth to keep flies out, and throw out any batch that grows fuzzy mould."
       },
       {
         "id": "gaz-oakley-kombucha",
@@ -1131,7 +1264,59 @@
         "title": "Kombucha masterclass",
         "creator": "Gaz Oakley",
         "cook": "Gaz",
-        "channelUrl": "https://www.youtube.com/@gazoakleychef"
+        "channelUrl": "https://www.youtube.com/@gazoakleychef",
+        "duration": "1:40",
+        "recipeTitle": "Gaz's kombucha",
+        "summary": "Gaz's whole kombucha method in under two minutes: brew loose black tea, sweeten and dilute it, add a scoby with a cup of mature kombucha and leave it for 7 to 10 days. Then bottle it with fruit and herbs for a second fermentation that makes it fizzy.",
+        "glance": {
+          "Time": "7 to 10 days + 3 to 5 days",
+          "Difficulty": "Easy",
+          "Makes": "About 5 litres",
+          "Fizz": "Second fermentation in bottles"
+        },
+        "ingredients": [
+          "2.5 litres filtered water for brewing, plus 2.5 litres cool water",
+          "Loose black tea (Gaz uses Assam) or tea bags",
+          "Organic cane sugar",
+          "A scoby with about a cup of mature kombucha",
+          "Fruit and herbs for flavouring, such as blackberries and mint, or rhubarb and strawberries"
+        ],
+        "method": [
+          {
+            "text": "Bring 2.5 litres of filtered water to the boil and add the black tea.",
+            "t": 12
+          },
+          {
+            "text": "Turn off the heat, steep for 10 to 15 minutes, then stir in the sugar.",
+            "t": 22
+          },
+          {
+            "text": "Pour into a clean fermentation jar (one with a tap is handy) and add 2.5 litres of cool water to bring it to room temperature.",
+            "t": 30
+          },
+          {
+            "text": "Add the scoby and about a cup of mature kombucha.",
+            "t": 41
+          },
+          {
+            "text": "Cover with muslin and leave for 7 to 10 days.",
+            "t": 52
+          },
+          {
+            "text": "Taste from day 7. If it's still too sweet, give it longer; when it's pleasantly tangy, it's ready.",
+            "t": 60
+          },
+          {
+            "text": "Bottle it plain or with fruit and herbs, leaving a little space at the top.",
+            "t": 66
+          },
+          {
+            "text": "Seal and leave at room temperature for 3 to 5 days to build up fizz, then move the bottles to the fridge.",
+            "t": 79
+          }
+        ],
+        "tip": "You can buy a scoby and starter liquid online, or ask a friend who already brews.",
+        "compare": "Gaz doesn't give a sugar amount; Johnny's 10% of the tea's weight is a good guide. The second fermentation builds pressure in sealed bottles, so use bottles designed for fizzy drinks, leave space at the top and open one after a couple of days to check."
       },
       {
         "id": "whole-shenanigans-ginger-bug",
@@ -1140,7 +1325,59 @@
         "start": 243,
         "title": "Make any probiotic soda from ginger",
         "creator": "Whole Shenanigans",
-        "channelUrl": "https://www.youtube.com/@WholeShenanigans"
+        "channelUrl": "https://www.youtube.com/@WholeShenanigans",
+        "duration": "6:32",
+        "cook": "Whole Shenanigans",
+        "recipeTitle": "Ginger bug soda",
+        "summary": "A ginger bug is a homemade starter for fizzy drinks: grated ginger, sugar and water, fed every day until it bubbles. Add a spoonful of its liquid to almost any juice, bottle it, and within a day or so you have a naturally fizzy soda.",
+        "glance": {
+          "Time": "About 5 days + 12 hours to 3 days",
+          "Difficulty": "Easy",
+          "Ratio": "1 tbsp bug per cup of juice",
+          "Temp": "21 to 24°C"
+        },
+        "ingredients": [
+          "Organic ginger, grated (no need to peel)",
+          "Sugar: organic cane or plain white",
+          "Non-chlorinated water: filtered, spring, or tap water left out for 24 hours",
+          "Juice for the soda, at room temperature and without preservatives"
+        ],
+        "method": [
+          {
+            "text": "Wash and grate the ginger. Organic ginger doesn't need peeling.",
+            "t": 165
+          },
+          {
+            "text": "In a clean glass jar, mix 2 cups of water with 2 tbsp sugar and 2 tbsp grated ginger.",
+            "t": 177
+          },
+          {
+            "text": "Cover loosely with a cloth or paper towel. Unlike most ferments, a ginger bug needs a little air.",
+            "t": 198
+          },
+          {
+            "text": "Feed it every day with another 2 tbsp each of sugar and ginger, and give it a stir.",
+            "t": 214
+          },
+          {
+            "text": "After about 5 days it should be bubbling. It's happiest at 21 to 24°C.",
+            "t": 223
+          },
+          {
+            "text": "To make soda, strain 1 tbsp of the bug's liquid into a swing-top bottle for every cup of juice.",
+            "t": 286
+          },
+          {
+            "text": "Top up with juice, leaving 2.5 to 5 cm of space at the top, and seal.",
+            "t": 309
+          },
+          {
+            "text": "Leave at room temperature for 12 hours to about 3 days, opening it at least once a day to let the gas out.",
+            "t": 320
+          }
+        ],
+        "tip": "Skip raw honey and non-fermentable sugars. Honey's natural antimicrobials can stop the bug getting going.",
+        "compare": "Opening the bottles every day matters: swing-top bottles can build enough pressure to burst. Once it's as fizzy as you like, move it to the fridge to slow things down."
       },
       {
         "id": "bon-appetit-tepache",
@@ -1149,16 +1386,107 @@
         "title": "Brad makes tepache",
         "creator": "Bon Appétit",
         "cook": "Brad",
-        "channelUrl": "https://www.youtube.com/@bonappetit"
+        "channelUrl": "https://www.youtube.com/@bonappetit",
+        "duration": "9:49",
+        "recipeTitle": "Brad's tepache",
+        "summary": "Tepache is a lightly fermented Mexican pineapple drink. Brad packs a whole pineapple, skin and all, into a jar with brown sugar, ginger, habanero, cinnamon and water, leaves it for a few days, then bottles it for a couple more to make it fizzy.",
+        "glance": {
+          "Time": "20 min + about 3 days + 2 to 3 days",
+          "Difficulty": "Easy",
+          "Sugar": "About a cup of brown sugar",
+          "Flavour": "Sweet, tangy, a little spicy"
+        },
+        "ingredients": [
+          "1 ripe pineapple, not washed: the skin carries useful yeasts",
+          "About 1 cup brown sugar (or piloncillo)",
+          "A knob of fresh ginger, crushed",
+          "A habanero or other chilli, ends trimmed",
+          "A cinnamon stick",
+          "Water"
+        ],
+        "method": [
+          {
+            "text": "Use a large jar that seals. Brad rigs his with a rubber band so it lets out excess pressure.",
+            "t": 28
+          },
+          {
+            "text": "Wash the ginger, trim the tips and crush it.",
+            "t": 56
+          },
+          {
+            "text": "Trim the ends off the chilli and open it up. There's no need to chop it.",
+            "t": 69
+          },
+          {
+            "text": "Cut the top and bottom off the pineapple without washing it, quarter it, trim off a little of the core and cut it into chunks.",
+            "t": 76
+          },
+          {
+            "text": "Add the brown sugar and a little water and shake to dissolve.",
+            "t": 115
+          },
+          {
+            "text": "Add the rest of the pineapple and the cinnamon, muddle it down and top up with a splash more water.",
+            "t": 156
+          },
+          {
+            "text": "Leave at room temperature for a few days until it's bubbling.",
+            "t": 237
+          },
+          {
+            "text": "Strain, then bottle in proper fermentation bottles, leaving 2.5 cm of space at the top.",
+            "t": 264
+          },
+          {
+            "text": "Leave the bottles for 2 to 3 days to carbonate, then chill before opening.",
+            "t": 350
+          },
+          {
+            "text": "For a second batch, add water and 2 tbsp brown sugar to the leftover pineapple.",
+            "t": 432
+          }
+        ],
+        "tip": "Only use bottles made for fermenting. Decorative glass bottles can explode under the pressure.",
+        "compare": "Tepache is a quick ferment driven mostly by wild yeasts, which is why it smells a little beery. The unwashed pineapple skin supplies them, but rinse off any visible dirt. Pineapple and ginger build fizz fast, so check the bottles daily and keep them in the fridge once they're carbonated."
       },
       {
         "id": "adam-witt",
         "category": "soda",
         "videoId": "G_kD6rmrbH4",
         "format": "short",
-        "title": "A new bubbly probiotic drink",
+        "title": "Fruit kvass",
         "creator": "Adam Witt",
-        "channelUrl": "https://www.youtube.com/@AdamWitt"
+        "channelUrl": "https://www.youtube.com/@AdamWitt",
+        "duration": "0:31",
+        "cook": "Adam",
+        "recipeTitle": "Adam's fruit kvass",
+        "summary": "A way to rescue leftover fruit: put it in a jar with water and a little sugar and leave it on the counter for 3 to 5 days until it turns lightly fizzy. Fruit kvass is an old Eastern European drink, a sort of homemade soda from before soda existed.",
+        "glance": {
+          "Time": "5 min + 3 to 5 days",
+          "Difficulty": "Very easy",
+          "Uses": "Leftover fruit",
+          "Serve": "Straight, frozen or mixed"
+        },
+        "ingredients": [
+          "Leftover fruit, chopped",
+          "Water",
+          "A little sugar"
+        ],
+        "method": [
+          {
+            "text": "Put the leftover fruit in a jar with water and some sugar.",
+            "t": 7
+          },
+          {
+            "text": "Leave it on the counter at room temperature for 3 to 5 days.",
+            "t": 11
+          },
+          {
+            "text": "Drink it as it is, freeze it into ice lollies, or use it as a mixer.",
+            "t": 24
+          }
+        ],
+        "compare": "Adam doesn't give amounts or say how to cover the jar. Use a clean jar, cover it loosely or open it daily to let the gas out, and move it to the fridge once it's fizzy. Throw it out if it grows fuzzy mould."
       }
     ]
   }

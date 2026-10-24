@@ -20,6 +20,7 @@
     return node;
   };
   const placeholder = (text) => el('p', { class: 'placeholder' }, text);
+  const possessive = (name) => (/s$/i.test(name) ? `${name}'` : `${name}'s`); // Andy's, Shenanigans'
   const fmtTime = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
   const isVideoId = (id) => typeof id === 'string' && /^[\w-]{11}$/.test(id);
   const safeChannelUrl = (u) => {
@@ -148,7 +149,7 @@
       const titleId = `recipe-${src.id}`;
       frag.append(el('article', { class: 'recipe', 'aria-labelledby': titleId },
         el('p', { class: 'recipe__eyebrow' }, 'Recipe'),
-        el('h3', { class: 'recipe__title', id: titleId }, src.recipeTitle || `${cook}'s ${label || 'recipe'}`),
+        el('h3', { class: 'recipe__title', id: titleId }, src.recipeTitle || `${possessive(cook)} ${label || 'recipe'}`),
         src.summary ? el('p', { class: 'recipe__summary' }, src.summary) : null,
         glance(),
         calcButton(),
@@ -163,7 +164,7 @@
       if (channel) {
         const subUrl = new URL(channel);
         subUrl.searchParams.set('sub_confirmation', '1'); // YouTube shows a "Subscribe?" prompt when this opens
-        frag.append(el('p', { class: 'support support--creator' }, `Enjoyed ${cook}'s recipe? `,
+        frag.append(el('p', { class: 'support support--creator' }, `Enjoyed ${possessive(cook)} recipe? `,
           el('a', { class: 'yt-sub', href: subUrl.href, target: '_blank', rel: 'noopener' }, `▶ Subscribe to ${src.creator} on YouTube`)));
       }
       frag.append(el('p', { class: 'support' }, 'Enjoying The Pickle Hub? ',
