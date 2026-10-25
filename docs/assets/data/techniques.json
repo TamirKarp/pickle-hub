@@ -1490,5 +1490,29 @@
         "compare": "Adam doesn't give amounts or say how to cover the jar. Use a clean jar, cover it loosely or open it daily to let the gas out, and move it to the fridge once it's fizzy. Throw it out if it grows fuzzy mould."
       }
     ]
+  },
+  "about": {
+    "sources": [
+      {
+        "id": "tamir-fermented-chilli-sauce",
+        "videoId": "q5BtfbN6b8c",
+        "format": "short",
+        "title": "Fermented chilli sauce",
+        "creator": "The Joseph-Karp Family",
+        "channelUrl": "https://www.youtube.com/channel/UCP0kHjXEpsry5kRrSxX9RxQ",
+        "duration": "0:23",
+        "intro": "How I make fermented chilli sauce, in under 30 seconds."
+      },
+      {
+        "id": "tamir-pickled-cucumbers",
+        "videoId": "hUJSDXyGofU",
+        "format": "short",
+        "title": "Easy pickled cucumbers",
+        "creator": "The Joseph-Karp Family",
+        "channelUrl": "https://www.youtube.com/channel/UCP0kHjXEpsry5kRrSxX9RxQ",
+        "duration": "0:25",
+        "intro": "Easy pickled cucumbers: anyone can do it. Turn the sound up for the pickle song."
+      }
+    ]
   }
 }
