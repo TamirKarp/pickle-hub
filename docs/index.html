@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' https://i.ytimg.com; connect-src 'self'; frame-src https://www.youtube-nocookie.com; form-action 'none'; base-uri 'none'; object-src 'none'; require-trusted-types-for 'script'; trusted-types 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com; style-src 'self'; font-src 'self'; img-src 'self' https://i.ytimg.com https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src https://www.youtube-nocookie.com; form-action 'none'; base-uri 'none'; object-src 'none'; require-trusted-types-for 'script'; trusted-types pickle-analytics">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>The Pickle Hub</title>
@@ -16,6 +16,7 @@
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/sources.js" defer></script>
   <script src="assets/js/seasons.js" defer></script>
+  <script src="assets/js/analytics.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -774,8 +775,12 @@
         <p>I keep your address until you unsubscribe. After that it's kept only as "unsubscribed", so you're never emailed again by mistake. If you don't confirm your sign-up, your address is deleted within 30 days. You must be 13 or over to subscribe.</p>
 
         <h3>Hosting and videos</h3>
-        <p>This site is hosted on GitHub Pages, which logs visitors' IP addresses for security. Video thumbnails load from YouTube (Google), which receives your IP address. Videos themselves only load when you choose one or press play, and YouTube may then store data in your browser. This site sets no cookies of its own and uses no analytics. The domain's address records are run by Cloudflare, which doesn't see your visit to the site itself.</p>
+        <p>This site is hosted on GitHub Pages, which logs visitors' IP addresses for security. Video thumbnails load from YouTube (Google), which receives your IP address. Videos themselves only load when you choose one or press play, and YouTube may then store data in your browser. Apart from the optional analytics below, this site sets no cookies of its own. The domain's address records are run by Cloudflare, which doesn't see your visit to the site itself.</p>
         <p>GitHub and Google are based in the US, so this information may be handled there, under the UK-approved safeguards those companies use. I rely on my legitimate interest in running a working, secure website, and in showing which videos you can play, for this part.</p>
+
+        <h3>Analytics and cookies</h3>
+        <p>If you say yes on the cookie message, the site uses Google Analytics to count visits. It records which pages you view, how you arrived (for example from Instagram or a search), which links out of the site you click, and your rough location (country and city), device and browser. Google Analytics doesn't store your IP address, and its advertising features are switched off here. It sets two cookies, <code>_ga</code> and <code>_ga_KGB3SPX7LC</code>, which last up to 13 months, and the data is kept for 2 months.</p>
+        <p>Google provides this service (Google Ireland and Google LLC in the US, under UK-approved safeguards) and only on my instructions. I rely on your consent, and if you say no, nothing loads from Google for analytics. You can change your choice at any time with <button type="button" class="link-button" data-consent-open>Cookie settings</button>, which also appears in the footer.</p>
 
         <h3>Buy me a coffee</h3>
         <p>If you choose to support The Pickle Hub through <a href="https://buymeacoffee.com/privacy-policy" rel="noopener">Buy Me a Coffee</a>, they handle the payment and I receive the name, email address and message you give them. I use these only to say thank you and keep basic records, and I keep them for as long as the law requires for my accounts. Payment details go to Buy Me a Coffee and their payment provider, never to me.</p>
@@ -830,6 +835,7 @@
           <li><a href="#sources">Sources &amp; resources</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#privacy">Privacy</a></li>
+          <li><button type="button" class="footer__button" data-consent-open>Cookie settings</button></li>
         </ul>
       </div>
       <div>
@@ -845,6 +851,15 @@
   </footer>
 
   <div class="scrim" id="toc-scrim" hidden></div>
+
+  <!-- Cookie message: analytics.js shows it until the visitor chooses, and nothing loads from Google before a yes. -->
+  <div class="consent" id="consent" role="region" aria-label="Cookie choice" hidden>
+    <p class="consent__text"><strong>Can we count your visit?</strong> With your OK, we use Google Analytics cookies to see which pages people enjoy. Nothing is set unless you say yes, and you can change your mind any time. <a href="#privacy">More in Privacy</a></p>
+    <div class="consent__actions">
+      <button type="button" class="btn btn--dark" data-consent="granted">Yes, that's fine</button>
+      <button type="button" class="btn btn--dark" data-consent="denied">No thanks</button>
+    </div>
+  </div>
   <button type="button" class="to-top" id="to-top" aria-label="Back to top">↑</button>
 </body>
 </html>
