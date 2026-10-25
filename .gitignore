@@ -19,3 +19,6 @@ research/
 .vscode/
 .idea/
 *.swp
+
+# Local-only helper for reading video captions
+scripts/fetch_transcript.sh
