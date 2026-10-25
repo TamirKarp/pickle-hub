@@ -1,0 +1,8 @@
+/* Loaded only when JavaScript is off: on phones the menu button can't open the sheet, so show the contents list in place. */
+@media (max-width: 900px) {
+  .nav__menu { display: none; }
+  .sheet {
+    position: static; transform: none; visibility: visible; max-height: none;
+    margin: 0 1rem 2rem; border-radius: 22px; box-shadow: none; border: 1px solid var(--border);
+  }
+}

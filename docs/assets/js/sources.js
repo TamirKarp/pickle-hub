@@ -31,9 +31,11 @@
   };
   const thumbUrl = (id, size) => `https://i.ytimg.com/vi/${encodeURIComponent(id)}/${size}.jpg`;
   // Shorts get YouTube's vertical frame (oar2); other videos the bar-free 16:9 one (hq720).
-  // Both fall back to the always-present hqdefault if YouTube doesn't have them.
+  // Both fall back to the always-present hqdefault if YouTube doesn't have them ("thumb" in the data picks one directly).
+  const THUMBS = ['hq720', 'oar2', 'hqdefault', 'sddefault', 'maxresdefault'];
   const thumbImg = (src, attrs) => {
-    const img = el('img', { ...attrs, src: thumbUrl(src.videoId, src.format === 'short' ? 'oar2' : 'hq720'), alt: '', loading: 'lazy' });
+    const size = THUMBS.includes(src.thumb) ? src.thumb : src.format === 'short' ? 'oar2' : 'hq720';
+    const img = el('img', { ...attrs, src: thumbUrl(src.videoId, size), alt: '', loading: 'lazy', referrerpolicy: 'no-referrer' });
     const fallback = () => { if (!img.src.endsWith('/hqdefault.jpg')) img.src = thumbUrl(src.videoId, 'hqdefault'); };
     img.addEventListener('error', fallback, { once: true });
     // A missing size comes back as YouTube's 120px grey placeholder rather than an error.
@@ -49,7 +51,8 @@
 
   /* ---------- Pause when leaving a section, resume when coming back ---------- */
   const playerState = new WeakMap(); // iframe -> last YouTube state (1 playing, 2 paused, 3 buffering…)
-  const ytCommand = (iframe, func) =>
+  // Only once the player has loaded; before that the message can't be delivered (the hidden-section check pauses it later).
+  const ytCommand = (iframe, func) => iframe.dataset.ready &&
     iframe.contentWindow?.postMessage(JSON.stringify({ event: 'command', func, args: [] }), YT_ORIGIN);
 
   window.addEventListener('message', (e) => {
@@ -58,8 +61,14 @@
     if (!iframe || typeof e.data !== 'string') return;
     let msg;
     try { msg = JSON.parse(e.data); } catch { return; }
+    if (!msg || typeof msg !== 'object') return;
     if (msg.event === 'onStateChange' && Number.isInteger(msg.info)) playerState.set(iframe, msg.info);
     if (msg.event === 'infoDelivery' && Number.isInteger(msg.info?.playerState)) playerState.set(iframe, msg.info.playerState);
+    // A video that started after its section was left (the visitor clicked away while it loaded): pause it, resume on return.
+    if (playerState.get(iframe) === 1 && iframe.closest('.section')?.hidden) {
+      ytCommand(iframe, 'pauseVideo');
+      iframe.dataset.resume = '1';
+    }
   });
 
   document.addEventListener('pickle:pagechange', ({ detail: { from, to } }) => {
@@ -83,13 +92,13 @@
       title: `${src.title} by ${src.creator}`,
       allow: 'autoplay; encrypted-media; picture-in-picture; fullscreen',
       sandbox: 'allow-scripts allow-same-origin allow-presentation allow-popups allow-popups-to-escape-sandbox',
-      allowfullscreen: true,
       // YouTube refuses to play embeds that don't send a referrer (Error 153).
       referrerpolicy: 'strict-origin-when-cross-origin',
     }));
     // Ask the player to report its state, so we know whether it was playing when the visitor leaves the section.
     const iframe = player.querySelector('iframe');
     iframe.addEventListener('load', () => {
+      iframe.dataset.ready = '1';
       iframe.contentWindow?.postMessage(JSON.stringify({ event: 'listening', id: src.id, channel: 'widget' }), YT_ORIGIN);
     });
   };
@@ -276,7 +285,7 @@
         const count = tech.sources.filter((src) => src.category === f.id).length;
         const b = el('button', { type: 'button', class: 'filter__btn', 'aria-pressed': 'false', 'data-filter': f.id },
           f.label, el('span', { class: 'filter__count' }, String(count)));
-        b.addEventListener('click', () => entry.setFilter(f.id));
+        b.addEventListener('click', () => { if (entry.filter !== f.id) entry.setFilter(f.id); });
         return b;
       });
       entry.setFilter = (cat, { selectFirst = true } = {}) => {
@@ -304,11 +313,20 @@
   };
   window.addEventListener('hashchange', applyHash);
 
+  mounts.forEach((mount) => mount.replaceChildren(placeholder('Loading the videos…')));
   fetch(DATA_URL)
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then((data) => {
-      mounts.forEach((mount) => build(mount, data[mount.dataset.technique]));
-      applyHash();
+      // One bad entry in the data file only breaks its own section, not every video switcher on the page.
+      mounts.forEach((mount) => {
+        mount.replaceChildren();
+        try { build(mount, data[mount.dataset.technique]); }
+        catch {
+          switchers.delete(mount.dataset.technique);
+          mount.replaceChildren(placeholder("Sorry, the videos couldn't be loaded. Try refreshing the page."));
+        }
+      });
+      try { applyHash(); } catch { /* a broken deep link leaves the page as it is */ }
     })
-    .catch(() => mounts.forEach((mount) => mount.append(placeholder("Sorry, the videos couldn't be loaded. Try refreshing the page."))));
+    .catch(() => mounts.forEach((mount) => mount.replaceChildren(placeholder("Sorry, the videos couldn't be loaded. Try refreshing the page."))));
 })();

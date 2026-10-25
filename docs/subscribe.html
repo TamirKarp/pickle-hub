@@ -5,7 +5,7 @@
   <!-- This page alone runs EmailOctopus's form script (and Google reCAPTCHA), and only after the visitor presses
        "Show the sign-up form". Its rules are looser than the main page's; keeping it on its own page means
        third-party code never runs on index.html. -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://eomail5.com/form/031d1a9e-cf00-11f1-b92e-657c95aab55c.js https://eomail5.com/build/js/ https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://gallery.eo.page; img-src 'self' data: https://eomail5.com https://gallery.eo.page https://www.gstatic.com; connect-src https://eomail5.com; frame-src https://www.google.com https://recaptcha.google.com; form-action https://eomail5.com; base-uri 'none'; object-src 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://eomail5.com/form/031d1a9e-cf00-11f1-b92e-657c95aab55c.js https://www.google.com/recaptcha/api.js https://www.gstatic.com/recaptcha/releases/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://gallery.eo.page; img-src 'self' data: https://eomail5.com https://gallery.eo.page https://www.gstatic.com; connect-src https://eomail5.com; frame-src https://www.google.com https://recaptcha.google.com; form-action https://eomail5.com; base-uri 'none'; object-src 'none'">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Subscribe · The Pickle Hub</title>

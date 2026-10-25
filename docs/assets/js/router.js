@@ -80,7 +80,10 @@
     if (!target) { show(current || home); return; }
 
     const page = pages.find((p) => p === target || p.contains(target));
-    if (page) {
+    if (!page && hero?.contains(target)) {
+      // The home page's own parts (#top, #explore): go home first, then scroll to them.
+      show(home, { scrollTo: target === hero ? null : target });
+    } else if (page) {
       // A whole section, or something inside one (e.g. #season): show its section, then scroll to it.
       show(page, { focus: focus && page === target, scrollTo: page === target ? null : target });
     } else {
@@ -90,5 +93,10 @@
   };
 
   window.addEventListener('hashchange', () => route({ focus: true }));
+  // Clicking a link to where you already are doesn't change the hash, so handle it here (back to the top of the section).
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href^="#"]');
+    if (a && a.getAttribute('href') === location.hash) route({ focus: true });
+  });
   route();
 })();

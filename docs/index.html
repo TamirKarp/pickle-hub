@@ -10,6 +10,8 @@
   <link rel="icon" href="assets/img/jar.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/style.css">
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+  <script src="assets/js/guard.js"></script>
   <script src="assets/js/router.js" defer></script>
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/sources.js" defer></script>
@@ -50,6 +52,7 @@
     <p class="sheet__group">Reference</p>
     <ul>
       <li><a data-page href="#safety">Safety &amp; troubleshooting</a></li>
+      <li><a data-page href="#shop">Shop</a></li>
       <li><a data-page href="#sources">Sources</a></li>
       <li><a data-page href="#privacy">Privacy</a></li>
     </ul>
@@ -74,27 +77,27 @@
           <h2 id="explore-title">What shall we make?</h2>
           <div class="cards">
             <a class="card" href="#kimchi">
-              <img class="card__img" src="https://i.ytimg.com/vi/eTucCw1w6Ak/hq720.jpg" alt="" loading="lazy" width="1280" height="720">
+              <img class="card__img" src="https://i.ytimg.com/vi/eTucCw1w6Ak/hq720.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" width="1280" height="720">
               <span class="card__title">Kimchi</span>
               <span class="card__meta">4 recipes · 1 to 2 days, then the fridge</span>
             </a>
             <a class="card" href="#quick-pickles">
-              <img class="card__img is-short" src="https://i.ytimg.com/vi/ZhEQPrGi68E/oar2.jpg" alt="" loading="lazy" width="1080" height="1920">
+              <img class="card__img is-short" src="https://i.ytimg.com/vi/ZhEQPrGi68E/oar2.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" width="1080" height="1920">
               <span class="card__title">Quick vinegar pickles</span>
               <span class="card__meta">4 recipes · ready in hours</span>
             </a>
             <a class="card" href="#sauerkraut">
-              <img class="card__img is-short" src="https://i.ytimg.com/vi/BV_q-3aXX4w/oar2.jpg" alt="" loading="lazy" width="1080" height="1920">
+              <img class="card__img is-short" src="https://i.ytimg.com/vi/BV_q-3aXX4w/oar2.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" width="1080" height="1920">
               <span class="card__title">Sauerkraut</span>
               <span class="card__meta">4 recipes · 1 to 6 weeks</span>
             </a>
             <a class="card" href="#brine-ferments">
-              <img class="card__img" src="https://i.ytimg.com/vi/Jg5LSeVleDU/hq720.jpg" alt="" loading="lazy" width="1280" height="720">
+              <img class="card__img" src="https://i.ytimg.com/vi/Jg5LSeVleDU/hq720.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" width="1280" height="720">
               <span class="card__title">Brine ferments</span>
               <span class="card__meta">5 recipes · days to weeks</span>
             </a>
             <a class="card" href="#drinks">
-              <img class="card__img" src="https://i.ytimg.com/vi/JNcoYLVFCKg/hq720.jpg" alt="" loading="lazy" width="1280" height="720">
+              <img class="card__img" src="https://i.ytimg.com/vi/JNcoYLVFCKg/hq720.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" width="1280" height="720">
               <span class="card__title">Fermented drinks</span>
               <span class="card__meta">7 recipes · cheong, kombucha and soda</span>
             </a>
@@ -128,7 +131,9 @@
 
         <p><strong>A note on storage:</strong> vinegar pickles can only live in the cupboard if the jars have been properly heat-processed and sealed. Quick "fridge pickles" stay in the fridge. Fermented veg also belongs in the fridge once it tastes right, because the cold slows fermentation and keeps it crunchy.</p>
 
-        <div class="switcher" data-technique="intro"></div>
+        <div class="switcher" data-technique="intro">
+          <noscript><p class="placeholder">Turn on JavaScript to watch the video here.</p></noscript>
+        </div>
 
         <p class="cite">Sources: <a href="https://www.kilnerjar.co.uk/blog/what-is-the-difference-between-fermenting-and-pickling" rel="noopener">Kilner, "What is the difference between fermenting and pickling?"</a>; <a href="https://www.youtube.com/watch?v=HQCS--L9OhM" rel="noopener">Wendy the Food Scientist, "Fermentation vs. Pickling"</a>.</p>
       </section>
@@ -409,7 +414,9 @@
 
         <h3>Why eat fermented food?</h3>
         <p>Fermenting doesn't just preserve food. Live ferments carry the bacteria that made them, and there's growing evidence that eating them regularly is good for your gut.</p>
-        <div class="switcher" data-technique="science"></div>
+        <div class="switcher" data-technique="science">
+          <noscript><p class="placeholder">Turn on JavaScript to watch the video here.</p></noscript>
+        </div>
 
         <p class="cite">Sources: <a href="https://www.britannica.com/topic/food-preservation/Fungi" rel="noopener">Britannica, "Food preservation: Fungi" and "Control of microbial contamination"</a>; <a href="https://www.kilnerjar.co.uk/blog/what-is-the-difference-between-fermenting-and-pickling" rel="noopener">Kilner</a>; <a href="https://www.youtube.com/watch?v=HQCS--L9OhM" rel="noopener">Wendy the Food Scientist</a>; <a href="https://doi.org/10.1016/j.cell.2021.06.019" rel="noopener">Wastyk et al., "Gut-microbiota-targeted diets modulate human immune status", Cell (2021)</a>.</p>
       </section>
@@ -444,6 +451,7 @@
             </tbody>
           </table>
         </div>
+        <p>The brine strengths above are a percentage of the water alone, so in the <a href="#calculator">brine calculator</a> enter just the water's weight. For a dry-salted ferment, enter the weight of the veg.</p>
 
         <h3>Where to keep it</h3>
         <p>Find a spot out of direct sunlight, away from the oven, radiators and outside walls, where the temperature stays steady and you'll remember to check it every day. Temperature sets the pace:</p>
@@ -498,18 +506,18 @@
             </div>
             <label class="calc__input">
               <span class="visually-hidden">Brine strength in percent</span>
-              <input id="calc-pct" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="2">
+              <input id="calc-pct" type="text" inputmode="decimal" maxlength="32" autocomplete="off" spellcheck="false" value="2">
               <span class="calc__suffix">%</span>
             </label>
           </fieldset>
 
           <fieldset class="calc__field">
             <legend>Total weight</legend>
-            <p class="calc__help">Everything going in the jar: veg, aromatics and water.</p>
+            <p class="calc__help">Everything going in the jar: veg, aromatics and water. If your recipe gives the brine as a percentage of the water only, enter just the water's weight.</p>
             <div class="calc__row">
               <label class="calc__input calc__input--grow">
                 <span class="visually-hidden">Total weight</span>
-                <input id="calc-weight" type="number" inputmode="decimal" min="0" step="any" placeholder="e.g. 1000">
+                <input id="calc-weight" type="text" inputmode="decimal" maxlength="32" autocomplete="off" spellcheck="false" placeholder="e.g. 1000">
               </label>
               <label>
                 <span class="visually-hidden">Unit</span>
@@ -655,6 +663,37 @@
         <p class="cite">Sources: National Center for Home Food Preservation on <a href="https://nchfp.uga.edu/how/ferment/general-information-on-fermenting/causes-and-possible-solutions-for-problems-with-fermented-pickles/" rel="noopener">problems with fermented pickles</a>, <a href="https://nchfp.uga.edu/how/ferment/general-information-on-fermenting/suitable-containers-covers-and-weights-for-fermenting-food/" rel="noopener">containers, covers and weights</a> and <a href="https://nchfp.uga.edu/how/ferment/sauerkraut" rel="noopener">sauerkraut</a>; <a href="https://thefermentguide.com/guides/how-to-ferment-at-home" rel="noopener">The Ferment Guide</a>; <a href="https://efda.co.uk/blog/fermenting-and-pickling-at-home-a-beginners-guide-to-living-flavour/" rel="noopener">Edinburgh Food &amp; Drink Academy</a>; <a href="https://revolutionfermentation.com/en/blogs/other/clean-sanitize-fermentation-equipment/" rel="noopener">Révolution Fermentation</a>; <a href="https://www.youtube.com/watch?v=Jg5LSeVleDU" rel="noopener">Ethan Chlebowski</a>.</p>
       </section>
 
+      <section id="shop" class="section">
+        <h2>Shop</h2>
+        <p>You don't need much kit to get going: a few good jars, something to keep the veg under the brine, and scales so your salt is spot on. Here are some good places to start.</p>
+        <p class="tip"><strong>About these links:</strong> they're Amazon affiliate links. If you buy something through one, The Pickle Hub gets a small commission and you pay the same price. As an Amazon Associate I earn from qualifying purchases.</p>
+
+        <ul class="shop">
+          <li class="shop__item">
+            <span class="tag">Jars</span>
+            <h3>Kilner jars</h3>
+            <p>The classic for ferments and fridge pickles. Clip-top jars can let a little gas escape as a ferment bubbles, and screw-top ones are easy to open for a daily taste. Get a few sizes: a 1 litre jar holds a small cabbage's worth of sauerkraut.</p>
+            <a class="btn btn--dark" href="https://link.amazon/B0itZXUEe" target="_blank" rel="sponsored noopener">Browse Kilner jars on Amazon ↗</a>
+            <span class="shop__ad">Affiliate link</span>
+          </li>
+          <li class="shop__item">
+            <span class="tag">Fermenting kit</span>
+            <h3>Kilner fermenting accessories</h3>
+            <p>Airlock lids, glass weights, funnels and more. If you only add one thing, make it a weight: anything poking up above the brine is where mould gets started (see <a href="#safety">Safety &amp; troubleshooting</a>).</p>
+            <a class="btn btn--dark" href="https://link.amazon/B0f7UuaFN" target="_blank" rel="sponsored noopener">Browse Kilner accessories on Amazon ↗</a>
+            <span class="shop__ad">Affiliate link</span>
+          </li>
+          <li class="shop__item">
+            <span class="tag">Scales</span>
+            <h3>Salter Arc digital kitchen scale</h3>
+            <p>Salt is the one thing worth getting exactly right, and spoonfuls vary a lot. This one weighs in grams, takes up to 3 kg, and can reset to zero with the jar already on it, which makes the <a href="#calculator">brine calculator</a> a breeze.</p>
+            <a class="btn btn--dark" href="https://link.amazon/B09PXMzmj" target="_blank" rel="sponsored noopener">See the scale on Amazon ↗</a>
+            <span class="shop__ad">Affiliate link</span>
+          </li>
+        </ul>
+        <p class="cite">Prices and stock are set by Amazon and can change.</p>
+      </section>
+
       <section id="sources" class="section">
         <h2>Sources</h2>
         <h3>Written</h3>
@@ -690,6 +729,9 @@
 
         <h3>Hosting and videos</h3>
         <p>This site is hosted on GitHub Pages, which logs visitors' IP addresses for security. Video thumbnails load from YouTube (Google), which receives your IP address. Videos themselves only load when you choose one or press play, and YouTube may then store data in your browser. This site sets no cookies of its own and uses no analytics.</p>
+
+        <h3>Shop links</h3>
+        <p>The links in the <a href="#shop">Shop</a> are Amazon affiliate links. Nothing loads from Amazon until you click one. If you do, Amazon can see you came from The Pickle Hub and may set cookies, under <a href="https://www.amazon.co.uk/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ" rel="noopener">Amazon's Privacy Notice</a>. If you buy something, I get a small commission. Amazon only tells me which products sold, never who bought them.</p>
 
         <h3>Your rights</h3>
         <p>You can ask to see, correct or delete your details, to limit or object to how they're used, or for a copy to take elsewhere, by contacting me. If you're unhappy with how your data has been handled, you can complain to the <a href="https://ico.org.uk/make-a-complaint/" rel="noopener">Information Commissioner's Office</a>.</p>
@@ -742,6 +784,7 @@
       <div>
         <p class="footer__head">Support</p>
         <ul>
+          <li><a href="#shop">Shop</a></li>
           <li><a href="subscribe.html">Subscribe</a></li>
           <li><a href="https://buymeacoffee.com/tamirkarp" target="_blank" rel="noopener">Buy me a coffee</a></li>
         </ul>
