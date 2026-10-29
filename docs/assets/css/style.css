@@ -217,6 +217,12 @@ img { max-width: 100%; height: auto; }
 .footer__button, .link-button { padding: 0; border: 0; background: none; font: inherit; color: inherit; text-decoration: underline; cursor: pointer; }
 .footer__button { text-decoration: none; color: #d6d6d6; }
 .footer__button:hover { color: #fff; text-decoration: underline; text-decoration-color: var(--accent); }
+/* Instagram profile embed (click to load) */
+.insta { max-width: 34rem; padding: 1.35rem; border: 1px solid var(--border); border-radius: var(--radius); }
+.insta:has(.insta__frame) { padding: 0; border: 0; }
+.insta__intro { margin: 0 0 .9rem; }
+.insta__note { margin: .9rem 0 0; font-size: .88rem; color: var(--muted); }
+.insta__frame { display: block; width: 100%; height: 34rem; border: 1px solid var(--border); border-radius: var(--radius); background: #fff; }
 .about__links { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.5rem 0 0; }
 .shop { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: 1rem; }
 .shop__item { display: flex; flex-direction: column; align-items: flex-start; gap: .6rem; padding: 1.35rem; border: 1px solid var(--border); border-radius: var(--radius); }

@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com; style-src 'self'; font-src 'self'; img-src 'self' https://i.ytimg.com https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src https://www.youtube-nocookie.com; form-action 'none'; base-uri 'none'; object-src 'none'; require-trusted-types-for 'script'; trusted-types pickle-analytics">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com; style-src 'self'; font-src 'self'; img-src 'self' https://i.ytimg.com https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src https://www.youtube-nocookie.com https://www.instagram.com; form-action 'none'; base-uri 'none'; object-src 'none'; require-trusted-types-for 'script'; trusted-types pickle-analytics">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>The Pickle Hub</title>
@@ -16,6 +16,7 @@
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/sources.js" defer></script>
   <script src="assets/js/seasons.js" defer></script>
+  <script src="assets/js/instagram.js" defer></script>
   <script src="assets/js/analytics.js" defer></script>
 </head>
 <body>
@@ -762,6 +763,13 @@
         <div class="switcher" data-technique="about">
           <noscript><p class="placeholder">Turn on JavaScript to watch the videos here.</p></noscript>
         </div>
+
+        <h3>On Instagram</h3>
+        <div class="insta" data-profile="tamir_karp">
+          <p class="insta__intro">See what I've been making lately, straight from my Instagram.</p>
+          <button type="button" class="btn btn--dark insta__load">Show my Instagram posts</button>
+          <p class="insta__note">This loads my posts from Instagram (Meta), which may set cookies. See <a href="#privacy">Privacy</a>. Or <a href="https://www.instagram.com/tamir_karp/" target="_blank" rel="me noopener">open Instagram</a> instead.</p>
+        </div>
       </section>
 
       <section id="privacy" class="section">
@@ -777,6 +785,9 @@
         <h3>Hosting and videos</h3>
         <p>This site is hosted on GitHub Pages, which logs visitors' IP addresses for security. Video thumbnails load from YouTube (Google), which receives your IP address. Videos themselves only load when you choose one or press play, and YouTube may then store data in your browser. Apart from the optional analytics below, this site sets no cookies of its own. The domain's address records are run by Cloudflare, which doesn't see your visit to the site itself.</p>
         <p>GitHub and Google are based in the US, so this information may be handled there, under the UK-approved safeguards those companies use. I rely on my legitimate interest in running a working, secure website, and in showing which videos you can play, for this part.</p>
+
+        <h3>Instagram posts</h3>
+        <p>The About page can show my latest Instagram posts. They only load if you press "Show my Instagram posts". Instagram (Meta Platforms Ireland) then receives your IP address and device details, may set cookies, and can link the visit to your Instagram or Facebook account if you're signed in. <a href="https://privacycenter.instagram.com/policy" rel="noopener">Instagram's Privacy Policy</a> applies.</p>
 
         <h3>Analytics and cookies</h3>
         <p>If you say yes on the cookie message, the site uses Google Analytics to count visits. It records which pages you view, how you arrived (for example from Instagram or a search), which links out of the site you click, and your rough location (country and city), device and browser. Google Analytics doesn't store your IP address, and its advertising features are switched off here. It sets two cookies, <code>_ga</code> and <code>_ga_KGB3SPX7LC</code>, which last up to 13 months, and the data is kept for 2 months.</p>
